@@ -76,22 +76,26 @@
                         
                    
                 </div>
-                <div class="text-start lg:text-center mt-16 text-xl px-6 lg:px-0">Fill up the application and Submit</div>
+              
 
                 <!-- profile section -->
 
                 <section >
-                    <div class="flex flex-col lg:flex-row gap-10 px-6 lg:px-32 xl:px-[600px] mt-10">
-                        <div class="flex items-center"><img src="./images/image 1.png"/></div>
+                    
+                    <div class="flex flex-col lg:flex-row gap-5  px-6 lg:px-32 xl:px-[600px] mt-10">
+                        <div class="flex items-center basis-1/2"><img src="./images/image 1.png"/></div>
 
                         <div class="flex flex-col justify-center gap-2">
+                            <div class="text-2xl mb-10">Fill up the application and Submit</div>
                             <div>It is highly advised to upload a profile picture as a profile picture helps making a more personal connection with the recruiter.</div>
+                            
 
                             <div> Upload your profile picture</div>
                             
-                            <div class="flex flex-col gap-4">
-                                <label class="text-xl">Resume</label>
-                                <input type="file"  class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+                            <div class="flex flex-col gap-2 cursor-pointer">
+                                <label class="text-xl">Upload your profile picture</label>
+                                <input type="file"  class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"   required="required"/>
+                                * In jpg, jpeg or png format and 1 meg max
                             </div>
                           
                         </div>
@@ -111,19 +115,19 @@
                             <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
                         </div>
 
-                        <div class="flex flex-col gap-4">
+                        <div class="flex flex-col gap-4 ">
                             <label class="text-xl">Date of birth</label>
-                            <input type="date" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+                            <input  type="date" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"   required="required"/>
                         </div>
 
                         <div class="flex flex-col gap-4">
                             <label class="text-xl">Contact number</label>
-                            <input type="number" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+                            <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
                         </div>
 
                         <div class="flex flex-col gap-4">
                             <label class="text-xl">Grad institute </label>
-                            <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
                               <option value="javascript">Select Your University </option>
                               <option value="php">options 2</option>
                               <option value="java">options 3</option>
@@ -137,7 +141,7 @@
 
                         <div class="flex flex-col gap-4">
                             <label class="text-xl">Grad degree </label>
-                            <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
                               <option value="javascript">Select Your Degree </option>
                               <option value="php">options 2</option>
                               <option value="java">options 3</option>
@@ -151,7 +155,7 @@
 
                         <div class="flex flex-col gap-4">
                             <label class="text-xl">Grad Major </label>
-                            <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black">
+                            <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
                               <option value="javascript">Select Your Major </option>
                               <option value="php">options 2</option>
                               <option value="java">options 3</option>
@@ -165,12 +169,13 @@
 
                         <div class="flex flex-col gap-4">
                             <label class="text-xl">Passing Year</label>
-                            <input type="number" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+                            <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
                         </div>
 
                         <div class="flex flex-col gap-4">
                             <label class="text-xl">Resume</label>
-                            <input type="file" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+                            <input type="file" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+                            <div class="mb-4"> <i>* In doc, docs, pdf format and 3 meg max </i> </div>
                         </div>
 
                         <div class="flex flex-col gap-4">
@@ -180,12 +185,12 @@
 
                         <div class="flex flex-col gap-4">
                             <label class="text-xl">GitHub profile link</label>
-                            <input type="number" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+                            <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
                         </div>
 
                         <div class="flex flex-col gap-4">
                             <label class="text-xl">LinkedIn profile link</label>
-                            <input type="number" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+                            <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
                         </div>
 
                         <div class="flex items-center justify-center mt-5  ">
@@ -201,7 +206,7 @@
     
     <footer class="bg-black mt-10 ">
 
-        <div class="px-6 lg:px-[500px] py-5 flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between text-white">
+        <div class="px-6 lg:px-72 xl:px-[500px] py-5 flex flex-col lg:flex-row gap-8  justify-between text-white">
             <div>
                 <div class="text-xl">
                     For Other Inquires -
