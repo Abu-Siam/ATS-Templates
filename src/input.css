@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*/ progress bar responsiveness /*/
+@media screen and (max-width: 700px) {
+
+    .progress_bar{
+        width: 320px;
+    }
+
+}
