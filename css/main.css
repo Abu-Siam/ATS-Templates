@@ -559,10 +559,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute{
-  position: absolute;
-}
-
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -579,10 +575,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-
 .flex{
   display: flex;
 }
@@ -595,16 +587,16 @@ video {
   cursor: pointer;
 }
 
+.cursor-text{
+  cursor: text;
+}
+
 .flex-col{
   flex-direction: column;
 }
 
 .items-start{
   align-items: flex-start;
-}
-
-.items-end{
-  align-items: flex-end;
 }
 
 .items-center{
@@ -641,10 +633,6 @@ video {
 
 .gap-2{
   gap: 0.5rem;
-}
-
-.gap-4{
-  gap: 1rem;
 }
 
 .gap-8{
@@ -691,6 +679,11 @@ video {
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-2{
@@ -754,6 +747,26 @@ html{
   /* background-color: #A0A0A0; */
 }
 
+/* progress bar responsiveness */
+
+@media screen and (max-width: 600px) {
+  .progress_bar{
+    width: 300px;
+  }
+}
+
+/* select arrow */
+
+/* remove date */
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+
+input[type=date]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -789,6 +802,11 @@ html{
     padding-right: 8rem;
   }
 
+  .lg\:px-64{
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -797,16 +815,6 @@ html{
   .lg\:px-72{
     padding-left: 18rem;
     padding-right: 18rem;
-  }
-
-  .lg\:px-36{
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  .lg\:px-64{
-    padding-left: 16rem;
-    padding-right: 16rem;
   }
 
   .lg\:pb-5{
