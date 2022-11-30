@@ -33,7 +33,7 @@
 
 <!-- back button -->
 <a href="#"><div class="text-blue-500 mt-10 flex items-center justify-center">
-  <img src="./images/Chevron left.png"/>
+  <img src="../images/Chevron left.png"/>
   <div class="text-xl italic">Back</div>
 </div></a>
 
@@ -71,7 +71,7 @@
     </div>
   </div>
   <div class="text-2xl font-bold mt-5">Application</div>
-  <svg width="320" height="22" viewBox="0 0 600 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg class="progress_bar" width="520" height="22" viewBox="0 0 600 22" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect x="9.81982" y="9" width="579.362" height="4" fill="#D9D9D9"/>
     <rect x="10" y="9" width="380" height="4" fill="black"/>
     <ellipse cx="10.3107" cy="10.5684" rx="10.3107" ry="10.5" fill="black"/>
@@ -89,7 +89,7 @@
 <section >
 
   <div class="flex flex-col lg:flex-row gap-5  px-6 lg:px-32 xl:px-[600px] mt-10">
-    <div class="flex items-center basis-1/2"><img src="./images/image 1.png"/></div>
+    <div class="flex items-center basis-1/2"><img src="../images/image 1.png"/></div>
 
     <div class="flex flex-col justify-center gap-2">
       <div class="text-2xl mb-10">Fill up the application and Submit</div>
@@ -99,8 +99,10 @@
       <div> Upload your profile picture</div>
 
       <div class="flex flex-col gap-2 cursor-pointer">
-        <label class="text-xl">Upload your profile picture</label>
-        <input type="file"  class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"   required="required"/>
+        <label class="text-xl border border-gray-400 p-2 pl-4  rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer text-blue-500 flex justify-end px-4">Upload
+          <input type="file"  style="display: none;"   required="required"/>
+        </label>
+
         * In jpg, jpeg or png format and 1 meg max
       </div>
 
@@ -109,31 +111,36 @@
 
 
 </section>
+
+<!-- form -->
 <section class="px-6 lg:px-32 xl:px-[600px] mt-10">
   <form method="post">
-    <div class="flex flex-col gap-4">
-      <label class="text-xl">Full legal name <span class="text-red-600">*</span></label>
+    <div class="flex flex-col gap-2">
+      <label class="text-xl ">Full legal name <span class="text-red-600">*</span></label>
       <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
       <label class="text-xl">Preferred nick name </label>
       <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
     </div>
 
-    <div class="flex flex-col gap-4 ">
+    <div class="flex flex-col gap-2 ">
       <label class="text-xl">Date of birth </label>
-      <input  type="date" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer"   required="required"/>
+      <input  type="date" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-text"   required="required"/>
+
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
       <label class="text-xl">Contact number <span class="text-red-600">*</span></label>
       <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div class=" flex flex-col gap-2">
       <label class="text-xl">Grad institute <span class="text-red-600">*</span> </label>
-      <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
+      <select   class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
+
+
         <option >Select Your University </option>
         <option >options 2</option>
         <option >options 3</option>
@@ -145,9 +152,9 @@
       </select>
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
       <label class="text-xl">Grad degree <span class="text-red-600">*</span> </label>
-      <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
+      <select class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
         <option >Select Your Degree </option>
         <option >options 2</option>
         <option >options 3</option>
@@ -159,9 +166,9 @@
       </select>
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
       <label class="text-xl">Grad major <span class="text-red-600">*</span> </label>
-      <select name="languages"  class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
+      <select class="bg-white border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer">
         <option >Select Your Major </option>
         <option >options 2</option>
         <option >options 3</option>
@@ -175,7 +182,7 @@
 
 
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
       <label class="text-xl">Passing year <span class="text-red-600">*</span></label>
 
       <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4  rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
@@ -188,25 +195,27 @@
 
 
 
-    <div class="flex flex-col gap-4">
-      <label class="text-xl">Resume <span class="text-red-600">*</span></label>
-      <input type="file" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
+    <div class="flex flex-col gap-2">
+      <label class="text-xl">Resume</label>
+      <label class="text-xl border border-gray-400 p-2 pl-4  rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer text-blue-500 flex justify-end px-4">Upload
+        <input type="file"  style="display: none;"   required="required"/>
+      </label>
       <div class="mb-4"> <i>* In doc, docs, pdf format and 3 meg max </i> </div>
     </div>
 
 
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
       <label class="text-xl">Notice period to previous employer (in month)</label>
       <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
       <label class="text-xl">GitHub profile link</label>
       <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-2">
       <label class="text-xl">LinkedIn profile link</label>
       <input type="text" placeholder="enter here"   class="border border-gray-400 p-2 pl-4 mb-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black"   required="required"/>
     </div>
