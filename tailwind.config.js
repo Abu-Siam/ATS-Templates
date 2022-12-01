@@ -14,9 +14,9 @@ module.exports = {
     },
     extend: {
       colors:{
-        olwelGreen:'#2D8B45',
-        olwelGreenLight:'#CFFFD94D',
-        olwelGreenBorder:'#E0EEE3'
+//         olwelGreen:'#2D8B45',
+//         olwelGreenLight:'#CFFFD94D',
+//         olwelGreenBorder:'#E0EEE3'
         
       }
     },
