@@ -1,0 +1,22 @@
+{
+  "name": "shrimp-templates",
+  "version": "1.0.0",
+  "description": "HTML Templates with the help of Tailwind CSS for shrimp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abu-Siam/Shrimp-Templates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abu-Siam/Shrimp-Templates/issues"
+  },
+  "homepage": "https://github.com/Abu-Siam/Shrimp-Templates#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

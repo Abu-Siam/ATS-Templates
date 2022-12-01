@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*/ progress bar responsiveness /*/
+/*@media screen and (max-width: 700px) {*/
+
+/*    .progress_bar{*/
+/*        width: 320px;*/
+/*    }*/
+
+/*}*/
+
+input[type="file"]::file-selector-button {
+
+    font-weight: bold;
+    color: dodgerblue;
+    padding: 0;
+
+    border: 0 solid white;
+    background-color: white;
+}
