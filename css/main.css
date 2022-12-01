@@ -909,3 +909,22 @@ input[type=date]:focus::-webkit-datetime-edit {
     padding-right: 500px;
   }
 }
+div.fileinputs {
+	position: relative;
+}
+
+
+input.file {
+	position: relative;
+	text-align: right;
+	z-index: 2;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: dodgerblue;
+  padding: 0.5em;
+ 
+  border: 0px solid white;
+  background-color: white;
+}
