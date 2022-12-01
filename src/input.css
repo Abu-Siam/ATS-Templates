@@ -13,11 +13,10 @@
 
 input[type="file"]::file-selector-button {
 
-    opacity: 0;
     font-weight: bold;
     color: dodgerblue;
-    padding: 0.5em;
+    padding: 0;
 
-    border: 0px solid white;
+    border: 0 solid white;
     background-color: white;
 }
