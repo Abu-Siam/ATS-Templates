@@ -11,6 +11,11 @@
 
 /*}*/
 
+html{
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
 input[type="file"]::file-selector-button {
 
     font-weight: bold;

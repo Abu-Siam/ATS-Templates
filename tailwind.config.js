@@ -2,10 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      'sans': ['Lato', 'sans-serif'],
-
-    },
+    // fontFamily: {
+    //   'sans': ['Lato', 'sans-serif'],
+    //
+    // },
     screens: {
       sm:'480px',
       md:'768px',
