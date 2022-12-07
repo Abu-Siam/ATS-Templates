@@ -9,40 +9,41 @@
   <body>
     <main>
       <!-- nav section -->
-      <div class="grid grid-cols-2 px-4 lg:px-20 py-5">
-        <div class="flex items-center space-x-16">
+      <div class="flex justify-between  lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:px-20 py-5">
+        <div class="flex flex-col lg:flex-row items-center gap-2 lg:gap-0 lg:space-x-16">
           <div><img src="../images/Shrimp.svg" class="cursor-pointer" /></div>
-          <button class="bg-gray-700 text-white py-3 px-5 hover:bg-gray-900">All jobs</button>
+          <button class="bg-gray-700 text-white py-2 md:py-3 px-6 hover:bg-gray-900 rounded-md">All jobs</button>
           <a class="text-blue-600 cursor-pointer hover:underline"> Candidates</a>
         </div>
 
-        <div class="hidden md:flex items-center justify-end space-x-4">
+        <div class=" flex flex-col md:justify-end items-end md:flex-row md:items-center space-y-2 md:space-x-4">
           <div>
             Mohammad Habibul Bashar
             <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
           </div>
+          <div class="flex items-center space-x-4">
+            <div>
+              <img src="../images/Vector (1).svg" />
+            </div>
 
-          <div>
-            <img src="../images/Vector (1).svg" />
-          </div>
-
-          <div class="cursor-pointer">
-            <img src="../images/profilepic.svg" />
-          </div>
-          <div class="cursor-pointer">
-            <img src="../images/Icon (1).svg" />
+            <div class="cursor-pointer">
+              <img src="../images/profilepic.svg" />
+            </div>
+            <div class="cursor-pointer">
+              <img src="../images/Icon (1).svg" />
+            </div>
           </div>
         </div>
       </div>
 
       <!-- job openings section -->
-      <section class="bg-gray-300 py-10">
+      <section class="bg-gray-300 py-4 lg:py-10">
         <div>
-          <div class="flex justify-between px-6 lg:px-44 py-8">
-            <div class=" text-2xl lg:text-3xl">Job Openings</div>
-            <div class="flex flex-col lg:flex-row gap-2">
+          <div class="flex flex-col lg:flex-row gap-5 justify-between px-6 lg:px-44 py-8">
+            <div class=" text-2xl lg:text-3xl text-center">Job Openings</div>
+            <div class="flex flex-col lg:flex-row gap-4">
               <input type="search" placeholder="Search" class="p-2 rounded-md" />
-              <button class="bg-gray-700 hover:bg-gray-900 text-white px-4 py-2 flex  gap-2 rounded-md"><img src="../images/plus-circle.svg"/> Create New Job</button>
+              <button class="bg-gray-700 hover:bg-gray-900 text-white px-4 py-2 flex  gap-2 rounded-md items-center justify-center"><img src="../images/plus-circle.svg"/> Create New Job</button>
             </div>
           </div>
 
@@ -339,8 +340,8 @@
 
       <!-- footer section -->
       <footer class="bg-[#374151] text-white py-5 mx-auto mt-auto w-full">
-        <div class="text-center text-sm">
-            <b>powered by -</b> <i>Shrimp Solutions . www.shrimpsolutions.com </i>
+        <div class="text-center text-sm px-4">
+            <b>powered by -</b> <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
         </div>
       </footer>
     </main>
