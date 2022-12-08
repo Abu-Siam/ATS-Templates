@@ -12,98 +12,159 @@
 /*}*/
 
 /* making custom class for repeated styles */
+@layer base {
+
+
+    html {
+        @apply h-full
+
+
+    }
+
+    body {
+        @apply min-h-full flex flex-col
+    }
+}
 
 @layer components {
     /* .btn-primary {
       @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
     } */
-
-    .back-button-d1{
-      @apply text-blue-500 mt-10 flex items-center justify-center
+    /*.back-button-d1 {*/
+    /*    @apply text-blue-500 mt-10 flex items-center justify-center*/
+    /*}*/
+    .link-flex-center {
+        @apply text-blue-500 mt-10 flex items-center justify-center
     }
 
-    .back-button-d2{
-      @apply  text-xl italic hover:underline
+    /*.back-button-d2 {*/
+    /*    @apply text-xl italic hover:underline*/
+    /*} */
+    .text-xl-i-u {
+        @apply text-xl italic hover:underline
     }
 
     /* job post name */
-    .job-title{
-      @apply flex flex-col items-start lg:items-center gap-3 px-6 lg:px-20 mt-11
+    /*.job-title {*/
+    /*    @apply flex flex-col items-start lg:items-center gap-3 px-6 lg:px-20 mt-11*/
+    /*} */
+    .title-flex-center{
+        @apply flex flex-col items-start lg:items-center gap-3 px-6 lg:px-20 mt-11
     }
 
-    .job-details{
-      @apply flex flex-col lg:flex-row gap-5
+    .text-flex-g-5 {
+        @apply flex flex-col lg:flex-row gap-5
     }
 
-    .job-details-d2{
-      @apply flex items-center gap-1
+    .text-center-g-1 {
+        @apply flex items-center gap-1
     }
 
     /* overview or form tilte */
-    .form-title{
-      @apply  text-2xl font-bold mt-8
+    .text-2xl-bold-mt-8 {
+        @apply text-2xl font-bold mt-8
     }
 
 
     /* form */
-    .form-gap{
-      @apply flex flex-col gap-2
+    .form-flex-g-2 {
+        @apply flex flex-col gap-2
     }
 
-    .input-style{
-      @apply border border-gray-400 p-2 pl-4 mb-5 rounded-md focus:outline-none focus:ring-2 focus:ring-black
+    .form-input-rounded {
+        @apply border border-gray-400 p-2 pl-4 mb-5 rounded-md focus:outline-none focus:ring-2 focus:ring-black
     }
 
-    .dropdown-style{
-      @apply bg-white cursor-pointer text-base
+    .form-dropdown {
+        @apply bg-white cursor-pointer text-base
     }
 
-    .submit-button-position{
-      @apply flex items-center justify-center mt-5
+    .btn-flex-center {
+        @apply flex items-center justify-center mt-5
     }
 
-    .submit-button-style{
-      @apply cursor-pointer bg-blue-600 hover:bg-blue-800 rounded-md text-lg font-semibold text-white px-5 py-3
+    .btn-blue-rounded {
+        @apply cursor-pointer bg-blue-600 hover:bg-blue-800 rounded-md text-lg font-semibold text-white px-5 py-3
     }
 
     /* header styles */
-    .header-d1{
-      @apply flex flex-col items-center text-center px-6 py-4 lg:py-5 gap-2  xl:px-64 lg:pb-5
+    .logo-flex-center {
+        @apply flex flex-col items-center text-center px-6 py-4 lg:py-5 gap-2  xl:px-64 lg:pb-5
     }
 
-    .header-title{
-      @apply text-xl lg:text-2xl text-white
+    .title-2xl {
+        @apply text-xl lg:text-2xl text-white
     }
 
-    .header-details{
-      @apply text-white lg:px-64 text-xl
+    .text-xl-center {
+        @apply text-white lg:px-64 text-xl
     }
 
-    .footer-d1{
-      @apply px-6 lg:px-72 xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white
+    .text-flex-between {
+        @apply px-6 lg:px-72 xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white
     }
 
     /* upload file button modification */
     input[type="file"]::file-selector-button {
-      @apply font-bold text-blue-600 p-0 border-0 bg-white
+        @apply font-bold text-blue-600 p-0 border-0 bg-white
     }
-  }
+    /*.job-details {*/
+    /*    @apply flex flex-col lg:flex-row gap-5*/
+    /*}*/
+
+    /*.job-details-d2 {*/
+    /*    @apply flex items-center gap-1*/
+    /*}*/
+
+    /*!* overview or form tilte *!*/
+    /*.form-title {*/
+    /*    @apply text-2xl font-bold mt-8*/
+    /*}*/
 
 
-  @layer base {
+    /*!* form *!*/
+    /*.form-gap {*/
+    /*    @apply flex flex-col gap-2*/
+    /*}*/
 
+    /*.input-style {*/
+    /*    @apply border border-gray-400 p-2 pl-4 mb-5 rounded-md focus:outline-none focus:ring-2 focus:ring-black*/
+    /*}*/
 
-    html{
-     @apply h-full 
-    
-      
-    }
-    body{
-      @apply min-h-full flex flex-col
-    }
-  }
+    /*.dropdown-style {*/
+    /*    @apply bg-white cursor-pointer text-base*/
+    /*}*/
 
+    /*.submit-button-position {*/
+    /*    @apply flex items-center justify-center mt-5*/
+    /*}*/
 
+    /*.submit-button-style {*/
+    /*    @apply cursor-pointer bg-blue-600 hover:bg-blue-800 rounded-md text-lg font-semibold text-white px-5 py-3*/
+    /*}*/
+
+    /*!* header styles *!*/
+    /*.header-d1 {*/
+    /*    @apply flex flex-col items-center text-center px-6 py-4 lg:py-5 gap-2  xl:px-64 lg:pb-5*/
+    /*}*/
+
+    /*.header-title {*/
+    /*    @apply text-xl lg:text-2xl text-white*/
+    /*}*/
+
+    /*.header-details {*/
+    /*    @apply text-white lg:px-64 text-xl*/
+    /*}*/
+
+    /*.footer-d1 {*/
+    /*    @apply px-6 lg:px-72 xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white*/
+    /*}*/
+
+    /*!* upload file button modification *!*/
+    /*input[type="file"]::file-selector-button {*/
+    /*    @apply font-bold text-blue-600 p-0 border-0 bg-white*/
+    /*}*/
+}
 
 
 /* html{
