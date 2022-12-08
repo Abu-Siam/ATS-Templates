@@ -82,22 +82,43 @@
     .footer-d1{
       @apply px-6 lg:px-72 xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white
     }
+
+    /* upload file button modification */
+    input[type="file"]::file-selector-button {
+      @apply font-bold text-blue-600 p-0 border-0 bg-white
+    }
   }
 
-  
-html{
-    font-family: 'Lato', sans-serif;
-    scroll-behavior: smooth;
-    height: 100%;
-}
 
-body{
+  @layer base {
+
+
+    html{
+     @apply h-full 
+    
+      
+    }
+    body{
+      @apply min-h-full flex flex-col
+    }
+  }
+
+
+
+
+/* html{
+    font-family: 'Lato', sans-serif;
+
+    height: 100%;
+} */
+
+/* body{
     min-height: 100%;
     display: flex;
     flex-direction: column;
-}
+} */
 
-input[type="file"]::file-selector-button {
+/* input[type="file"]::file-selector-button {
 
     font-weight: bold;
     color: dodgerblue;
@@ -105,4 +126,4 @@ input[type="file"]::file-selector-button {
 
     border: 0 solid white;
     background-color: white;
-}
+} */

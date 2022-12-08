@@ -419,6 +419,16 @@ video {
   display: none;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -729,6 +739,18 @@ video {
     padding-left: 25rem;
     padding-right: 25rem;
   }
+}
+
+/* upload file button modification */
+
+input[type="file"]::file-selector-button {
+  border-width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .col-span-2 {
@@ -1155,25 +1177,27 @@ video {
 
 /* making custom class for repeated styles */
 
-html{
-  font-family: 'Lato', sans-serif;
-  scroll-behavior: smooth;
-  height: 100%;
-}
+/* html{
+    font-family: 'Lato', sans-serif;
 
-body{
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-}
+    height: 100%;
+} */
 
-input[type="file"]::file-selector-button {
-  font-weight: bold;
-  color: dodgerblue;
-  padding: 0;
-  border: 0 solid white;
-  background-color: white;
-}
+/* body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* input[type="file"]::file-selector-button {
+
+    font-weight: bold;
+    color: dodgerblue;
+    padding: 0;
+
+    border: 0 solid white;
+    background-color: white;
+} */
 
 .hover\:bg-blue-800:hover {
   --tw-bg-opacity: 1;
