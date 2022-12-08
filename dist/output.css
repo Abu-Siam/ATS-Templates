@@ -523,11 +523,7 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-/* .btn-primary {
-      @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-    } */
-
-.back-button-d1 {
+.link-flex-center {
   margin-top: 2.5rem;
   display: flex;
   align-items: center;
@@ -536,19 +532,17 @@ body {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.back-button-d2 {
+.text-xl-i-u {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-style: italic;
 }
 
-.back-button-d2:hover {
+.text-xl-i-u:hover {
   text-decoration-line: underline;
 }
 
-/* job post name */
-
-.job-title {
+.title-flex-center {
   margin-top: 2.75rem;
   display: flex;
   flex-direction: column;
@@ -559,26 +553,26 @@ body {
 }
 
 @media (min-width: 976px) {
-  .job-title {
+  .title-flex-center {
     align-items: center;
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 
-.job-details {
+.text-flex-g-5 {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
 @media (min-width: 976px) {
-  .job-details {
+  .text-flex-g-5 {
     flex-direction: row;
   }
 }
 
-.job-details-d2 {
+.text-center-g-1 {
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -586,7 +580,7 @@ body {
 
 /* overview or form tilte */
 
-.form-title {
+.text-2xl-bold-mt-8 {
   margin-top: 2rem;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -595,13 +589,13 @@ body {
 
 /* form */
 
-.form-gap {
+.form-flex-g-2 {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.input-style {
+.form-input-rounded {
   margin-bottom: 1.25rem;
   border-radius: 0.375rem;
   border-width: 1px;
@@ -611,7 +605,7 @@ body {
   padding-left: 1rem;
 }
 
-.input-style:focus {
+.form-input-rounded:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
@@ -621,7 +615,7 @@ body {
   --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));
 }
 
-.dropdown-style {
+.form-dropdown {
   cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -629,14 +623,14 @@ body {
   line-height: 1.5rem;
 }
 
-.submit-button-position {
+.btn-flex-center {
   margin-top: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.submit-button-style {
+.btn-blue-rounded {
   cursor: pointer;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
@@ -652,14 +646,14 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.submit-button-style:hover {
+.btn-blue-rounded:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
 /* header styles */
 
-.header-d1 {
+.logo-flex-center {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -672,20 +666,20 @@ body {
 }
 
 @media (min-width: 976px) {
-  .header-d1 {
+  .logo-flex-center {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 }
 
 @media (min-width: 1600px) {
-  .header-d1 {
+  .logo-flex-center {
     padding-left: 16rem;
     padding-right: 16rem;
   }
 }
 
-.header-title {
+.title-2xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -693,13 +687,13 @@ body {
 }
 
 @media (min-width: 976px) {
-  .header-title {
+  .title-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
 
-.header-details {
+.text-xl-center {
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -707,13 +701,13 @@ body {
 }
 
 @media (min-width: 976px) {
-  .header-details {
+  .text-xl-center {
     padding-left: 16rem;
     padding-right: 16rem;
   }
 }
 
-.footer-d1 {
+.text-flex-between {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -727,7 +721,7 @@ body {
 }
 
 @media (min-width: 976px) {
-  .footer-d1 {
+  .text-flex-between {
     flex-direction: row;
     padding-left: 18rem;
     padding-right: 18rem;
@@ -735,7 +729,7 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .footer-d1 {
+  .text-flex-between {
     padding-left: 25rem;
     padding-right: 25rem;
   }
@@ -1177,28 +1171,6 @@ input[type="file"]::file-selector-button {
 
 /* making custom class for repeated styles */
 
-/* html{
-    font-family: 'Lato', sans-serif;
-
-    height: 100%;
-} */
-
-/* body{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* input[type="file"]::file-selector-button {
-
-    font-weight: bold;
-    color: dodgerblue;
-    padding: 0;
-
-    border: 0 solid white;
-    background-color: white;
-} */
-
 .hover\:bg-blue-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
@@ -1302,6 +1274,10 @@ input[type="file"]::file-selector-button {
     flex-basis: auto;
   }
 
+  .lg\:basis-1\/2 {
+    flex-basis: 50%;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1393,6 +1369,10 @@ input[type="file"]::file-selector-button {
 }
 
 @media (min-width: 1600px) {
+  .xl\:basis-1\/3 {
+    flex-basis: 33.333333%;
+  }
+
   .xl\:px-64 {
     padding-left: 16rem;
     padding-right: 16rem;
