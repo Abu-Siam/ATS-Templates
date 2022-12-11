@@ -964,6 +964,10 @@ input[type="file"]::file-selector-button{
   border-radius: 1rem;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1351,6 +1355,11 @@ html{
   .lg\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .lg\:px-40{
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .lg\:text-3xl{

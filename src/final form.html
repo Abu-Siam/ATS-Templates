@@ -78,21 +78,21 @@
                 <section >
                     
                     <div class="flex flex-col lg:flex-row gap-2  px-6 lg:w-1/2 mx-auto mt-10">
-                        <div class="hidden lg:flex  items-center lg:basis-1/2 xl:basis-1/3"><img src="../images/Profile Picture.png"/></div>
+                        <div class=" hidden lg:flex  items-center lg:basis-1/2 xl:basis-1/3  rounded-full"><img src="../images/Profile Picture.png" id="preview_image"/></div>
 
                         <div class="flex flex-col justify-center gap-2">
                             <div class="text-lg font-normal mb-2 lg:mb-6">Fill up the application and Submit</div>
                             <div class="text-lg">It is highly advised to upload a profile picture as a profile picture helps making a more personal connection with the recruiter.</div>
                             
                             <!-- for mobile -->
-                            <div class="flex lg:hidden items-center basis-1/2 mx-auto py-4"><img src="../images/Profile Picture.png"/></div>
+                            <div class="flex lg:hidden items-center basis-1/2 mx-auto py-4"><img src="../images/Profile Picture.png" id="preview_image_mbl"/></div>
                               <!-- for mobile ends -->
                               
                             <div class="text-lg"> Upload your profile picture</div>
                             
                             <div class="flex flex-col  gap-2 cursor-pointer">
                                 <label class="text-base border border-gray-400 p-2   rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer text-blue-500">
-                                    <input  type="file"   required="required"/>
+                                    <input class=" rounded-full"  type="file" accept="image/*" onchange="proPicReview(event)"  required="required"/>
                                 </label>
                                
                                
@@ -256,5 +256,25 @@
   </footer>
   <!-- footer Ends -->
 
+
+
+  <!-- image upload preview  -->
+  <script>
+    var proPicReview = function(event) {
+      var output = document.getElementById("preview_image");
+    
+      output.src = URL.createObjectURL(event.target.files[0]);
+      output.onload = function() {
+        URL.revokeObjectURL(output.src)
+      }
+
+      // for mobile
+      var output_mbl= document.getElementById("preview_image_mbl");
+      output_mbl.src = URL.createObjectURL(event.target.files[0]);
+      output_mbl.onload = function() {
+        URL.revokeObjectURL(output_mbl.src)
+      }
+    };
+  </script>
 </body>
 </html>
