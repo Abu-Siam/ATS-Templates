@@ -100,6 +100,11 @@
         @apply font-bold text-blue-600 p-0 border-0 bg-white
     }
 
+    /* Star sign in form */
+    .required-star{
+        @apply after:content-['*'] after:text-red-500
+    }
+
 }
 
 html{
