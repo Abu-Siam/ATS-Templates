@@ -791,14 +791,6 @@ input[type="file"]::file-selector-button{
   grid-row: span 2 / span 2;
 }
 
-.row-span-4{
-  grid-row: span 4 / span 4;
-}
-
-.row-span-1{
-  grid-row: span 1 / span 1;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -820,6 +812,10 @@ input[type="file"]::file-selector-button{
 
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .mr-40{
@@ -886,30 +882,6 @@ input[type="file"]::file-selector-button{
   margin-left: 2rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mr-2{
-  margin-right: 0.5rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
-}
-
-.mb-40{
-  margin-bottom: 10rem;
-}
-
-.mb-56{
-  margin-bottom: 14rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
-}
-
 .block{
   display: block;
 }
@@ -926,8 +898,12 @@ input[type="file"]::file-selector-button{
   display: none;
 }
 
-.h-16{
-  height: 4rem;
+.h-2\/3{
+  height: 66.666667%;
+}
+
+.h-20{
+  height: 5rem;
 }
 
 .h-6{
@@ -942,40 +918,12 @@ input[type="file"]::file-selector-button{
   height: 2rem;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
-.h-20{
-  height: 5rem;
-}
-
-.h-28{
-  height: 7rem;
-}
-
-.h-56{
-  height: 14rem;
-}
-
-.h-auto{
-  height: auto;
-}
-
-.h-1\/2{
-  height: 50%;
-}
-
-.h-2\/3{
-  height: 66.666667%;
-}
-
 .max-h-48{
   max-height: 12rem;
 }
 
-.w-16{
-  width: 4rem;
+.w-full{
+  width: 100%;
 }
 
 .w-6{
@@ -990,8 +938,8 @@ input[type="file"]::file-selector-button{
   width: 2rem;
 }
 
-.w-full{
-  width: 100%;
+.w-16{
+  width: 4rem;
 }
 
 .w-24{
@@ -1062,10 +1010,6 @@ input[type="file"]::file-selector-button{
   align-items: center;
 }
 
-.justify-start{
-  justify-content: flex-start;
-}
-
 .justify-end{
   justify-content: flex-end;
 }
@@ -1118,54 +1062,40 @@ input[type="file"]::file-selector-button{
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.divide-x > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(1px * var(--tw-divide-x-reverse));
-  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
-.divide-x-2 > :not([hidden]) ~ :not([hidden]){
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(2px * var(--tw-divide-x-reverse));
-  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
 .rounded-md{
   border-radius: 0.375rem;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 
 .rounded-full{
   border-radius: 9999px;
 }
 
-.rounded-2xl{
-  border-radius: 1rem;
-}
-
 .rounded-xl{
   border-radius: 0.75rem;
 }
 
-.rounded-r-md{
-  border-top-right-radius: 0.375rem;
-  border-bottom-right-radius: 0.375rem;
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
 }
 
 .border{
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-r-2{
   border-right-width: 2px;
 }
 
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+.border-r-4{
+  border-right-width: 4px;
 }
 
 .border-gray-400{
@@ -1173,9 +1103,14 @@ input[type="file"]::file-selector-button{
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
-.border-gray-300{
+.border-black{
   --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-green-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
 }
 
 .bg-gray-700{
@@ -1233,9 +1168,9 @@ input[type="file"]::file-selector-button{
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800{
+.bg-gray-800{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -1271,6 +1206,11 @@ input[type="file"]::file-selector-button{
   padding-right: 0.5rem;
 }
 
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1291,9 +1231,13 @@ input[type="file"]::file-selector-button{
   padding-bottom: 0.75rem;
 }
 
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.pr-2{
+  padding-right: 0.5rem;
 }
 
 .pt-5{
@@ -1306,10 +1250,6 @@ input[type="file"]::file-selector-button{
 
 .pl-4{
   padding-left: 1rem;
-}
-
-.pr-2{
-  padding-right: 0.5rem;
 }
 
 .text-center{
