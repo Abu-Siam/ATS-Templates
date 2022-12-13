@@ -115,6 +115,14 @@
         @apply border border-gray-400 p-2 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black
     }
 
+
+    /* applicant's profile */
+        /* tabs */
+        
+    .text-blue-bg-gray{
+        @apply text-blue-500 px-4 py-2 bg-gray-100 rounded-md cursor-pointer
+    } 
+
 }
 
 html{
