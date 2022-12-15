@@ -31,8 +31,12 @@
           <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
         </div>
         <div class="flex items-center space-x-4">
-          <div class="cursor-pointer">
+          <div class=" relative cursor-pointer">
             <img src="../images/Vector (1).svg" />
+                  <!-- notification dot pulse -->
+                  <div class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"></div>
+                  <div class="absolute  left-0   -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"></div>
+                  <!-- notification dot pulse ENDS -->
           </div>
 
           <div class="cursor-pointer">
@@ -126,32 +130,32 @@
       <div>
         <div class="flex flex-wrap lg:mx-44 gap-2 mb-2">
           <div
-            class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+            class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
           >
             All applicants <b>237</b>
           </div>
           <div
-            class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+            class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
           >
             Screened <b>237</b>
           </div>
           <div
-            class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+            class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
           >
             Written exam1 <b>237</b>
           </div>
           <div
-            class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+            class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
           >
             Written exam2 <b>237</b>
           </div>
           <div
-            class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+            class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
           >
             Written exam3 <b>237</b>
           </div>
           <div
-            class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+            class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
           >
             1st Interview <b>237</b>
           </div>
@@ -162,17 +166,17 @@
           2nd Interview <b>237</b>
         </div>
         <div
-          class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+          class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
         >
           Offered <b>237</b>
         </div>
         <div
-          class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+          class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
         >
           Hired <b>0</b>
         </div>
         <div
-          class="text-blue-bg-gray hover:bg-gray-400 hover:text-black"
+          class="text-blue-bg-gray hover:bg-gray-200 hover:text-black"
         >
           No match for this post <b>13</b>
         </div>
@@ -771,6 +775,9 @@
              -->
               <!-- <embed src="../pdfs/sample.pdf" width="100%" height="1100px" frameBorder="0" /> -->
               <embed src="../pdfs/sample.pdf"
+              toolbar="0"
+              navpanes="0"
+              scrollbar="0"
               frameBorder="0"
               scrolling="auto"
               height="1100"
