@@ -20,7 +20,7 @@
         >
           All jobs
         </button>
-        <a class="text-blue-600 cursor-pointer hover:underline"> Candidates</a>
+        <a class="text-blue-500 cursor-pointer hover:underline"> Candidates</a>
       </div>
 
       <div
@@ -233,7 +233,11 @@
             </div>
 
             <!-- all profiles -->
-            <div class="flex flex-col mt-6 gap-4">
+            
+            <div class="flex flex-col mt-6 gap-2">
+
+              <div class="flex flex-col justify-end gap-6">
+              <div>
               <div class="bg-green-200 rounded-md py-2 px-1">
                 <div class="flex justify-between items-center pr-2">
                   <div class="flex items-center gap-4">
@@ -434,28 +438,74 @@
                 </div>
               </div>
 
-              <div class="flex justify-between items-center border border-gray-400 rounded-xl text-xl">
-                <div class="  text-black flex items-center py-4 px-6 cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                  </svg>
-                  
-                </div>
-                <div class="py-4 px-6  text-white bg-gray-700 cursor-pointer">1</div>
-                <div class="py-4 px-6 cursor-pointer border-2">2</div>
-                <div class="py-4 px-6 cursor-pointer border-2">3</div>
-                <div class="py-4 px-6 cursor-pointer border-2">4</div>
-             
-                <div class=" text-black flex items-center py-4 px-6 cursor-pointer">
-              
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>
-                  
-                </div>
+              <div class=" rounded-md py-2 px-1">
+                <div class="flex justify-between items-center pr-2">
+                  <div class="flex items-center gap-4">
+                    <div class="flex gap-2">
+                      <input type="checkbox" /><img
+                        class="rounded-full h-20 w-full"
+                        src="../images/image 2.png"
+                       
+                      />
+                    </div>
+                    <div>
+                      <span class="text-xl"><b>Nasrin Sultana</b></span>
+                      <p>Dhaka University</p>
+                    </div>
+                  </div>
 
-                
+                </div>
               </div>
+
+              <div class=" rounded-md py-2 px-1">
+                <div class="flex justify-between items-center pr-2">
+                  <div class="flex items-center gap-4">
+                    <div class="flex gap-2">
+                      <input type="checkbox" /><img
+                        class="rounded-full h-20 w-full"
+                        src="../images/image 2.png"
+                       
+                      />
+                    </div>
+                    <div>
+                      <span class="text-xl"><b>Nasrin Sultana</b></span>
+                      <p>Dhaka University</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              </div>
+
+            
+
+              
+              <!-- pagination -->
+              <div class="flex flex-col  items-center">
+                <div class="flex justify-between items-center border border-gray-400 rounded-xl text-xl">
+                  <div class="  text-black flex items-center py-2 px-4 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                    </svg>
+                    
+                  </div>
+                  <div class="  py-2 px-4  text-white bg-gray-700 cursor-pointer border-r-2">1</div>
+                  <div class=" py-2 px-4 cursor-pointer border-r-2">2</div>
+                  <div class="py-2 px-4 cursor-pointer border-r-2">3</div>
+                  <div class="py-2 px-4 cursor-pointer border-r-2">4</div>
+              
+                  <div class=" text-black flex items-center py-2 px-4 cursor-pointer">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                    
+                  </div>
+
+                  
+                </div>
+              </div>
+            </div>
 
               
 
@@ -532,68 +582,81 @@
 
         <!-- right 2nd section -->
         <div class="row-span-2 col-span-2 mr-40">
-          <div class="flex justify-between bg-white px-4 py-4 rounded-md">
-            <div class="flex gap-4 items-center">
-              <img src="../images/image 2.png" />
+          <div class="flex flex-col">
+            <div class="flex justify-between bg-white px-4 py-4 rounded-t-md">
+              <div class="flex gap-4 items-center">
+                <img src="../images/image 2.png" />
 
-              <div>
                 <div>
-                  <p class="text-2xl font-bold">Nasrin Sultana</p>
-                  <p class="font-bold">3+ years Experience</p>
-                  <p>Software Engineer, Therap Services LLC.</p>
-                </div>
-
-                <div class="pt-5">
-                  <p>Master’s in Computer Science</p>
-                  <p>Application developer</p>
-                  <p class="font-bold">Dhaka University</p>
-                </div>
-
-                <div class="flex gap-4 items-center pt-2">
-                  <select
-                    class="px-2 py-2 rounded-md bg-white text-blue-600 font-bold cursor-pointer"
-                  >
-                    <option>+ Add Tags</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-
-                  <div
-                    class="flex gap-2 px-2 py-2 bg-green-200 rounded-md italic"
-                  >
-                    <img src="../images/image 4.svg" /> Referred
+                  <div>
+                    <p class="text-2xl font-bold">Nasrin Sultana</p>
+                    <p class="font-bold">3+ years Experience</p>
+                    <p>Software Engineer, Therap Services LLC.</p>
                   </div>
 
-                  <div class="px-2 py-2 bg-green-200 rounded-md italic">
-                    A problem solver
+                  <div class="pt-5">
+                    <p>Master’s in Computer Science</p>
+                    <p>Application developer</p>
+                    <p class="font-bold">Dhaka University</p>
                   </div>
 
-                  <div class="px-2 py-2 bg-gray-200 rounded-md italic">
-                    Introvert
+                  <div class="flex gap-4 items-center pt-2">
+                    <select
+                      class="px-2 py-2 rounded-md bg-white text-blue-600 font-bold cursor-pointer"
+                    >
+                      <option>+ Add Tags</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+
+                    <div
+                      class="flex gap-2 px-2 py-2 bg-green-200 rounded-md italic"
+                    >
+                      <img src="../images/image 4.svg" /> Referred
+                    </div>
+
+                    <div class="px-2 py-2 bg-green-200 rounded-md italic">
+                      A problem solver
+                    </div>
+
+                    <div class="px-2 py-2 bg-gray-200 rounded-md italic">
+                      Introvert
+                    </div>
                   </div>
                 </div>
+
+                
               </div>
+
+              <div class="flex justify-end gap-2">
+                <div class="text-xl">3</div>
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
+                  />
+                </svg>
+              </div>
+
+            
             </div>
 
-            <div class="flex justify-end gap-2">
-              <div class="text-xl">3</div>
-
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
-                />
-              </svg>
+            <div class="bg-white rounded-b-md px-8 py-2">
+              <ul class="list-disc">
+                <li><b>Also in -</b> <span class="text-blue-600 font-bold">Also in - Design Verification Engineer</span> (applied)</li>
+                <li><b>Also in -</b> <span class="text-blue-600 font-bold">Also in - Design Verification Engineer</span> (applied)</li>
+              </ul>
             </div>
           </div>
 
