@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,127 +14,117 @@
 
 /* making custom class for repeated styles */
 @layer base {
+  html {
+    @apply h-full;
+  }
 
+  body {
+    @apply min-h-full flex flex-col;
+  }
 
-    html {
-        @apply h-full
-
-
-    }
-
-    body {
-        @apply min-h-full flex flex-col
-    }
-
-    SELECT {
-        background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='black' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
-        background-position: calc(100% - 0.75rem) center !important;
-        -moz-appearance:none !important;
-        -webkit-appearance: none !important; 
-        appearance: none !important;
-        padding-right: 2rem !important;
-        
-    }
+  SELECT {
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='black' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+      no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    padding-right: 2rem !important;
+  }
 }
 
 @layer components {
+  .link-flex-center {
+    @apply text-blue-500 mt-10 flex items-center justify-center;
+  }
 
-    .link-flex-center {
-        @apply text-blue-500 mt-10 flex items-center justify-center
-    }
+  .text-xl-i-u {
+    @apply text-xl italic hover:underline;
+  }
 
+  .title-flex-center {
+    @apply flex flex-col items-start lg:items-center gap-3 px-6 lg:px-20 mt-11;
+  }
 
-    .text-xl-i-u {
-        @apply text-xl italic hover:underline
-    }
+  .text-flex-g-5 {
+    @apply flex flex-col lg:flex-row gap-5;
+  }
 
+  .text-center-g-1 {
+    @apply flex items-center gap-1;
+  }
 
-    .title-flex-center{
-        @apply flex flex-col items-start lg:items-center gap-3 px-6 lg:px-20 mt-11
-    }
+  /* overview or form tilte */
+  .text-2xl-bold-mt-8 {
+    @apply text-2xl font-bold mt-8;
+  }
 
-    .text-flex-g-5 {
-        @apply flex flex-col lg:flex-row gap-5
-    }
+  /* form */
+  .form-flex-g-2 {
+    @apply flex flex-col gap-2;
+  }
 
-    .text-center-g-1 {
-        @apply flex items-center gap-1
-    }
+  .form-input-rounded {
+    @apply border border-gray-400 p-2 pl-4 mb-5 rounded-md focus:outline-none focus:ring-2 focus:ring-black;
+  }
 
-    /* overview or form tilte */
-    .text-2xl-bold-mt-8 {
-        @apply text-2xl font-bold mt-8
-    }
+  .form-dropdown {
+    @apply bg-white cursor-pointer text-base;
+  }
 
+  .btn-flex-center {
+    @apply flex items-center justify-center mt-5;
+  }
 
-    /* form */
-    .form-flex-g-2 {
-        @apply flex flex-col gap-2
-    }
+  .btn-blue-rounded {
+    @apply cursor-pointer bg-blue-600 hover:bg-blue-800 rounded-md text-lg font-semibold text-white px-5 py-3;
+  }
 
-    .form-input-rounded {
-        @apply border border-gray-400 p-2 pl-4 mb-5 rounded-md focus:outline-none focus:ring-2 focus:ring-black
-    }
+  /* header styles */
+  .logo-flex-center {
+    @apply flex flex-col items-center text-center px-6 py-4 lg:py-5 gap-2  2xl:px-64 lg:pb-5;
+  }
 
-    .form-dropdown {
-        @apply bg-white cursor-pointer text-base
-    }
+  .title-2xl {
+    @apply text-xl lg:text-2xl text-white;
+  }
 
-    .btn-flex-center {
-        @apply flex items-center justify-center mt-5
-    }
+  .text-xl-center {
+    @apply text-white lg:px-64 text-xl;
+  }
 
-    .btn-blue-rounded {
-        @apply cursor-pointer bg-blue-600 hover:bg-blue-800 rounded-md text-lg font-semibold text-white px-5 py-3
-    }
+  .text-flex-between {
+    @apply px-6 lg:px-72 2xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white;
+  }
 
-    /* header styles */
-    .logo-flex-center {
-        @apply flex flex-col items-center text-center px-6 py-4 lg:py-5 gap-2  2xl:px-64 lg:pb-5
-    }
+  /* upload file button modification */
+  input[type="file"]::file-selector-button {
+    @apply font-bold text-blue-600 p-0 border-0 bg-white;
+  }
 
-    .title-2xl {
-        @apply text-xl lg:text-2xl text-white
-    }
+  /* Star sign in form */
+  .required-star {
+    @apply after:content-['*'] after:text-red-500;
+  }
 
-    .text-xl-center {
-        @apply text-white lg:px-64 text-xl
-    }
+  /* form input corners modified */
 
-    .text-flex-between {
-        @apply px-6 lg:px-72 2xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white
-    }
+  .form-dropdown-rounded {
+    @apply border border-gray-400 p-3 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black;
+  }
 
-    /* upload file button modification */
-    input[type="file"]::file-selector-button {
-        @apply font-bold text-blue-600 p-0 border-0 bg-white
-    }
+  .form-input-rounded {
+    @apply border border-gray-400 p-2 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black;
+  }
 
-    /* Star sign in form */
-    .required-star{
-        @apply after:content-['*'] after:text-red-500
-    }
+  /* applicant's profile */
+  /* tabs */
 
-    /* form input corners modified */
-
-    .form-dropdown-rounded {
-        @apply border border-gray-400 p-3 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black
-    }
-
-    .form-input-rounded {
-        @apply border border-gray-400 p-2 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black
-    }
-
-
-    /* applicant's profile */
-        /* tabs */
-        
-    .text-blue-bg-gray{
-        @apply text-blue-500 px-4 py-2 bg-gray-100 rounded-md cursor-pointer
-    } 
-
+  .text-blue-bg-gray {
+    @apply text-blue-500 px-4 py-2 bg-gray-100 rounded-md cursor-pointer;
+  }
 }
 
-html{
-    font-family: 'Lato', sans-serif;
+html {
+  font-family: "Lato", sans-serif;
 }
