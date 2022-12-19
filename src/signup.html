@@ -9,7 +9,7 @@
   <body class="bg-gray-300 z-10">
     
             <!-- nav section -->
-    <div
+    <!-- <div
     class="flex justify-between lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:px-20 py-5 bg-white z-20"
   >
     <div
@@ -25,17 +25,38 @@
     </div>
 
 
+  </div> -->
+
+  <div class="flex flex-col lg:flex-row items-center gap-4 px-4 py-5 lg:px-20  bg-white z-20">
+    <div><img src="../images/Shrimp.svg" class="cursor-pointer" /></div>
+    
+      <div class="flex items-center gap-4 lg:ml-12">
+          <button
+          class="bg-gray-700 text-white py-2 md:py-3 px-6 hover:bg-gray-900 rounded-md"
+        >
+          Sign Up
+        </button>
+        <a class="text-blue-600 cursor-pointer hover:underline"> About shrimp</a>
+      </div>
+    
   </div>
 
 
-  <main class="bg-gray-300">
-    <div class="flex flex-col lg:grid lg:grid-cols-2 lg:px-40 2xl:px-60 mx-auto lg:py-10">
-        <div>
-            <div class="flex items-center gap-2 lg:my-10">
+    <!-- nav section -->
+   
+
+
+
+
+
+  <main >
+    <div class="flex flex-col lg:grid lg:grid-cols-2 lg:px-20  2xl:px-52 mx-auto lg:py-10">
+        <div class="px-4 py-6 mx-10">
+            <div class="flex items-center gap-2 lg:my-10 ">
                 <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M27.5 27L23.5 37L15.5 15L37.5 23L27.5 27ZM27.5 27L37.5 37M11.876 1.47803L13.43 7.27203M7.772 12.93L1.976 11.376M25.4 5.10003L21.156 9.34403M9.842 20.656L5.602 24.9" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-               <span class="text-2xl"> Sign up with Shrimp</span>
+               <span class="text-2xl flex gap-4"> Sign up with <img src="../images/Shrimp.svg" class="cursor-pointer" /></span>
             </div>
 
             <div class="text-xl">
@@ -86,31 +107,36 @@
         
         <div>
         <div class="bg-white rounded-md px-4 py-6 lg:mt-10 mx-10">
-            <div class="text-center text-2xl font-bold">Fill up the following to Sign up - </div>
+            <div class="text-center text-2xl font-bold">Fill up the following to Sign up </div>
             <form class="flex flex-col px-6 py-8">
-                <label>Company Name *</label>
-                <input type="text" class="border border-gray-300 rounded-md py-2 my-1"/>
+                <label class="required-star">Company Name </label>
+                <input type="text" class="border border-gray-300 rounded-md py-2 px-2 my-1 "/>
 
               
 
-                <label class="mt-8">Unique Account ID *</label>
-                <input type="text" class="border border-gray-300 rounded-md py-2 my-1"/>
+                <label class="mt-8 required-star">Unique Account ID </label>
+                <input type="text" class="border border-gray-300 rounded-md py-2 px-2 my-1 "/>
 
                 <label class="mt-8">Link of Company Website</label>
-                <input type="text" class="border border-gray-300 rounded-md py-2 my-1"/>
+                <input type="text" class="border border-gray-300 rounded-md py-2 px-2 my-1"/>
 
                 
 
 
-                <label class="mt-8">Account Owner’s Email address*</label>
-                <input type="text" class="border border-gray-300 rounded-md py-2 my-1"/>
+                <label class="mt-8 required-star">Account Owner’s Email address</label>
+                <input type="text" class="border border-gray-300 rounded-md py-2 px-2 my-1 "/>
 
-                <label class="mt-8">Time Zone *</label>
-                <input type="text" class="border border-gray-300 rounded-md py-2 my-1"/> 
+                <label class="mt-8 required-star">Time Zone </label>
+                <select class="border border-gray-300 rounded-md py-2 px-2 my-1 ">
+                  <option>UTC</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select> 
 
-                <div class="mt-8 text-2xl flex items-center justify-between">
+                <div class="mt-8 text-xl flex flex-wrap flex-col-reverse lg:flex-row gap-4 items-center justify-between">
                     <div>Already a member? <a class="text-blue-600 hover:underline">Sign In</a></div>
-                    <button class="px-6 py-4 text-white bg-gray-700 rounded-md hover:bg-black">Sign Up</button>
+                    <button class="px-5 py-3 text-white bg-gray-700 rounded-md hover:bg-black">Sign Up</button>
                 </div>
             </form>
         </div>

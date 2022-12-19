@@ -794,6 +794,13 @@ input[type="file"]::file-selector-button{
 
 /* Star sign in form */
 
+.required-star::after{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+  --tw-content: '*';
+  content: var(--tw-content);
+}
+
 /* form input corners modified */
 
 .form-input-rounded{
@@ -1116,6 +1123,10 @@ input[type="file"]::file-selector-button{
   flex-direction: column;
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -1358,6 +1369,11 @@ input[type="file"]::file-selector-button{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pr-2{
@@ -1637,6 +1653,26 @@ html{
     margin-top: 2.5rem;
   }
 
+  .lg\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .lg\:ml-28{
+    margin-left: 7rem;
+  }
+
+  .lg\:ml-14{
+    margin-left: 3.5rem;
+  }
+
+  .lg\:ml-16{
+    margin-left: 4rem;
+  }
+
+  .lg\:ml-12{
+    margin-left: 3rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1739,9 +1775,25 @@ html{
     padding-right: 10rem;
   }
 
+  .lg\:pl-20{
+    padding-left: 5rem;
+  }
+
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .xl\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
@@ -1768,6 +1820,11 @@ html{
   .\32xl\:px-60{
     padding-left: 15rem;
     padding-right: 15rem;
+  }
+
+  .\32xl\:px-52{
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 
   .\32xl\:pt-12{
