@@ -905,6 +905,10 @@ input[type="file"]::file-selector-button{
   margin-bottom: -0.5rem;
 }
 
+.-ml-3{
+  margin-left: -0.75rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -987,26 +991,6 @@ input[type="file"]::file-selector-button{
 
 .mb-4{
   margin-bottom: 1rem;
-}
-
-.-ml-2{
-  margin-left: -0.5rem;
-}
-
-.-ml-8{
-  margin-left: -2rem;
-}
-
-.-ml-6{
-  margin-left: -1.5rem;
-}
-
-.-ml-4{
-  margin-left: -1rem;
-}
-
-.-ml-3{
-  margin-left: -0.75rem;
 }
 
 .block{
@@ -1324,16 +1308,8 @@ input[type="file"]::file-selector-button{
   fill: #fff;
 }
 
-.fill-blue-600{
-  fill: #2563eb;
-}
-
 .p-2{
   padding: 0.5rem;
-}
-
-.p-1{
-  padding: 0.25rem;
 }
 
 .px-4{
@@ -1354,6 +1330,11 @@ input[type="file"]::file-selector-button{
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .py-4{
@@ -1379,11 +1360,6 @@ input[type="file"]::file-selector-button{
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 
 .px-8{
@@ -1426,6 +1402,11 @@ input[type="file"]::file-selector-button{
   line-height: 2rem;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1439,11 +1420,6 @@ input[type="file"]::file-selector-button{
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-3xl{
