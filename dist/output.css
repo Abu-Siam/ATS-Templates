@@ -989,6 +989,26 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1rem;
 }
 
+.-ml-2{
+  margin-left: -0.5rem;
+}
+
+.-ml-8{
+  margin-left: -2rem;
+}
+
+.-ml-6{
+  margin-left: -1.5rem;
+}
+
+.-ml-4{
+  margin-left: -1rem;
+}
+
+.-ml-3{
+  margin-left: -0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -1304,8 +1324,16 @@ input[type="file"]::file-selector-button{
   fill: #fff;
 }
 
+.fill-blue-600{
+  fill: #2563eb;
+}
+
 .p-2{
   padding: 0.5rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .px-4{
@@ -1620,14 +1648,14 @@ html {
     margin-right: 11rem;
   }
 
-  .lg\:my-10{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
   .lg\:mx-10{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .lg\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .lg\:mb-16{
@@ -1646,12 +1674,12 @@ html {
     margin-left: 3rem;
   }
 
-  .lg\:mt-10{
-    margin-top: 2.5rem;
-  }
-
   .lg\:mt-0{
     margin-top: 0px;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
   }
 
   .lg\:mb-0{
