@@ -929,6 +929,21 @@ input[type="file"]::file-selector-button{
   margin-bottom: 0.5rem;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .-mt-5{
   margin-top: -1.25rem;
 }
@@ -1031,6 +1046,18 @@ input[type="file"]::file-selector-button{
 
 .mb-20{
   margin-bottom: 5rem;
+}
+
+.mb-28{
+  margin-bottom: 7rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 
 .block{
@@ -1216,6 +1243,10 @@ input[type="file"]::file-selector-button{
   justify-content: space-between;
 }
 
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -1294,6 +1325,18 @@ input[type="file"]::file-selector-button{
   border-right-width: 2px;
 }
 
+.border-t-2{
+  border-top-width: 2px;
+}
+
+.border-t-4{
+  border-top-width: 4px;
+}
+
+.border-t-8{
+  border-top-width: 8px;
+}
+
 .border-gray-400{
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
@@ -1307,6 +1350,16 @@ input[type="file"]::file-selector-button{
 .border-gray-300{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-cyan-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(8 145 178 / var(--tw-border-opacity));
+}
+
+.border-green-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
 }
 
 .bg-gray-300{
@@ -1362,6 +1415,16 @@ input[type="file"]::file-selector-button{
 .bg-yellow-100{
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
 }
 
 .fill-white{
@@ -1713,6 +1776,21 @@ html {
     margin-right: 8rem;
   }
 
+  .lg\:mx-36{
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .lg\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lg\:my-32{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
@@ -1743,6 +1821,18 @@ html {
 
   .lg\:mt-32{
     margin-top: 8rem;
+  }
+
+  .lg\:-mt-36{
+    margin-top: -9rem;
+  }
+
+  .lg\:mt-36{
+    margin-top: 9rem;
+  }
+
+  .lg\:mt-auto{
+    margin-top: auto;
   }
 
   .lg\:block{
