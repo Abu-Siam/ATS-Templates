@@ -123,8 +123,18 @@
   .text-blue-bg-gray {
     @apply text-blue-500 px-4 py-2 bg-gray-100 rounded-md cursor-pointer;
   }
+
+  /* like dislike button toggle color */
+  #like:checked ~ #like_label {
+    @apply bg-green-300
+  }
+  
+  #dislike:checked ~ #dislike_label {
+    @apply bg-red-300
+  }
 }
 
 html {
   font-family: "Lato", sans-serif;
 }
+
