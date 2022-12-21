@@ -6,173 +6,229 @@
     <link rel="stylesheet" href="../dist/output.css">
     <title>Opening Detail</title>
 </head>
-<body>
-<header class="bg-black">
+<body >
 
-    <div class="flex flex-col items-center text-center px-6 py-4 lg:py-8 gap-6  lg:px-32 xl:px-64 lg:pb-5">
-        <img src="../images/dsi_logo_v2.svg" alt="Company Logo" width="150rem" height="150rem">
-<!--        <svg width="160" height="90" viewBox="0 0 80 45" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--            <g clip-path="url(#clip0_4825_3864)">-->
-<!--                <path d="M17.6211 35.4489V34.8803C18.4575 34.8803 19.0343 34.65 19.3516 34.1893C19.6689 33.7287 19.8275 32.9225 19.8275 31.7709V19.542C19.8275 18.3688 19.6689 17.5555 19.3516 17.102C19.0343 16.6414 18.4575 16.4182 17.6211 16.4182V15.8496H26.627C29.951 15.8496 32.6116 16.7997 34.6089 18.7071C36.6062 20.6145 37.6013 23.0401 37.6013 25.9768C37.6013 28.863 36.6567 31.1663 34.7676 32.8793C32.8784 34.5924 30.2466 35.4561 26.8721 35.4561H17.6211V35.4489ZM26.1006 16.5982H22.4016V31.0727C22.4016 32.4691 22.5675 33.4192 22.8991 33.9302C23.2308 34.4412 23.8942 34.7004 24.8892 34.7004H26.8937C29.2804 34.7004 31.1623 33.923 32.5323 32.3683C33.9023 30.8136 34.5873 28.6903 34.5873 26.0055C34.5873 23.1553 33.8374 20.8736 32.3376 19.1605C30.8451 17.4475 28.7685 16.5982 26.1006 16.5982Z" fill="white"/>-->
-<!--                <path d="M47.8044 16.1736H48.475V20.8737H47.7684C47.6097 19.5709 47.0473 18.5632 46.0955 17.829C45.1438 17.1021 43.9468 16.735 42.5047 16.735C41.2213 16.735 40.1902 17.0085 39.4114 17.5555C38.6255 18.1026 38.2361 18.8295 38.2361 19.7436C38.2361 20.5858 38.5606 21.3559 39.2095 22.0541C39.8585 22.7523 41.2573 23.6448 43.4132 24.7388C45.9225 26.0056 47.6097 27.1069 48.4678 28.057C49.333 28.9999 49.7584 30.0867 49.7584 31.3031C49.7584 32.8794 49.1023 34.2182 47.7756 35.341C46.4561 36.4567 44.8698 37.0181 43.0095 37.0181C41.9351 37.0181 40.5579 36.7662 38.8923 36.2624C38.2073 36.0608 37.7675 35.9529 37.58 35.9529C37.1906 35.9529 36.8878 36.212 36.6715 36.723H35.9648V31.3031H36.6715C36.6859 32.8003 37.2627 33.9951 38.402 34.8948C39.5412 35.7945 40.868 36.248 42.3894 36.248C43.8315 36.248 44.9851 35.9241 45.8504 35.2691C46.7156 34.6213 47.1555 33.7504 47.1555 32.6707C47.1555 31.8574 46.8022 31.0872 46.0883 30.3458C45.3745 29.6045 43.8819 28.6472 41.6178 27.4812C39.7648 26.5167 38.5318 25.7537 37.9117 25.1923C37.2916 24.6309 36.8373 24.0191 36.5417 23.3497C36.2461 22.6803 36.0946 21.9533 36.0946 21.1544C36.0946 19.6141 36.6931 18.3689 37.8828 17.4044C39.0726 16.4471 40.63 15.9648 42.548 15.9648C43.6007 15.9648 44.7472 16.1448 45.9874 16.4975C46.5642 16.6558 46.968 16.735 47.1987 16.735C47.3862 16.735 47.516 16.699 47.5809 16.6342C47.6458 16.5623 47.7251 16.4111 47.8044 16.1736Z" fill="white"/>-->
-<!--                <path d="M50.1417 44.8281C48.6563 45.2744 47.7262 44.8641 47.344 43.6045C47.034 42.5752 47.3945 40.1856 48.4328 36.4356C49.8533 31.5124 51.3098 26.5748 52.7951 21.6372C52.7014 21.5436 52.5788 21.4716 52.4274 21.4212C52.276 21.3709 52.1606 21.3277 52.0813 21.2917C51.3963 21.4932 50.5166 22.1986 49.4206 23.4006C48.3319 24.6026 47.5315 25.5959 47.0196 26.3661L46.1543 25.5023C47.6613 23.5518 48.8438 22.105 49.7091 21.1549C51.4972 19.2475 52.9826 18.1175 54.1579 17.7648C55.5207 17.3546 56.3859 17.7576 56.7465 18.9596C57.0565 19.9889 56.1913 23.6885 54.1507 30.0441C52.1173 36.3996 51.1872 39.8977 51.3819 40.5239C51.5045 40.927 51.8073 41.0493 52.3048 40.9054C53.0475 40.6822 53.9632 39.9121 55.052 38.5877C55.5495 38.0047 56.2706 37.0402 57.2223 35.6871L58.0876 36.5508C56.9339 38.3358 55.7875 39.8977 54.6338 41.2365C52.9321 43.2374 51.4396 44.4394 50.1417 44.8281Z" fill="white"/>-->
-<!--                <path d="M59.3121 16.7274C63.9395 16.7274 67.6907 12.9829 67.6907 8.36372C67.6907 3.74457 63.9395 0 59.3121 0C54.6848 0 50.9336 3.74457 50.9336 8.36372C50.9336 12.9829 54.6848 16.7274 59.3121 16.7274Z" fill="white"/>-->
-<!--                <path d="M79.9276 14.0511C79.4661 12.4532 76.7045 11.647 72.3783 11.5391C72.3855 11.5463 72.3927 11.5463 72.3999 11.5535C72.4215 11.5535 72.4359 11.5535 72.4576 11.5535C72.4936 11.5535 72.5297 11.5463 72.5657 11.5463C72.6451 11.5463 72.7244 11.5535 72.7965 11.5607C72.8181 11.5607 72.8325 11.5535 72.8542 11.5535C72.9551 11.5535 73.0488 11.5607 73.1354 11.5751C73.2003 11.5751 73.2579 11.5822 73.3156 11.5822C73.4094 11.5822 73.5031 11.5894 73.5896 11.6038C73.6257 11.611 73.6545 11.611 73.6906 11.6182C73.6978 11.6182 73.6978 11.6182 73.705 11.6182C73.741 11.6254 73.7771 11.6326 73.8131 11.6398C73.8997 11.647 73.9862 11.6614 74.0655 11.6758C74.1953 11.6758 74.3107 11.6974 74.426 11.7262C74.5414 11.7334 74.6496 11.7622 74.7577 11.791C74.8298 11.7982 74.9019 11.8054 74.9668 11.8198C75.0533 11.827 75.1399 11.8486 75.2192 11.8702C75.3345 11.8846 75.4499 11.9061 75.5509 11.9421C76.618 12.0717 77.7068 12.5827 78.2548 13.4608C78.6297 14.0583 78.5288 14.8212 78.1178 15.3538C78.0241 15.5914 77.8798 15.8073 77.6996 16.0016C77.6058 16.1744 77.4761 16.3327 77.3246 16.4623C77.2814 16.5127 77.2309 16.5631 77.1804 16.6062C77.0723 16.7646 76.9425 16.9085 76.7766 17.0237C76.6973 17.1317 76.5964 17.2324 76.4882 17.3188C76.207 17.6715 75.8465 17.9738 75.4643 18.2473C74.3756 19.219 73.1065 20.0899 71.7726 20.7737C71.6933 20.8241 71.6068 20.8673 71.5202 20.9033C71.5058 20.9105 71.4914 20.9177 71.4842 20.9249C71.3832 20.9968 71.2751 21.0616 71.1597 21.112C70.1286 21.7382 68.9389 22.3932 67.6987 22.9114C67.6915 22.9186 67.6843 22.9258 67.6698 22.933C67.5617 22.9978 67.4391 23.0554 67.3237 23.1058C67.3237 23.1058 67.3309 23.1058 67.3309 23.0986C67.3237 23.0986 67.3237 23.1058 67.3165 23.1058C67.3093 23.113 67.2949 23.113 67.2877 23.1202C66.9848 23.2569 66.6892 23.3937 66.3864 23.5232C66.3864 23.5232 66.3864 23.5232 66.3792 23.5232C66.4585 23.4872 66.5378 23.4585 66.6171 23.4225C66.509 23.4728 66.408 23.5304 66.2999 23.5736C66.2926 23.5736 66.2926 23.5736 66.2926 23.5808C66.2566 23.6024 66.2205 23.6384 66.1773 23.66C66.0403 23.732 65.8889 23.7895 65.7446 23.8543C65.687 23.8903 65.6149 23.9263 65.55 23.9551C65.4851 23.9911 65.413 24.0199 65.3409 24.0487C65.276 24.0847 65.2039 24.1134 65.1318 24.1422C65.1245 24.1494 65.1101 24.1494 65.1029 24.1566H65.0957C65.0885 24.1638 65.0741 24.1638 65.0669 24.171C65.0524 24.1782 65.038 24.1854 65.0236 24.1926C64.9443 24.243 64.8578 24.279 64.7712 24.315C64.7496 24.3222 64.7352 24.3366 64.7135 24.3438C64.6847 24.3582 64.6486 24.3798 64.6126 24.3942C64.591 24.4085 64.5693 24.4229 64.5477 24.4373C64.0574 24.6965 63.5527 24.898 63.0335 25.0707C62.8749 25.1931 62.6874 25.2795 62.4711 25.3299C62.4134 25.3658 62.3485 25.4018 62.2764 25.4306C62.1538 25.5026 62.0168 25.553 61.8654 25.5962C61.7645 25.6538 61.6563 25.7041 61.5337 25.7473C61.4833 25.7689 61.4256 25.7905 61.3679 25.8121C61.3607 25.8121 61.3607 25.8121 61.3535 25.8193C61.2669 25.8625 61.1804 25.9057 61.0795 25.9345C60.9929 25.9776 60.9064 26.0136 60.8127 26.0424C60.8055 26.0496 60.7911 26.0496 60.7838 26.0496C60.6685 26.1216 60.5315 26.1792 60.3873 26.2224C60.2791 26.28 60.1565 26.3303 60.0267 26.3663C59.9619 26.3951 59.9042 26.4311 59.8321 26.4527C59.7383 26.5031 59.6374 26.5463 59.522 26.5751C59.4139 26.6326 59.2985 26.683 59.1759 26.719C59.1254 26.7406 59.0822 26.755 59.0317 26.7694C58.974 26.791 58.9163 26.8126 58.8587 26.827C58.7793 26.863 58.7072 26.899 58.6207 26.9277C58.563 26.9565 58.5053 26.9781 58.4477 26.9925C58.3683 27.0357 58.289 27.0717 58.1953 27.1005C58.0655 27.1725 57.9213 27.23 57.7627 27.266C57.7266 27.2804 57.6833 27.2948 57.6473 27.3092C57.604 27.3308 57.568 27.3452 57.5247 27.3596C57.3877 27.4388 57.2435 27.4964 57.0777 27.5324C56.9839 27.5755 56.883 27.6187 56.7676 27.6475C56.6739 27.6907 56.5729 27.7339 56.4648 27.7627C56.4071 27.7915 56.3422 27.8203 56.2773 27.8419C56.1908 27.885 56.1043 27.921 56.0033 27.9498C55.8879 28.0074 55.7654 28.0578 55.6284 28.0866C55.549 28.1226 55.4697 28.1514 55.3832 28.1657C55.3616 28.1729 55.3399 28.1801 55.3183 28.1873C55.2606 28.2161 55.2029 28.2377 55.1381 28.2593C55.1236 28.2665 55.1092 28.2665 55.0948 28.2737H55.0876C54.965 28.3457 54.8208 28.3961 54.6694 28.4321C54.5468 28.504 54.4098 28.5544 54.2584 28.5904C54.1646 28.6336 54.0637 28.6624 53.9555 28.684C53.833 28.7488 53.696 28.7991 53.5445 28.8351C53.4148 28.8999 53.2778 28.9503 53.1191 28.9863C53.0903 29.0007 53.0542 29.0151 53.0254 29.0295C52.8884 29.1015 52.7442 29.1518 52.5783 29.1878C52.4918 29.2238 52.4125 29.2598 52.3116 29.2886C52.2034 29.339 52.088 29.375 51.9655 29.4038C51.915 29.4253 51.8645 29.4397 51.8068 29.4541C51.6698 29.5333 51.5112 29.5909 51.3309 29.6269C51.2588 29.6629 51.1795 29.6917 51.093 29.7133C51.0353 29.7348 50.9776 29.7564 50.9199 29.7708C50.7901 29.8356 50.6387 29.8716 50.4873 29.8932C50.4801 29.9004 50.4657 29.9004 50.4513 29.9004C50.3719 29.9364 50.2854 29.9724 50.1917 29.994C50.17 30.0012 50.1556 30.0084 50.134 30.0156C50.1196 30.0156 50.1124 30.0228 50.0979 30.0228C49.896 30.1019 49.6942 30.1667 49.4923 30.2171C49.3481 30.2963 49.1894 30.3539 49.0092 30.3826C48.8866 30.433 48.7568 30.4762 48.6126 30.4978C48.5333 30.5266 48.4467 30.5554 48.353 30.5698C48.2593 30.6202 48.1511 30.6562 48.043 30.6921C47.906 30.7569 47.7545 30.8073 47.5959 30.8361C47.4661 30.9009 47.3291 30.9513 47.1705 30.98C47.1489 30.9872 47.1272 30.9872 47.1128 30.9944C46.983 31.0592 46.8388 31.1024 46.6802 31.1312C46.5792 31.1744 46.4711 31.2104 46.3485 31.232C46.2187 31.2896 46.0817 31.3327 45.9231 31.3615C45.887 31.3759 45.8438 31.3903 45.8005 31.4047C45.6779 31.4623 45.5481 31.5055 45.4039 31.5271C45.2814 31.5775 45.1588 31.6206 45.0146 31.6422C44.9641 31.6638 44.8992 31.6782 44.8487 31.6926C44.7406 31.7502 44.6108 31.7862 44.481 31.815C44.3152 31.9014 44.1277 31.9589 43.9186 31.9877C43.8969 31.9949 43.8681 32.0021 43.8465 32.0165C43.7239 32.0741 43.5869 32.1101 43.4427 32.1389C43.2913 32.2109 43.1254 32.2612 42.938 32.2828C42.7793 32.362 42.6063 32.4124 42.4044 32.4412C42.3106 32.4844 42.2025 32.5132 42.0943 32.5348C42.0294 32.5635 41.9501 32.5923 41.878 32.6067C41.7482 32.6643 41.604 32.7075 41.4454 32.7291C41.3661 32.7507 41.2868 32.7723 41.2074 32.7795C41.1065 32.8227 40.9911 32.8515 40.8758 32.873C40.7388 32.9378 40.5801 32.981 40.4143 33.0026C40.335 33.0314 40.2484 33.0602 40.1619 33.0746C40.0177 33.1394 39.8519 33.1825 39.6788 33.2041C39.5635 33.2473 39.4409 33.2833 39.3039 33.3049C39.2606 33.3193 39.2246 33.3337 39.1813 33.3481C39.0443 33.4129 38.8857 33.4561 38.7126 33.4777C38.6117 33.5136 38.5035 33.5424 38.3954 33.5568H38.3882C38.2439 33.6216 38.0853 33.672 37.905 33.7008C37.768 33.7584 37.6166 33.8087 37.4436 33.8231C37.3426 33.8591 37.2345 33.8879 37.1191 33.9023C37.0398 33.9311 36.9533 33.9599 36.8667 33.9815C36.7802 34.0103 36.6865 34.0247 36.5855 34.0391C36.4846 34.0823 36.3692 34.1111 36.2466 34.1326C36.2178 34.147 36.1818 34.147 36.1529 34.1542C36.052 34.1902 35.9438 34.219 35.8212 34.2406C34.7685 34.6149 33.6437 34.8308 32.5405 35.0468C32.4756 35.0611 32.4107 35.0755 32.3386 35.0899C32.252 35.1115 32.1655 35.1331 32.0718 35.1475C32.0574 35.1547 32.0429 35.1547 32.0285 35.1619C31.9564 35.1907 31.8699 35.2123 31.7906 35.2339C31.7473 35.2483 31.6896 35.2555 31.6392 35.2627C31.5382 35.3059 31.4228 35.3347 31.3075 35.3563C31.2426 35.3778 31.1705 35.3994 31.0912 35.4138C30.9974 35.4282 30.9037 35.4498 30.8172 35.4714C30.7234 35.5074 30.6153 35.529 30.5071 35.5434C30.4206 35.5722 30.3269 35.5866 30.2259 35.601C30.1899 35.6082 30.161 35.6226 30.125 35.6226C30.024 35.6514 29.9231 35.6801 29.8149 35.6945C29.7212 35.7233 29.6202 35.7521 29.5121 35.7593C29.4039 35.7953 29.2885 35.8169 29.166 35.8313C29.0794 35.8601 28.9857 35.8745 28.892 35.8889C28.8631 35.8961 28.8271 35.9033 28.791 35.9105C28.6973 35.9465 28.5891 35.9681 28.481 35.9825C28.4305 35.9968 28.3656 36.004 28.3151 36.0112C28.2791 36.0256 28.2358 36.0256 28.1998 36.0328C28.1637 36.0472 28.1132 36.0472 28.07 36.0616C27.9546 36.1048 27.8248 36.1336 27.6806 36.148C27.3922 36.2128 27.0966 36.2848 26.8009 36.3351C26.7937 36.3351 26.7937 36.3351 26.7865 36.3351C26.7793 36.3351 26.7721 36.3351 26.7649 36.3351C26.7144 36.3495 26.6639 36.3567 26.6135 36.3639C26.5125 36.3999 26.4044 36.4215 26.289 36.4359C26.2385 36.4503 26.1808 36.4575 26.1159 36.4647C26.0438 36.4863 25.9645 36.5007 25.878 36.5079C25.8564 36.5151 25.8347 36.5151 25.8203 36.5223C25.6977 36.5655 25.5679 36.5871 25.4237 36.6087C25.3372 36.6302 25.2435 36.6446 25.1497 36.659C25.1065 36.6662 25.0632 36.6806 25.02 36.6878C24.9479 36.7022 24.883 36.7166 24.8036 36.7238C24.7748 36.731 24.7387 36.7454 24.7027 36.7454C24.6017 36.7742 24.5008 36.7958 24.3854 36.803C24.3422 36.8102 24.2917 36.8174 24.2484 36.8246H24.2412C24.1331 36.8606 24.0105 36.8822 23.8879 36.8966C23.7942 36.9254 23.686 36.9398 23.5779 36.9541C23.4985 36.9757 23.4048 36.9901 23.3183 36.9973C23.2534 37.0189 23.1813 37.0333 23.1092 37.0405C23.0731 37.0477 23.0371 37.0477 23.0082 37.0549C22.8857 37.0909 22.7559 37.1125 22.6189 37.1125C22.4675 37.1557 22.3088 37.1845 22.143 37.1989C22.0348 37.2277 21.9195 37.2492 21.7969 37.2564C21.7536 37.2708 21.7104 37.278 21.6599 37.2852C21.6166 37.2924 21.5661 37.2996 21.5157 37.3068C21.494 37.314 21.4652 37.314 21.4364 37.3212C21.2345 37.3644 21.0326 37.3932 20.8379 37.4148C20.7802 37.4292 20.7225 37.4364 20.6648 37.4436C20.5927 37.458 20.5134 37.4724 20.4413 37.4796C20.3692 37.494 20.2971 37.5084 20.225 37.5156C20.1745 37.5228 20.1313 37.53 20.0808 37.5372C20.0519 37.5444 20.0231 37.5444 19.9943 37.5516C19.9871 37.5516 19.9798 37.5516 19.9798 37.5516C19.9294 37.5588 19.8789 37.5731 19.8212 37.5803C19.7996 37.5875 19.7779 37.5875 19.7563 37.5875H19.7491C19.7419 37.5875 19.7347 37.5875 19.7275 37.5947C19.6914 37.6019 19.6554 37.6091 19.6193 37.6091C19.5833 37.6163 19.5472 37.6235 19.5112 37.6235C19.4895 37.6235 19.4679 37.6307 19.4463 37.6307C19.367 37.6523 19.2804 37.6595 19.2011 37.6667C19.1218 37.6811 19.0425 37.6955 18.9632 37.7027H18.956C18.8478 37.7315 18.7324 37.7459 18.6171 37.7531C18.5954 37.7603 18.5666 37.7603 18.5377 37.7603C18.4873 37.7747 18.4368 37.7819 18.3863 37.7891C18.3142 37.8035 18.2277 37.8107 18.1484 37.8179C18.1123 37.8251 18.0763 37.8251 18.0402 37.8323C17.9681 37.8467 17.8888 37.8539 17.8095 37.8611C17.8023 37.8611 17.7879 37.8682 17.7807 37.8682C17.6941 37.8898 17.6004 37.9042 17.4994 37.9114C17.4273 37.9258 17.3552 37.933 17.2831 37.933C17.211 37.9474 17.1461 37.9546 17.0668 37.9618C17.0236 37.969 16.9731 37.969 16.9298 37.9762C16.8505 37.9978 16.764 38.005 16.6775 38.0122C16.5837 38.0266 16.4828 38.041 16.3818 38.041C16.2809 38.0626 16.1799 38.077 16.0718 38.077C16.0646 38.077 16.0574 38.077 16.0501 38.077C15.9997 38.0842 15.9492 38.0914 15.8987 38.0914C15.7978 38.113 15.6824 38.1274 15.567 38.1274C15.4589 38.149 15.3435 38.1634 15.2209 38.1634C15.12 38.185 15.0118 38.1993 14.8965 38.1993C14.7883 38.2209 14.6802 38.2353 14.5576 38.2353C14.5432 38.2353 14.5359 38.2353 14.5215 38.2353C14.435 38.2497 14.3485 38.2641 14.2619 38.2641C14.2259 38.2641 14.1971 38.2641 14.161 38.2713C14.0673 38.2857 13.9735 38.2929 13.8654 38.2929C13.8582 38.2929 13.8582 38.2929 13.8509 38.2929C13.8149 38.2929 13.7861 38.3001 13.75 38.3001C13.6923 38.3073 13.6346 38.3145 13.577 38.3145C13.5193 38.3217 13.4544 38.3289 13.3895 38.3289C13.2957 38.3433 13.202 38.3505 13.0939 38.3505C12.654 38.4009 12.207 38.4225 11.7671 38.4369C11.659 38.4585 11.5364 38.4729 11.4138 38.4729C11.4066 38.4729 11.3994 38.4729 11.385 38.4729C10.9163 38.516 10.4476 38.5304 10.051 38.5088C10.0366 38.5088 10.0222 38.5088 10.0078 38.5088C9.99335 38.5088 9.98614 38.5088 9.97172 38.5088C9.94288 38.5088 9.91404 38.5088 9.87798 38.5017C9.80588 38.5088 9.72656 38.516 9.64725 38.516C9.57514 38.516 9.51025 38.5088 9.44536 38.5017C9.43815 38.5017 9.43094 38.5017 9.42373 38.5017C9.41651 38.5017 9.4093 38.5017 9.40209 38.5017C9.05599 38.516 8.7171 38.5232 8.37821 38.5017C8.29889 38.5017 8.04653 38.4873 8.01047 38.4873C7.96 38.4945 7.90953 38.4945 7.85184 38.4945C7.77974 38.4945 7.71485 38.4801 7.64274 38.4729C7.59948 38.4729 7.56343 38.4801 7.52016 38.4801C7.44085 38.4801 7.36153 38.4729 7.28222 38.4657H7.27501C7.26059 38.4657 7.24617 38.4657 7.22453 38.4657C7.21011 38.4657 7.18848 38.4657 7.17406 38.4657C7.1308 38.4657 7.09475 38.4585 7.05148 38.4513C7.02264 38.4513 6.98659 38.4585 6.95775 38.4585C6.84959 38.4585 6.74143 38.4441 6.64049 38.4297C6.61164 38.4297 6.5828 38.4225 6.55396 38.4225C6.54675 38.4225 6.53954 38.4225 6.53233 38.4225C6.42417 38.4225 6.31602 38.4153 6.22228 38.3937C6.21507 38.3937 6.20065 38.3937 6.18623 38.3937C6.17902 38.3937 6.17181 38.3937 6.1646 38.3937C6.0276 38.3937 5.8906 38.3793 5.77523 38.3577C5.73197 38.3505 5.6815 38.3505 5.63102 38.3433C5.59497 38.3361 5.55892 38.3433 5.52287 38.3361C5.47239 38.3289 5.42913 38.3217 5.38587 38.3145C5.29934 38.3073 5.22003 38.3001 5.14071 38.2785C4.96045 38.2713 4.7874 38.2425 4.63598 38.1921C4.59993 38.1849 4.56387 38.1778 4.52782 38.1706C4.49898 38.1634 4.47014 38.1634 4.44851 38.1562C4.41245 38.149 4.36919 38.1418 4.33314 38.1346C4.22498 38.1202 4.12404 38.0986 4.02309 38.0698C3.94377 38.0554 3.86446 38.0338 3.79235 38.005C3.77793 37.9978 3.76351 37.9978 3.74909 37.9978C3.64814 37.9834 3.55441 37.9618 3.46067 37.9258C3.35973 37.9042 3.26599 37.8683 3.17946 37.8323C3.05689 37.7963 2.94152 37.7603 2.83336 37.7027C2.6531 37.6523 2.50168 37.5803 2.36468 37.4796C2.26374 37.4292 2.17 37.3716 2.08347 37.3068C2.04021 37.2852 2.00416 37.2493 1.96811 37.2277C1.75179 37.1053 1.57874 36.9325 1.44895 36.731C1.33359 36.5727 1.24706 36.3999 1.18938 36.2128C1.18938 36.2056 1.18938 36.2056 1.18938 36.1984C1.18217 36.1768 1.17496 36.1624 1.16775 36.148C1.03796 35.6658 1.14611 35.2771 1.3408 34.8308C1.43453 34.6149 1.5499 34.3774 1.69411 34.183L1.70132 34.1758C1.76621 34.0607 1.83832 33.9527 1.93205 33.8591C1.98253 33.78 2.04021 33.708 2.10511 33.636C2.19163 33.5064 2.28537 33.3841 2.39352 33.2761C2.48005 33.1538 2.58821 33.053 2.71078 32.9666C2.73963 32.9378 2.77568 32.909 2.81173 32.8802C2.86942 32.8227 2.9271 32.7723 2.99199 32.7219C3.02805 32.6931 3.0641 32.6571 3.10015 32.6283C3.15062 32.5707 3.20831 32.5132 3.2732 32.4628C3.31646 32.4196 3.36694 32.3836 3.4102 32.3404C3.4823 32.2684 3.55441 32.2037 3.64093 32.1461C3.67699 32.1101 3.71304 32.0813 3.74909 32.0525C3.76351 32.0381 3.78514 32.0237 3.80677 32.0093C3.8933 31.9086 4.00146 31.8294 4.11682 31.7574C4.16009 31.7214 4.19614 31.6926 4.2394 31.6638C4.3043 31.5991 4.3764 31.5343 4.45572 31.4839C4.47014 31.4695 4.47735 31.4623 4.49177 31.4479C1.29032 33.6864 -0.368082 35.7017 0.0717559 37.2133C1.36964 41.6758 20.2971 40.1067 42.3539 33.708C64.4035 27.3164 81.2255 18.5136 79.9276 14.0511Z" fill="white"/>-->
-<!--            </g>-->
-<!--            <defs>-->
-<!--                <clipPath id="clip0_4825_3864">-->
-<!--                    <rect width="80" height="45" fill="white"/>-->
-<!--                </clipPath>-->
-<!--            </defs>-->
-<!--        </svg>-->
+  <header class="bg-black">
 
-        <div class="text-xl lg:text-3xl text-white">Careers at Dynamic Solution Innovators Ltd.</div>
-        <div class="text-white lg:px-64">We are a software development company founded by passionate programmers. We prioritize quality of work above anything else in our projects.</div>
+    <div class="flex flex-col items-center text-center px-6 py-4 lg:py-5 gap-2  xl:px-64 lg:pb-5">
+       <img src="../images/dsi_logo_v2.svg"/>
+            
+        <div class="text-xl lg:text-2xl text-white">Careers at Dynamic Solution Innovators Ltd.</div>
+        <div class="text-white lg:px-64 text-xl">We are a software development company founded by passionate programmers. We prioritize quality of work above anything else in our projects.</div>
     </div>
 
 </header>
-
-<!-- back button -->
-<a href="#"><div class="text-blue-500 mt-8 flex items-center justify-center">
-    <img src="../images/Back%20Icon.png"/>
-    <div class="text-xl italic hover:underline">Back</div>
-</div></a>
-
-<!-- First Section -->
-<div class="flex flex-col items-start lg:items-center gap-3 px-6 lg:px-20 mt-11">
-    <a href="#" class="text-2xl">Senior Design Verification Engineer</a>
-
-    <div class="flex flex-col lg:flex-row gap-5">
-        <div class="flex items-center gap-1">
-            <img src="../images/People%20Icon.svg" alt="People Icon">
-
-            <!--            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                <path d="M10.6667 4.73506C10.6667 6.20782 9.47276 7.40172 8 7.40172C6.52724 7.40172 5.33334 6.20782 5.33334 4.73506C5.33334 3.2623 6.52724 2.06839 8 2.06839C9.47276 2.06839 10.6667 3.2623 10.6667 4.73506Z" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--                <path d="M8 9.40172C5.42267 9.40172 3.33334 11.4911 3.33334 14.0684H12.6667C12.6667 11.4911 10.5773 9.40172 8 9.40172Z" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--            </svg>-->
-            <div>1 Position</div>
-
+      <main>
+        <!-- back button -->
+        <a href="#"
+          ><div class="text-blue-600 mt-10 flex items-center justify-center">
+            <img src="../images/Back Icon.png" />
+            <div class="text-xl italic hover:underline">Back</div>
+          </div></a
+        >
+  
+        <!-- First Section -->
+        <div
+          class="flex flex-col items-start lg:items-center gap-3 px-6 lg:px-20 mt-10"
+        >
+          <a href="#" class="text-2xl">Senior Design Verification Engineer</a>
+  
+          <div class="flex flex-col lg:flex-row gap-5">
+            <div class="flex items-center gap-1">
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.6667 4.73506C10.6667 6.20782 9.47276 7.40172 8 7.40172C6.52724 7.40172 5.33334 6.20782 5.33334 4.73506C5.33334 3.2623 6.52724 2.06839 8 2.06839C9.47276 2.06839 10.6667 3.2623 10.6667 4.73506Z"
+                  stroke="#555555"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8 9.40172C5.42267 9.40172 3.33334 11.4911 3.33334 14.0684H12.6667C12.6667 11.4911 10.5773 9.40172 8 9.40172Z"
+                  stroke="#555555"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div>1 Position</div>
+            </div>
+  
+            <div class="flex items-center gap-1">
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.7712 11.173C11.2495 11.6947 10.2519 12.6923 9.41382 13.5304C8.63277 14.3114 7.36728 14.3115 6.58623 13.5304C5.76383 12.708 4.78309 11.7273 4.22877 11.173C2.14597 9.09016 2.14597 5.71328 4.22877 3.63049C6.31157 1.54769 9.68844 1.54769 11.7712 3.63049C13.854 5.71328 13.854 9.09016 11.7712 11.173Z"
+                  stroke="#555555"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 7.40172C10 8.50629 9.10457 9.40172 8.00001 9.40172C6.89544 9.40172 6.00001 8.50629 6.00001 7.40172C6.00001 6.29715 6.89544 5.40172 8.00001 5.40172C9.10457 5.40172 10 6.29715 10 7.40172Z"
+                  stroke="#555555"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+  
+              <div>Dhaka, Bangladesh</div>
+            </div>
+  
+            <div class="flex items-center gap-1">
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 5.40172V8.06839L10 10.0684M14 8.06839C14 11.3821 11.3137 14.0684 8 14.0684C4.68629 14.0684 2 11.3821 2 8.06839C2 4.75468 4.68629 2.06839 8 2.06839C11.3137 2.06839 14 4.75468 14 8.06839Z"
+                  stroke="#555555"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+  
+              <div>Added on 9 November 2022</div>
+            </div>
+          </div>
         </div>
-
-        <div class="flex items-center gap-1">
-            <img src="../images/Location%20marker.svg" alt="Location Icon">
-
-            <!--            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                <path d="M11.7712 11.173C11.2495 11.6947 10.2519 12.6923 9.41382 13.5304C8.63277 14.3114 7.36728 14.3115 6.58623 13.5304C5.76383 12.708 4.78309 11.7273 4.22877 11.173C2.14597 9.09016 2.14597 5.71328 4.22877 3.63049C6.31157 1.54769 9.68844 1.54769 11.7712 3.63049C13.854 5.71328 13.854 9.09016 11.7712 11.173Z" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--                <path d="M10 7.40172C10 8.50629 9.10457 9.40172 8.00001 9.40172C6.89544 9.40172 6.00001 8.50629 6.00001 7.40172C6.00001 6.29715 6.89544 5.40172 8.00001 5.40172C9.10457 5.40172 10 6.29715 10 7.40172Z" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--            </svg>-->
-
-            <div>Dhaka, Bangladesh</div>
-
-        </div>
-
-        <div class="flex items-center gap-1">
-            <img src="../images/Clock%20Icon.svg" alt="Clock Icon">
-
-            <!--            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                <path d="M8 5.40172V8.06839L10 10.0684M14 8.06839C14 11.3821 11.3137 14.0684 8 14.0684C4.68629 14.0684 2 11.3821 2 8.06839C2 4.75468 4.68629 2.06839 8 2.06839C11.3137 2.06839 14 4.75468 14 8.06839Z" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>-->
-<!--            </svg>-->
-
-            <div>Added on 9 November 2022</div>
-
-        </div>
+  
+        <section class="px-6 lg:w-1/2 mx-auto">
+          <div class="text-2xl text-center font-bold py-8">Overview</div>
+  
+          <div class="flex flex-col">
+              <div class="flex justify-between mb-3">
+                  <div class="text-2xl">Description</div>
+                  <div class="text-blue-600 text-xl flex items-center gap-2"> 
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.78925 7.96301C4.9241 7.69382 5 7.38997 5 7.06839C5 6.74681 4.9241 6.44296 4.78925 6.17377M4.78925 7.96301C4.46089 8.61845 3.78299 9.06839 3 9.06839C1.89543 9.06839 1 8.17296 1 7.06839C1 5.96382 1.89543 5.06839 3 5.06839C3.78299 5.06839 4.46089 5.51833 4.78925 6.17377M4.78925 7.96301L9.21075 10.1738M4.78925 6.17377L9.21075 3.96301M9.21075 3.96301C9.53911 4.61845 10.217 5.06839 11 5.06839C12.1046 5.06839 13 4.17296 13 3.06839C13 1.96382 12.1046 1.06839 11 1.06839C9.89543 1.06839 9 1.96382 9 3.06839C9 3.38997 9.0759 3.69382 9.21075 3.96301ZM9.21075 10.1738C9.0759 10.443 9 10.7468 9 11.0684C9 12.173 9.89543 13.0684 11 13.0684C12.1046 13.0684 13 12.173 13 11.0684C13 9.96382 12.1046 9.06839 11 9.06839C10.217 9.06839 9.53911 9.51833 9.21075 10.1738Z" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          
+                      <a href="#" class="hover:underline">Share this job</a></div>
+              </div>
+  
+              <div class="text-xl">
+                  Dynamic Solution Innovators (DSi), started as a software company
+                  based in Dhaka, Bangladesh. We have been successfully providing
+                  software services since 2001 in global industry (USA, England, New
+                  Zealand, Asia and Africa). We have 230+ employees, with over 200+
+                  skilled engineers.
+                  <p class="py-5"> In 2020, DSi started a new business to serve the
+                  VLSI design and verification market and since then, we have received
+                  tremendous interest from clients and expanded our workforce
+                  gradually. We focus on the front-end portion of the VLSI design
+                  process, using SystemVerilog, UVM, System C, and numerous other
+                  cutting-edge technologies. We also work on the firmware and software
+                  stack required for a new microcontroller. We have trained and
+                  prepared engineers from scratch. Currently, we are seeking to expand
+                  our team and looking for Senior Design Verification Engineer who
+                  shall be responsible for the following-</p>
+              </div>
+          </div>
+  
+              <div class="flex flex-col mb-5">
+                  <div class="text-2xl mb-3">Job Description</div>
+                  <ul class="list-disc ml-8 text-xl">
+                      <li>Complete verification ownership – Testbench Architecture, Test Plan and Testbench Development, Functional Coverage Closure, and Code Coverage Closure</li>
+  
+                      <li>Usage of industry-standard methodologies like UVM and constrained random approach to achieve verification goals</li>
+  
+                      <li>Actively explore and deploy techniques like Formal verification to achieve faster turnaround time on verification</li>
+  
+                      <li>Debug efficiently and clearly articulate gating issues to engineering managers.</li>
+  
+                      <li>Perform a technical lead role.</li>
+  
+                  </ul>
+              </div>
+  
+              <div class="flex flex-col mb-5">
+                  <div class="text-2xl mb-3">Requirements</div>
+                  <ul class="list-disc ml-8 text-xl">
+                      <li>Experience in architecting and implementing functional verification environments for complex IP and top-level.</li>
+  
+                      <li>Must have knowledge of these protocols: AXI, APB, AHB, Ethernet.</li>
+  
+                      <li>Good to have knowledge of one or more of these protocols: DDR/PCIE/ACE/CHI/SD/eMMC/USB.</li>
+  
+                      <li>Hands-on experience in creating Test Environments from Functional Specifications using UVM, Test Planning, Coverage closure, and Assertion based verifications.</li>
+  
+                      <li>Familiar with the tools and processes for developing testbenches and finishing all aspects of the verification process</li>
+                      <li>Good scripting skills (Python, Perl, TCL) – being able to develop scripting to support new flows.</li>
+                      <li>Able to provide verification solutions for productivity, performance, and throughput improvement.</li>
+                      <li>Ability to achieve results in a fast-moving, agile flow and dynamic environment, both locally and across the organization.</li>
+                      <li>Strong communication skills and ability to work well as a teammate.</li>
+                      <li>Experience working with remote and international teams.</li>
+                      <li>Ability to document and train others on work developed
+                      </li>
+               
+  
+                  </ul>
+              </div>
+  
+              <div class="flex flex-col">
+                  <div class="text-2xl mb-3">Benefits</div>
+                  <ul class="list-disc ml-8 text-xl">
+                      <li>Work with some of the best and most experienced talents in the global VLSI Industry.</li>
+  
+                      <li>Opportunity to contribute in the revolution of Microprocessor design & development.</li>
+  
+                      <li>Training from foreign companies.</li>
+  
+                      <li>In-campus free lunch, snacks</li>
+  
+                      <li>Two festival bonuses</li>
+                      <li>Yearly increments</li>
+  
+                  </ul>
+              </div>
+              <div class="flex items-center justify-center my-10">
+              <button class="cursor-pointer  bg-blue-600 rounded-md text-lg font-semibold text-white px-5 py-3 hover:bg-blue-700">Apply For This Job</button>
+              </div>
+        </section>
+      </main>
+  
+ <!-- footer starts -->
+  
+ <footer class="bg-black mx-auto mt-auto w-full ">
+  <div
+    class="px-6 lg:px-72 xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white"
+  >
+    <div class="text-base">
+      <div class="font-semibold">For Other Inquires -</div>
+      <div>
+        <a href="mailto:info@dsinnovators.com"
+          ><i>info@dsinnovators.com</i></a
+        >
+      </div>
+      <div>
+        <a href="https://www.dsinnovators.com/" target="_blank"
+          ><i>www.dsinnovators.com</i></a
+        >
+      </div>
     </div>
-    <div class="text-2xl mt-10 font-bold">Overview</div>
-    <svg width="320" height="22" viewBox="0 0 600 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-    </svg>
 
-
-</div>
-
-
-<!-- Description section -->
-
-<section>
-
-    <div class="flex flex-col lg:flex-col gap-5  px-6 lg:px-32 xl:px-[600px]">
-
-        <div class="flex flex-col gap-4">
-            <div class="text-xl mt-5">Description</div>
-            <div>Dynamic Solution Innovators (DSi), started as a software company based in Dhaka, Bangladesh. We have been successfully providing software services since 2001 in global industry (USA, England, New Zealand, Asia and Africa). We have 230+ employees, with over 200+ skilled engineers.
-
-                In 2020, DSi started a new business to serve the VLSI design and verification market and since then, we have received tremendous interest from clients and expanded our workforce gradually. We focus on the front-end portion of the VLSI design process, using SystemVerilog, UVM, System C, and numerous other cutting-edge technologies. We also work on the firmware and software stack required for a new microcontroller. We have trained and prepared engineers from scratch. Currently, we are seeking to expand our team and looking for Senior Design Verification Engineer who shall be responsible for the following-
-            </div>
-
-        </div>
-
-        <div class="flex flex-col gap-4">
-            <div class="text-xl mt-10">Job Description</div>
-            <div>Complete verification ownership – Testbench Architecture, Test Plan and Testbench Development, Functional Coverage Closure, and Code Coverage Closure
-                Usage of industry-standard methodologies like UVM and constrained random approach to achieve verification goals
-                Actively explore and deploy techniques like Formal verification to achieve faster turnaround time on verification
-                Debug efficiently and clearly articulate gating issues to engineering managers.
-                Perform a technical lead role.</div>
-
-        </div>
-
-        <div class="flex flex-col gap-4">
-            <div class="text-xl mt-10">Requirments</div>
-            <div>Complete verification ownership – Testbench Architecture, Test Plan and Testbench Development, Functional Coverage Closure, and Code Coverage Closure
-                Usage of industry-standard methodologies like UVM and constrained random approach to achieve verification goals
-                Actively explore and deploy techniques like Formal verification to achieve faster turnaround time on verification
-                Debug efficiently and clearly articulate gating issues to engineering managers.
-                Perform a technical lead role.</div>
-
-        </div>
-
-        <div class="flex flex-col gap-4">
-            <div class="text-xl mt-10">Benifits</div>
-            <div>Complete verification ownership – Testbench Architecture, Test Plan and Testbench Development, Functional Coverage Closure, and Code Coverage Closure
-                Usage of industry-standard methodologies like UVM and constrained random approach to achieve verification goals
-                Actively explore and deploy techniques like Formal verification to achieve faster turnaround time on verification
-                Debug efficiently and clearly articulate gating issues to engineering managers.
-                Perform a technical lead role.</div>
-
-        </div>
-
+    <div class="flex flex-col lg:items-end text-base">
+      <div class="font-semibold">Powered By -</div>
+      <div>
+        <i>Shrimp Solutions</i>
+      </div>
+      <div>
+        <i>www.shrimpsolutions.com</i>
+      </div>
     </div>
-    <div class="flex items-center justify-center mt-10">
-        <input class="cursor-pointer bg-blue-600 rounded-md text-white px-6 py-3 hover:bg-blue-800" type="submit" value="Apply for this job">
-    </div>
-
-<!--    <a href="#">-->
-<!--        <div class="flex items-center justify-center mt-10  ">-->
-<!--            <input class="cursor-pointer bg-blue-500 rounded-md text-xl font-semibold text-white px-6 py-2" type="submit" value="Apply for this job">-->
-<!--        </div>-->
-<!--    </a>-->
-
-
-</section>
-
-<!-- footer starts -->
-
-<footer class="bg-black mt-16">
-
-    <div class="px-6 lg:px-72 xl:px-[500px] py-5 flex flex-col lg:flex-row gap-8  justify-between text-white">
-        <div class="text-xl">
-            <div class="font-semibold">
-                For Other Inquires -
-            </div>
-            <div>
-                <a href="mailto:info@dsinnovators.com" class="hover:underline"><i class="text-sm">info@dsinnovators.com</i></a>
-            </div>
-            <div>
-                <a href="https://www.dsinnovators.com/" class="hover:underline" target="_blank"><i class="text-sm">www.dsinnovators.com</i></a>
-            </div>
-        </div>
-
-        <div class="flex flex-col items-end text-xl">
-            <div class="font-semibold" >
-                Powered By -
-            </div>
-            <div>
-                <i class="text-sm">Shrimp Solutions</i>
-            </div>
-            <div>
-                <i class="text-sm">www.shrimpsolutions.com</i>
-            </div>
-        </div>
-    </div>
+  </div>
 </footer>
 <!-- footer Ends -->
 
