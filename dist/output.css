@@ -840,6 +840,10 @@ input[type="file"]::file-selector-button{
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -850,6 +854,10 @@ input[type="file"]::file-selector-button{
 
 .left-0{
   left: 0px;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .z-10{
@@ -870,6 +878,14 @@ input[type="file"]::file-selector-button{
 
 .row-span-2{
   grid-row: span 2 / span 2;
+}
+
+.float-right{
+  float: right;
+}
+
+.float-left{
+  float: left;
 }
 
 .mx-4{
@@ -905,6 +921,26 @@ input[type="file"]::file-selector-button{
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .-mt-5{
@@ -1011,12 +1047,20 @@ input[type="file"]::file-selector-button{
   margin-bottom: 5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .block{
   display: block;
 }
 
 .flex{
   display: flex;
+}
+
+.inline-flex{
+  display: inline-flex;
 }
 
 .grid{
@@ -1097,6 +1141,10 @@ input[type="file"]::file-selector-button{
 
 .w-2\/3{
   width: 66.666667%;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .basis-1\/6{
@@ -1678,6 +1726,16 @@ html {
     margin-bottom: 2.5rem;
   }
 
+  .lg\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .lg\:mx-32{
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
@@ -1704,6 +1762,10 @@ html {
 
   .lg\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .lg\:mt-32{
+    margin-top: 8rem;
   }
 
   .lg\:block{
@@ -1805,6 +1867,21 @@ html {
   .lg\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:py-20{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:text-start{
