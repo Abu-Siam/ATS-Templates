@@ -876,6 +876,10 @@ input[type="file"]::file-selector-button{
   grid-column: span 2 / span 2;
 }
 
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
 .row-span-3{
   grid-row: span 3 / span 3;
 }
@@ -909,9 +913,14 @@ input[type="file"]::file-selector-button{
   margin-bottom: 0.25rem;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-5{
@@ -929,19 +938,19 @@ input[type="file"]::file-selector-button{
   margin-bottom: 0.5rem;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-.my-20{
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.mx-40{
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.mx-60{
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
 .-mt-5{
@@ -1040,24 +1049,16 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .mt-24{
   margin-top: 6rem;
 }
 
 .mb-20{
   margin-bottom: 5rem;
-}
-
-.mb-28{
-  margin-bottom: 7rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
-}
-
-.mb-1{
-  margin-bottom: 0.25rem;
 }
 
 .block{
@@ -1144,16 +1145,16 @@ input[type="file"]::file-selector-button{
   width: 0.75rem;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .w-2\/3{
   width: 66.666667%;
 }
 
 .w-1\/4{
   width: 25%;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .basis-1\/6{
@@ -1243,10 +1244,6 @@ input[type="file"]::file-selector-button{
   justify-content: space-between;
 }
 
-.justify-evenly{
-  justify-content: space-evenly;
-}
-
 .gap-2{
   gap: 0.5rem;
 }
@@ -1325,14 +1322,6 @@ input[type="file"]::file-selector-button{
   border-right-width: 2px;
 }
 
-.border-t-2{
-  border-top-width: 2px;
-}
-
-.border-t-4{
-  border-top-width: 4px;
-}
-
 .border-t-8{
   border-top-width: 8px;
 }
@@ -1350,11 +1339,6 @@ input[type="file"]::file-selector-button{
 .border-gray-300{
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.border-cyan-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(8 145 178 / var(--tw-border-opacity));
 }
 
 .border-green-600{
@@ -1417,14 +1401,9 @@ input[type="file"]::file-selector-button{
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-300{
+.bg-gray-900{
   --tw-bg-opacity: 1;
-  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
-}
-
-.bg-cyan-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .fill-white{
@@ -1771,21 +1750,6 @@ html {
     margin-bottom: 2.5rem;
   }
 
-  .lg\:mx-32{
-    margin-left: 8rem;
-    margin-right: 8rem;
-  }
-
-  .lg\:mx-36{
-    margin-left: 9rem;
-    margin-right: 9rem;
-  }
-
-  .lg\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:my-32{
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -1817,22 +1781,6 @@ html {
 
   .lg\:mb-0{
     margin-bottom: 0px;
-  }
-
-  .lg\:mt-32{
-    margin-top: 8rem;
-  }
-
-  .lg\:-mt-36{
-    margin-top: -9rem;
-  }
-
-  .lg\:mt-36{
-    margin-top: 9rem;
-  }
-
-  .lg\:mt-auto{
-    margin-top: auto;
   }
 
   .lg\:block{
