@@ -132,6 +132,10 @@
   #dislike:checked ~ #dislike_label {
     @apply bg-red-300
   }
+
+  #waiting:checked ~ #waiting_label {
+    @apply bg-yellow-300
+  }
 }
 
 html {
