@@ -1113,6 +1113,14 @@ input[type="file"]::file-selector-button{
   height: 6rem;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
+.h-28{
+  height: 7rem;
+}
+
 .max-h-48{
   max-height: 12rem;
 }
@@ -1159,6 +1167,10 @@ input[type="file"]::file-selector-button{
 
 .w-1\/4{
   width: 25%;
+}
+
+.w-1\/2{
+  width: 50%;
 }
 
 .basis-1\/6{
@@ -1677,14 +1689,14 @@ html {
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-red-200:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-yellow-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-200:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .hover\:text-blue-600:hover{
