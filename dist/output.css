@@ -898,11 +898,6 @@ input[type="file"]::file-selector-button{
   margin-right: auto;
 }
 
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .mx-40{
   margin-left: 10rem;
   margin-right: 10rem;
@@ -911,6 +906,16 @@ input[type="file"]::file-selector-button{
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mx-10{
@@ -938,19 +943,9 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1.25rem;
 }
 
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-2{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.mx-32{
-  margin-left: 8rem;
-  margin-right: 8rem;
 }
 
 .-mt-5{
@@ -1009,6 +1004,10 @@ input[type="file"]::file-selector-button{
   margin-top: 1rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .mb-9{
   margin-bottom: 2.25rem;
 }
@@ -1061,14 +1060,6 @@ input[type="file"]::file-selector-button{
   margin-bottom: 5rem;
 }
 
-.mt-1{
-  margin-top: 0.25rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
-}
-
 .block{
   display: block;
 }
@@ -1093,6 +1084,10 @@ input[type="file"]::file-selector-button{
   height: 2rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .h-2\/3{
   height: 66.666667%;
 }
@@ -1113,8 +1108,12 @@ input[type="file"]::file-selector-button{
   height: 6rem;
 }
 
-.h-auto{
-  height: auto;
+.h-1\/2{
+  height: 50%;
+}
+
+.h-4\/5{
+  height: 80%;
 }
 
 .max-h-48{
@@ -1208,12 +1207,12 @@ input[type="file"]::file-selector-button{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-2{
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-rows-1{
