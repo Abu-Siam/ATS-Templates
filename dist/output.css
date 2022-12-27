@@ -948,6 +948,11 @@ input[type="file"]::file-selector-button{
   margin-bottom: 0.5rem;
 }
 
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .-mt-5{
   margin-top: -1.25rem;
 }
@@ -1084,8 +1089,8 @@ input[type="file"]::file-selector-button{
   height: 2rem;
 }
 
-.h-auto{
-  height: auto;
+.h-4\/5{
+  height: 80%;
 }
 
 .h-2\/3{
@@ -1106,14 +1111,6 @@ input[type="file"]::file-selector-button{
 
 .h-24{
   height: 6rem;
-}
-
-.h-1\/2{
-  height: 50%;
-}
-
-.h-4\/5{
-  height: 80%;
 }
 
 .max-h-48{
@@ -1213,6 +1210,10 @@ input[type="file"]::file-selector-button{
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-1{
@@ -1483,6 +1484,11 @@ input[type="file"]::file-selector-button{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .pl-4{
@@ -1766,6 +1772,11 @@ html {
     margin-bottom: 8rem;
   }
 
+  .lg\:mx-40{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
@@ -1828,6 +1839,10 @@ html {
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -1912,6 +1927,12 @@ html {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
