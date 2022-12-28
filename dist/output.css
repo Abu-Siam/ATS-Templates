@@ -953,6 +953,31 @@ input[type="file"]::file-selector-button{
   margin-bottom: 0.5rem;
 }
 
+.mx-6{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-16{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-14{
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .-mt-5{
   margin-top: -1.25rem;
 }
@@ -1065,6 +1090,22 @@ input[type="file"]::file-selector-button{
   margin-bottom: 5rem;
 }
 
+.mr-8{
+  margin-right: 2rem;
+}
+
+.mr-32{
+  margin-right: 8rem;
+}
+
+.mr-52{
+  margin-right: 13rem;
+}
+
+.mr-44{
+  margin-right: 11rem;
+}
+
 .block{
   display: block;
 }
@@ -1118,6 +1159,10 @@ input[type="file"]::file-selector-button{
   height: 6rem;
 }
 
+.h-10{
+  height: 2.5rem;
+}
+
 .max-h-48{
   max-height: 12rem;
 }
@@ -1168,6 +1213,10 @@ input[type="file"]::file-selector-button{
 
 .w-1\/4{
   width: 25%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .basis-1\/6{
@@ -1418,6 +1467,11 @@ input[type="file"]::file-selector-button{
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .fill-white{
   fill: #fff;
 }
@@ -1626,6 +1680,10 @@ input[type="file"]::file-selector-button{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /*/ progress bar responsiveness /*/
