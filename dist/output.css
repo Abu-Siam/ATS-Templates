@@ -1813,17 +1813,7 @@ html {
   --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));
 }
 
-@media (min-width: 640px){
-  .sm\:w-full{
-    width: 100%;
-  }
-}
-
 @media (min-width: 768px){
-  .md\:w-auto{
-    width: auto;
-  }
-
   .md\:flex-row{
     flex-direction: row;
   }
