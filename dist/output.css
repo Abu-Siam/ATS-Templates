@@ -1082,16 +1082,16 @@ input[type="file"]::file-selector-button{
   margin-bottom: 0.25rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .ml-28{
   margin-left: 7rem;
 }
 
 .mt-24{
   margin-top: 6rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
 }
 
 .block{
@@ -1840,6 +1840,10 @@ html {
 }
 
 @media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1894,6 +1898,11 @@ html {
     margin-bottom: 8rem;
   }
 
+  .lg\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
@@ -1944,6 +1953,10 @@ html {
 
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:w-1\/4{
+    width: 25%;
   }
 
   .lg\:basis-auto{
