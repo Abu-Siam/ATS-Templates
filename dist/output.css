@@ -1042,6 +1042,10 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1.5rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -1092,10 +1096,6 @@ input[type="file"]::file-selector-button{
 
 .mt-24{
   margin-top: 6rem;
-}
-
-.ml-4{
-  margin-left: 1rem;
 }
 
 .block{
@@ -1224,6 +1224,18 @@ input[type="file"]::file-selector-button{
   width: 66.666667%;
 }
 
+.w-32{
+  width: 8rem;
+}
+
+.w-44{
+  width: 11rem;
+}
+
+.w-56{
+  width: 14rem;
+}
+
 .grow{
   flex-grow: 1;
 }
@@ -1242,10 +1254,6 @@ input[type="file"]::file-selector-button{
 
 .basis-2\/3{
   flex-basis: 66.666667%;
-}
-
-.basis-1\/4{
-  flex-basis: 25%;
 }
 
 @keyframes ping{
@@ -1423,12 +1431,12 @@ input[type="file"]::file-selector-button{
   border-right-width: 2px;
 }
 
-.border-t-8{
-  border-top-width: 8px;
-}
-
 .border-t-4{
   border-top-width: 4px;
+}
+
+.border-t-8{
+  border-top-width: 8px;
 }
 
 .border-gray-900{
@@ -1446,6 +1454,11 @@ input[type="file"]::file-selector-button{
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-cyan-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(6 182 212 / var(--tw-border-opacity));
+}
+
 .border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -1454,16 +1467,6 @@ input[type="file"]::file-selector-button{
 .border-green-600{
   --tw-border-opacity: 1;
   border-color: rgb(22 163 74 / var(--tw-border-opacity));
-}
-
-.border-cyan-600{
-  --tw-border-opacity: 1;
-  border-color: rgb(8 145 178 / var(--tw-border-opacity));
-}
-
-.border-cyan-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(6 182 212 / var(--tw-border-opacity));
 }
 
 .bg-gray-300{
@@ -1516,6 +1519,11 @@ input[type="file"]::file-selector-button{
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
+.bg-cyan-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+}
+
 .bg-yellow-100{
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
@@ -1524,26 +1532,6 @@ input[type="file"]::file-selector-button{
 .bg-blue-500{
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.bg-green-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
-.bg-cyan-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
-}
-
-.bg-cyan-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
-}
-
-.bg-cyan-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
 }
 
 .fill-white{
