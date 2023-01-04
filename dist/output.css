@@ -929,6 +929,31 @@ input[type="file"]::file-selector-button{
   margin-bottom: 0.25rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mx-24{
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.mx-10{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.mx-14{
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .my-20{
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -942,21 +967,6 @@ input[type="file"]::file-selector-button{
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.mx-10{
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
 .mx-60{
@@ -974,14 +984,14 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1.25rem;
 }
 
-.mx-24{
-  margin-left: 6rem;
-  margin-right: 6rem;
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.mx-14{
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
+.mx-16{
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .-mt-5{
@@ -1052,6 +1062,10 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1.5rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -1094,10 +1108,6 @@ input[type="file"]::file-selector-button{
 
 .mb-1{
   margin-bottom: 0.25rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
 }
 
 .ml-28{
@@ -1144,6 +1154,19 @@ input[type="file"]::file-selector-button{
   height: auto;
 }
 
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.h-16{
+  height: 4rem;
+}
+
 .h-28{
   height: 7rem;
 }
@@ -1165,29 +1188,8 @@ input[type="file"]::file-selector-button{
   height: 0.75rem;
 }
 
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .h-24{
   height: 6rem;
-}
-
-.h-14{
-  height: 3.5rem;
-}
-
-.h-32{
-  height: 8rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-16{
-  height: 4rem;
 }
 
 .max-h-48{
@@ -1226,6 +1228,10 @@ input[type="file"]::file-selector-button{
   width: 12rem;
 }
 
+.w-40{
+  width: 10rem;
+}
+
 .w-80{
   width: 20rem;
 }
@@ -1248,10 +1254,6 @@ input[type="file"]::file-selector-button{
 
 .w-44{
   width: 11rem;
-}
-
-.w-40{
-  width: 10rem;
 }
 
 .grow{
@@ -1459,6 +1461,11 @@ input[type="file"]::file-selector-button{
 .rounded-b-md{
   border-bottom-right-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
+}
+
+.rounded-r-full{
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 .border{
@@ -1679,12 +1686,12 @@ input[type="file"]::file-selector-button{
   padding-left: 1rem;
 }
 
-.pr-2{
-  padding-right: 0.5rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
+}
+
+.pr-2{
+  padding-right: 0.5rem;
 }
 
 .pb-4{
@@ -1720,14 +1727,14 @@ input[type="file"]::file-selector-button{
   line-height: 1.5rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -1796,6 +1803,16 @@ input[type="file"]::file-selector-button{
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+.text-gray-300{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1850,14 +1867,14 @@ html {
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-300:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-300:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue-700:hover{
@@ -1954,6 +1971,11 @@ html {
     margin-right: 11rem;
   }
 
+  .lg\:mx-24{
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .lg\:mx-40{
     margin-left: 10rem;
     margin-right: 10rem;
@@ -1972,16 +1994,6 @@ html {
   .lg\:my-32{
     margin-top: 8rem;
     margin-bottom: 8rem;
-  }
-
-  .lg\:mx-20{
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-
-  .lg\:mx-24{
-    margin-left: 6rem;
-    margin-right: 6rem;
   }
 
   .lg\:mb-16{
@@ -2028,16 +2040,16 @@ html {
     display: none;
   }
 
+  .lg\:w-1\/4{
+    width: 25%;
+  }
+
   .lg\:w-full{
     width: 100%;
   }
 
   .lg\:w-1\/2{
     width: 50%;
-  }
-
-  .lg\:w-1\/4{
-    width: 25%;
   }
 
   .lg\:basis-auto{
