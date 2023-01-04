@@ -974,6 +974,16 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1.25rem;
 }
 
+.mx-24{
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.mx-14{
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
 .-mt-5{
   margin-top: -1.25rem;
 }
@@ -1164,6 +1174,22 @@ input[type="file"]::file-selector-button{
   height: 6rem;
 }
 
+.h-14{
+  height: 3.5rem;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.h-16{
+  height: 4rem;
+}
+
 .max-h-48{
   max-height: 12rem;
 }
@@ -1222,6 +1248,10 @@ input[type="file"]::file-selector-button{
 
 .w-44{
   width: 11rem;
+}
+
+.w-40{
+  width: 10rem;
 }
 
 .grow{
@@ -1337,6 +1367,14 @@ input[type="file"]::file-selector-button{
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
 }
 
 .gap-2{
@@ -1939,6 +1977,11 @@ html {
   .lg\:mx-20{
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .lg\:mx-24{
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .lg\:mb-16{
