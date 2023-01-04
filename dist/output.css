@@ -1138,10 +1138,6 @@ input[type="file"]::file-selector-button{
   height: 7rem;
 }
 
-.h-4\/5{
-  height: 80%;
-}
-
 .h-min{
   height: -moz-min-content;
   height: min-content;
@@ -1162,6 +1158,30 @@ input[type="file"]::file-selector-button{
 
 .h-24{
   height: 6rem;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.h-48{
+  height: 12rem;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-80{
+  height: 20rem;
+}
+
+.h-\[500px\]{
+  height: 500px;
+}
+
+.h-\[450px\]{
+  height: 450px;
 }
 
 .max-h-48{
@@ -1208,6 +1228,10 @@ input[type="file"]::file-selector-button{
   width: 20rem;
 }
 
+.w-56{
+  width: 14rem;
+}
+
 .w-1\/4{
   width: 25%;
 }
@@ -1220,20 +1244,8 @@ input[type="file"]::file-selector-button{
   width: 5rem;
 }
 
-.w-2\/3{
-  width: 66.666667%;
-}
-
-.w-32{
-  width: 8rem;
-}
-
 .w-44{
   width: 11rem;
-}
-
-.w-56{
-  width: 14rem;
 }
 
 .grow{
@@ -1254,6 +1266,22 @@ input[type="file"]::file-selector-button{
 
 .basis-2\/3{
   flex-basis: 66.666667%;
+}
+
+.basis-3\/4{
+  flex-basis: 75%;
+}
+
+.basis-1\/4{
+  flex-basis: 25%;
+}
+
+.basis-0{
+  flex-basis: 0px;
+}
+
+.basis-full{
+  flex-basis: 100%;
 }
 
 @keyframes ping{
@@ -1279,8 +1307,16 @@ input[type="file"]::file-selector-button{
   resize: both;
 }
 
+.list-inside{
+  list-style-position: inside;
+}
+
 .list-disc{
   list-style-type: disc;
+}
+
+.list-decimal{
+  list-style-type: decimal;
 }
 
 .grid-flow-col{
@@ -1377,6 +1413,10 @@ input[type="file"]::file-selector-button{
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
 }
 
 .break-words{
@@ -1623,6 +1663,11 @@ input[type="file"]::file-selector-button{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pr-4{
@@ -1969,6 +2014,10 @@ html {
     margin-bottom: 0px;
   }
 
+  .lg\:ml-4{
+    margin-left: 1rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -2005,6 +2054,10 @@ html {
     flex-basis: 50%;
   }
 
+  .lg\:basis-1\/4{
+    flex-basis: 25%;
+  }
+
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2015,6 +2068,10 @@ html {
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:flex-nowrap{
+    flex-wrap: nowrap;
   }
 
   .lg\:items-end{
