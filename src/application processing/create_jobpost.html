@@ -1,0 +1,256 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>Job Details</title>
+  </head>
+  <body class="bg-gray-300 z-10">
+
+
+
+ <!-- nav section -->
+ <div
+ class="flex justify-between lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:px-20 py-5 bg-white z-20"
+>
+ <div
+   class="flex flex-col lg:flex-row items-center gap-2 lg:gap-0 lg:space-x-16"
+ >
+ <a href="#"><div><img src="../../images/Shrimp.svg"/></div></a>
+   <a href="#"
+     class=" py-2 md:py-3 px-6 hover:underline text-blue-500 rounded-md"
+   >
+     All jobs
+  </a>
+   <a class="text-blue-500 cursor-pointer hover:underline"> Candidates</a>
+
+
+ </div>
+
+ <div
+   class="flex flex-col md:justify-end items-end md:flex-row md:items-center space-y-2 md:space-x-4"
+ >
+   <div>
+     Mohammad Habibul Bashar
+     <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+   </div>
+   <div class="flex items-center space-x-4">
+     <div class="relative cursor-pointer">
+       <img src="../../images/notification_icon.svg" />
+       <!-- notification dot pulse -->
+       <div
+         class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
+       ></div>
+       <div
+         class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
+       ></div>
+       <!-- notification dot pulse ENDS -->
+     </div>
+
+     <div class="cursor-pointer">
+       <img class="h-8 w-8" src="../../images/Profile Picture.png" />
+     </div>
+     <div class="cursor-pointer">
+       <!-- <img src="../../images/down_arrow.svg" /> -->
+       <select class="-ml-3 px-1 cursor-pointer focus:outline-none">
+         <option></option>
+         <a href="#"></a><option>1</option></a>
+         <a href="#"><option>2</option></a>
+         <a href="#"><option>3</option></a>
+       </select>
+     </div>
+   </div>
+ </div>
+</div>
+
+<main>
+    <section class="mx-auto container px-4 my-20">
+        <div class="bg-white rounded-md px-10 py-8">
+            <div class="text-center text-3xl font-bold ">Create Job Post</div>
+            <div>
+                <form class="mt-8">
+                    <div>
+                    <label class="required-star"> Job Title </label>
+                    <input
+                      type="text"
+                      class="border border-gray-300 rounded-md py-2 px-2 my-1 w-full"
+                    />
+                    </div>
+
+                    <div class="flex flex-wrap lg:flex-nowrap items-start">
+                      <div class="basis-3/4 grow">
+                        <div class="mt-4">
+                        <label class="required-star"> Description</label>
+                        <textarea class="border border-gray-300 rounded-md h-28 px-2 py-2 my-1 w-full"></textarea>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <label class="required-star"> Requirements</label>
+                            <textarea class="border border-gray-300 rounded-md h-28 px-2 py-2 my-1 w-full"></textarea>
+                        </div> 
+
+                        <div class="mt-4">
+                            <label > Benefits</label>
+                            <textarea class="border border-gray-300 rounded-md h-28 px-2 py-2 my-1 w-full"></textarea>
+                        </div>
+                      </div> 
+
+                      <div class="mt-6 ml-4 basis-full lg:basis-1/4 overflow-y-auto h-[450px]   bg-cyan-200 p-2 border border-t-4 border-cyan-500 shadow-md rounded-md">
+                        <p class="font-bold">About Markdown</p>
+                        <p>You can use markdown for Description, Requirements and Benefits fields using the following syntaxes</p>
+                        <p class="mt-2"><b>Heading:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, magni?</p>
+                        <p class="mt-2"><b>Ordered List</b></p>
+                        <ul class=" list-decimal list-inside">
+                          <li>First Item</li>
+                          <li>Second Item</li>
+                        </ul>
+                        <p class="mt-2"><b>Unordered List</b></p>
+                        <ul class=" list-disc list-inside">
+                          <li>First Item</li>
+                          <li>Second Item</li>
+                        </ul>
+                        <p class="mt-2"><b>Heading:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, magni?</p>
+                        <p class="mt-2"><b>Heading:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, magni?</p>
+                        <p class="mt-2"><b>Heading:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, magni?</p>
+                        <p class="mt-2"><b>Heading:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, magni?</p>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 mt-4">
+                      <div class="flex flex-col">
+                          <label>Location</label>
+                          <select class="border border-gray-300 rounded-md py-2 px-2 my-1 cursor-pointer ">
+                              <option>Dhaka</option>
+                              <option>Barishal</option>
+                              <option>khulna</option>
+                              <option>sylhet</option>
+                          </select>
+                      </div>
+
+                      <div class="flex flex-col">
+                          <label>Pipeline</label>
+                          <select class="border border-gray-300 rounded-md py-2 px-2 my-1 cursor-pointer ">
+                              <option>Common Pipeline</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                          </select>
+                      </div>
+
+                      <div class="flex flex-col">
+                          <label>Deadline (i.e. 12/02/2002 11:30 PM)</label>
+                          <input
+                          type="date"
+                          class="border border-gray-300 rounded-md py-2 px-2 my-1 cursor-pointer "
+                        />
+                      </div>
+
+                    
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 mt-4">
+                      
+                      <div class="flex flex-col">
+                        <label>Min salary (in Taka)</label>
+                        <input
+                        type="text"
+                        class="border border-gray-300 rounded-md py-2 px-2 my-1 cursor-pointer "
+                      />
+                      </div>
+
+
+                      <div class="flex flex-col">
+                      <label>Max salary (in Taka)</label>
+                      <input
+                      type="text"
+                      class="border border-gray-300 rounded-md py-2 px-2 my-1 cursor-pointer "
+                      />
+                      </div>
+                      
+  
+                      <div class="flex flex-col">
+                          <label>Social Media Image (Rec: 1200x600px)</label>
+                          <input
+                          type="file"
+                          class="border border-gray-300 rounded-md py-2 px-2 my-1 cursor-pointer "
+                        />
+                      </div>
+  
+                      
+                    </div>
+
+                    <div class="mt-4">
+                      <label class="required-star"> Team </label>
+                      <div class="flex flex-wrap gap-4">
+                        <div>
+                          <input type="checkbox">
+                          <label>Mr sae</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox">
+                          <label>Mrs aaa</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox">
+                          <label>Md ABC</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox">
+                          <label>Random Name</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox">
+                          <label>Some Name</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox">
+                          <label>Lorem Ipsum</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox">
+                          <label>Ipsum Lorem</label>
+                        </div>
+                        
+                        <div>
+                          <input type="checkbox">
+                          <label>Ipsum Lorem lorem</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox">
+                          <label>Ipsum Lorem Ipsum</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center justify-between mt-8">
+                      <div><a href="#">Cancel</a></div>
+                      <div class="flex items-center gap-2">
+                        <div class="px-4 py-2 border border-gray-400 rounded-md hover:bg-gray-300 cursor-pointer"><a href="#">Publish</a></div>
+                        <div class="px-4 py-2 border border-gray-400 rounded-md hover:bg-gray-300 cursor-pointer"><a href="#">Save</a></div>
+                      </div>
+                    </div>
+                      
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+  <!-- footer section -->
+  <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+    <div class="text-center text-sm px-4">
+      <b>powered by -</b>
+      <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+    </div>
+  </footer>
+</body>
+</html>
