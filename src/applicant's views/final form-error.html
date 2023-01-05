@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../dist/output.css" />
-    <title>Form final</title>
+    <title>Form final error</title>
   </head>
   <body>
     <header class="bg-black">
@@ -30,11 +30,11 @@
 
     <!-- First Section -->
     <div
-      class="flex flex-col items-start lg:items-center gap-3 px-6 lg:px-20 mt-11"
+      class="flex flex-col items-start lg:items-center gap-3 px-6 container mx-auto mt-11"
     >
       <a href="#" class="text-2xl">Senior Design Verification Engineer</a>
 
-      <div class="flex flex-col lg:flex-row gap-5">
+      <div class="flex flex-col sm:flex-row gap-5">
         <div class="flex items-center gap-1">
           <svg
             width="16"
@@ -142,23 +142,24 @@
           fill="#D9D9D9"
         />
       </svg>
+      
     </div>
 
     <!-- profile section -->
 
     <section>
-      <div class="flex flex-col lg:flex-row gap-4 px-6 lg:w-1/2 mx-auto mt-10">
+      <div class="flex flex-col lg:flex-row gap-4 px-6 container mx-auto  mt-10 justify-center">
         <div
-          class="hidden lg:flex items-center lg:basis-1/2 2xl:basis-1/3 2xl:pt-12"
+          class="hidden lg:flex items-center"
         >
           <img
-            class="rounded-full"
+            class="rounded-full w-44"
             src="../../images/pro pic.svg"
             id="preview_image"
           />
         </div>
 
-        <div class="flex flex-col justify-center gap-2">
+        <div class="flex flex-col gap-2">
           <div class="text-lg font-normal mb-2 lg:mb-4">
             Fill up the application and Submit
           </div>
@@ -199,7 +200,7 @@
     </section>
 
     <!-- form -->
-    <section class="px-6 lg:w-1/2 mt-10 mx-auto">
+    <section class="px-6 container mt-10 mx-auto">
       <form method="post">
         <div class="flex flex-col gap-2">
           <label class="text-lg"
@@ -372,37 +373,37 @@
       </form>
     </section>
 
-    <!-- footer starts -->
+<!-- footer starts -->
 
-    <footer class="bg-black mx-auto mt-auto w-full">
-      <div
-        class="px-6 lg:px-72 2xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white"
-      >
-        <div class="text-base">
-          <div class="font-semibold">For Other Inquires -</div>
-          <div>
-            <a href="mailto:info@dsinnovators.com"
-              ><i>info@dsinnovators.com</i></a
-            >
-          </div>
-          <div>
-            <a href="https://www.dsinnovators.com/" target="_blank"
-              ><i>www.dsinnovators.com</i></a
-            >
-          </div>
-        </div>
-
-        <div class="flex flex-col lg:items-end text-base">
-          <div class="font-semibold">Powered By -</div>
-          <div>
-            <i>Shrimp Solutions</i>
-          </div>
-          <div>
-            <i>www.shrimpsolutions.com</i>
-          </div>
-        </div>
+<footer class="bg-black mx-auto mt-auto w-full">
+  <div
+    class="px-6 mx-auto container lg:px-28 py-5 flex gap-4 justify-around text-white"
+  >
+    <div class="text-base">
+      <div class="font-semibold">For Other Inquires -</div>
+      <div>
+        <a href="mailto:info@dsinnovators.com"
+          ><i>info@dsinnovators.com</i></a
+        >
       </div>
-    </footer>
-    <!-- footer Ends -->
+      <div>
+        <a href="https://www.dsinnovators.com/" target="_blank"
+          ><i>www.dsinnovators.com</i></a
+        >
+      </div>
+    </div>
+
+    <div class="flex flex-col items-end text-base">
+      <div class="font-semibold">Powered By -</div>
+      <div>
+        <i>Shrimp Solutions</i>
+      </div>
+      <div>
+        <i>www.shrimpsolutions.com</i>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer Ends -->
   </body>
 </html>

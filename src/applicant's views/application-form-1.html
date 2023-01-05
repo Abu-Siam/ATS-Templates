@@ -20,7 +20,9 @@
       </div>
     </header>
 
-    <main class="px-6 mb-8 lg:px-60 2xl:px-[500px] lg:mb-16">
+      <!-- ********remove:lg:px-60 2xl:px-[500px]
+    add: container mx-auto in main tag******** -->
+    <main class="px-6 mb-8 container mx-auto lg:mb-16">
       <div class="flex flex-col items-center text-center gap-3 mt-10 lg:px-20">
         <a href="#"
           ><div class="text-blue-500 flex items-center justify-center">
@@ -82,37 +84,37 @@
       </section>
     </main>
 
-    <!-- footer starts -->
+<!-- footer starts -->
 
-    <footer class="bg-black mx-auto mt-auto w-full">
-      <div
-        class="px-6 lg:px-72 2xl:px-[25rem] py-5 flex flex-col lg:flex-row gap-8 justify-between text-white"
-      >
-        <div class="text-base">
-          <div class="font-semibold">For Other Inquires -</div>
-          <div>
-            <a href="mailto:info@dsinnovators.com"
-              ><i>info@dsinnovators.com</i></a
-            >
-          </div>
-          <div>
-            <a href="https://www.dsinnovators.com/" target="_blank"
-              ><i>www.dsinnovators.com</i></a
-            >
-          </div>
-        </div>
-
-        <div class="flex flex-col lg:items-end text-base">
-          <div class="font-semibold">Powered By -</div>
-          <div>
-            <i>Shrimp Solutions</i>
-          </div>
-          <div>
-            <i>www.shrimpsolutions.com</i>
-          </div>
-        </div>
+<footer class="bg-black mx-auto mt-auto w-full">
+  <div
+    class="px-6 mx-auto container lg:px-28 py-5 flex gap-4 justify-around text-white"
+  >
+    <div class="text-base">
+      <div class="font-semibold">For Other Inquires -</div>
+      <div>
+        <a href="mailto:info@dsinnovators.com"
+          ><i>info@dsinnovators.com</i></a
+        >
       </div>
-    </footer>
-    <!-- footer Ends -->
+      <div>
+        <a href="https://www.dsinnovators.com/" target="_blank"
+          ><i>www.dsinnovators.com</i></a
+        >
+      </div>
+    </div>
+
+    <div class="flex flex-col items-end text-base">
+      <div class="font-semibold">Powered By -</div>
+      <div>
+        <i>Shrimp Solutions</i>
+      </div>
+      <div>
+        <i>www.shrimpsolutions.com</i>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer Ends -->
   </body>
 </html>
