@@ -975,6 +975,16 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1.25rem;
 }
 
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -1237,6 +1247,10 @@ input[type="file"]::file-selector-button{
   width: 5rem;
 }
 
+.w-12{
+  width: 3rem;
+}
+
 .grow{
   flex-grow: 1;
 }
@@ -1386,10 +1400,6 @@ input[type="file"]::file-selector-button{
 
 .gap-6{
   gap: 1.5rem;
-}
-
-.gap-16{
-  gap: 4rem;
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
@@ -1919,6 +1929,45 @@ html {
 }
 
 @media (min-width: 768px){
+  .md\:container{
+    width: 100%;
+  }
+
+  @media (min-width: 640px){
+    .md\:container{
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px){
+    .md\:container{
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .md\:container{
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px){
+    .md\:container{
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px){
+    .md\:container{
+      max-width: 1536px;
+    }
+  }
+
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1933,10 +1982,6 @@ html {
 
   .md\:justify-end{
     justify-content: flex-end;
-  }
-
-  .md\:gap-8{
-    gap: 2rem;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -2000,6 +2045,11 @@ html {
     margin-right: 10rem;
   }
 
+  .lg\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lg\:mx-24{
     margin-left: 6rem;
     margin-right: 6rem;
@@ -2020,11 +2070,6 @@ html {
     margin-bottom: 8rem;
   }
 
-  .lg\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
@@ -2035,6 +2080,10 @@ html {
 
   .lg\:ml-44{
     margin-left: 11rem;
+  }
+
+  .lg\:mt-auto{
+    margin-top: auto;
   }
 
   .lg\:ml-12{
@@ -2051,10 +2100,6 @@ html {
 
   .lg\:mb-0{
     margin-bottom: 0px;
-  }
-
-  .lg\:mt-auto{
-    margin-top: auto;
   }
 
   .lg\:block{
@@ -2085,6 +2130,10 @@ html {
     width: 25%;
   }
 
+  .lg\:w-3\/4{
+    width: 75%;
+  }
+
   .lg\:basis-1\/2{
     flex-basis: 50%;
   }
@@ -2113,6 +2162,10 @@ html {
     flex-wrap: nowrap;
   }
 
+  .lg\:items-start{
+    align-items: flex-start;
+  }
+
   .lg\:items-end{
     align-items: flex-end;
   }
@@ -2129,28 +2182,12 @@ html {
     justify-content: flex-end;
   }
 
-  .lg\:justify-around{
-    justify-content: space-around;
-  }
-
-  .lg\:justify-evenly{
-    justify-content: space-evenly;
-  }
-
   .lg\:gap-0{
     gap: 0px;
   }
 
   .lg\:gap-5{
     gap: 1.25rem;
-  }
-
-  .lg\:gap-16{
-    gap: 4rem;
-  }
-
-  .lg\:gap-12{
-    gap: 3rem;
   }
 
   .lg\:space-x-16 > :not([hidden]) ~ :not([hidden]){
@@ -2184,11 +2221,6 @@ html {
     padding-right: 11rem;
   }
 
-  .lg\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -2202,6 +2234,11 @@ html {
   .lg\:px-72{
     padding-left: 18rem;
     padding-right: 18rem;
+  }
+
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .lg\:text-start{
@@ -2238,10 +2275,6 @@ html {
 
   .xl\:items-center{
     align-items: center;
-  }
-
-  .xl\:gap-16{
-    gap: 4rem;
   }
 
   .xl\:px-52{
