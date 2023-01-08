@@ -8,19 +8,22 @@
   </head>
   <body class=" bg-gray-300 z-10">
     <!-- nav section -->
+    <div class="bg-white z-20">
     <div
-      class="flex justify-between lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:px-20 py-5 bg-white z-20"
+      class="flex justify-between  lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:container lg:mx-auto py-5  "
     >
       <div
-        class="flex flex-col lg:flex-row items-center gap-2 lg:gap-0 lg:space-x-16"
+        class="flex flex-col md:flex-row items-center justify-evenly gap-2 lg:gap-0   "
       >
       <a href="#"><div><img src="../../images/Shrimp.svg"/></div></a>
-        <button
+        <a
           class="bg-gray-700 text-white py-2 md:py-3 px-6 hover:bg-gray-900 rounded-md"
         >
           All jobs
-        </button>
+    </a>
         <a class="text-blue-500 cursor-pointer hover:underline"> Candidates</a>
+
+        
       </div>
 
       <div
@@ -58,9 +61,10 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!-- section 1 -->
-    <main class="bg-gray-300 container mx-auto lg:px-8">
+    <main class="bg-gray-300 lg:container lg:mx-auto px-4">
 
       <div class="flex justify-between items-center">
       <div>
@@ -278,7 +282,7 @@
                   <div
                     class="bg-green-200 rounded-md py-2 px-1 cursor-pointer hover:bg-gray-300"
                   >
-                    <div class="flex justify-between items-center pr-2">
+                    <div class="flex justify-between gap-4 items-center pr-2">
                       <div class="flex items-center gap-4">
                         <div class="flex gap-2">
                           <input
@@ -302,6 +306,7 @@
                           viewBox="0 0 20 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
+                          class="hidden lg:block"
                         >
                           <path
                             d="M8.00003 8H3.2361C1.74934 8 0.782345 9.56463 1.44725 10.8944L4.94725 17.8944C5.28603 18.572 5.97856 19 6.7361 19H10.7538C10.9173 19 11.0803 18.9799 11.2389 18.9403L15 18M8.00003 8V3C8.00003 1.89543 8.89546 1 10 1H10.0955C10.5951 1 11 1.40497 11 1.90453C11 2.61883 11.2115 3.31715 11.6077 3.91149L15 9V18M8.00003 8H10M15 18H17C18.1046 18 19 17.1046 19 16V10C19 8.89543 18.1046 8 17 8H14.5"
@@ -409,7 +414,7 @@
                   <div
                     class="rounded-md py-2 px-1 cursor-pointer hover:bg-gray-300"
                   >
-                    <div class="flex justify-between items-center pr-2">
+                    <div class="flex justify-between items-center gap-4 pr-2">
                       <div class="flex items-center gap-4">
                         <div class="flex gap-2">
                           <input
@@ -428,6 +433,7 @@
                       </div>
                       <div class="cursor-pointer">
                         <svg
+                        class="hidden lg:flex"
                           width="25"
                           height="25"
                           viewBox="0 0 20 20"
@@ -467,6 +473,7 @@
                       </div>
                       <div class="cursor-pointer">
                         <svg
+                        class="hidden lg:flex"
                           width="25"
                           height="25"
                           viewBox="0 0 20 20"
@@ -591,7 +598,7 @@
 
         <!-- right top section -->
         <div class="col-span-2 bg-white rounded-md ">
-          <div class="flex flex-row justify-between py-2 px-4">
+          <div class="flex flex-col lg:flex-row justify-between py-2 px-4">
             <div class="text-xl font-bold flex gap-2 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -611,7 +618,7 @@
               0123 456 7890
             </div>
 
-            <div class="flex flex-wrap gap-2 items-end justify-end">
+            <div class="flex flex-wrap gap-2 items-end justify-around mt-2 lg:mt-auto lg:justify-end">
               <button
                 class="relative px-2 py-2 border border-black hover:bg-blue-600 hover:text-white rounded-md flex gap-2 items-center"
               >
@@ -656,7 +663,7 @@
         <div class="row-span-2 col-span-2">
           <div class="flex flex-col">
             <div class="flex justify-between bg-white px-4 py-4 rounded-t-md">
-              <div class="flex gap-4 items-start">
+              <div class="flex flex-col lg:flex-row  gap-4 items-start">
                 <img src="../../images/applicants_pic.jpg" />
 
                 <div>
