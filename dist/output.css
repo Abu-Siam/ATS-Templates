@@ -902,6 +902,22 @@ input[type="file"]::file-selector-button{
   grid-column: span 2 / span 2;
 }
 
+.col-start-1{
+  grid-column-start: 1;
+}
+
+.col-end-4{
+  grid-column-end: 4;
+}
+
+.col-end-3{
+  grid-column-end: 3;
+}
+
+.col-end-5{
+  grid-column-end: 5;
+}
+
 .row-span-3{
   grid-row: span 3 / span 3;
 }
@@ -935,9 +951,9 @@ input[type="file"]::file-selector-button{
   margin-bottom: 5rem;
 }
 
-.mx-20{
-  margin-left: 5rem;
-  margin-right: 5rem;
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .my-4{
@@ -948,6 +964,11 @@ input[type="file"]::file-selector-button{
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-2{
@@ -975,14 +996,14 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1.25rem;
 }
 
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.mx-12{
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .mb-8{
@@ -1053,16 +1074,12 @@ input[type="file"]::file-selector-button{
   margin-bottom: 3rem;
 }
 
-.mr-40{
-  margin-right: 10rem;
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
 }
 
 .mb-32{
@@ -1107,6 +1124,14 @@ input[type="file"]::file-selector-button{
 
 .ml-28{
   margin-left: 7rem;
+}
+
+.mr-40{
+  margin-right: 10rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
 }
 
 .block{
@@ -1231,10 +1256,6 @@ input[type="file"]::file-selector-button{
   width: 14rem;
 }
 
-.w-1\/4{
-  width: 25%;
-}
-
 .w-3{
   width: 0.75rem;
 }
@@ -1247,8 +1268,13 @@ input[type="file"]::file-selector-button{
   width: 5rem;
 }
 
-.w-12{
-  width: 3rem;
+.w-1\/4{
+  width: 25%;
+}
+
+.max-w-fit{
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .grow{
@@ -1263,16 +1289,16 @@ input[type="file"]::file-selector-button{
   flex-basis: 50%;
 }
 
-.basis-1\/6{
-  flex-basis: 16.666667%;
-}
-
 .basis-3\/4{
   flex-basis: 75%;
 }
 
 .basis-full{
   flex-basis: 100%;
+}
+
+.basis-1\/6{
+  flex-basis: 16.666667%;
 }
 
 @keyframes ping{
@@ -1322,6 +1348,14 @@ input[type="file"]::file-selector-button{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-rows-1{
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
@@ -1342,6 +1376,18 @@ input[type="file"]::file-selector-button{
   flex-wrap: wrap;
 }
 
+.place-content-center{
+  place-content: center;
+}
+
+.place-items-start{
+  place-items: start;
+}
+
+.place-items-center{
+  place-items: center;
+}
+
 .items-start{
   align-items: flex-start;
 }
@@ -1352,6 +1398,10 @@ input[type="file"]::file-selector-button{
 
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-end{
@@ -1414,8 +1464,22 @@ input[type="file"]::file-selector-button{
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.justify-self-start{
+  justify-self: start;
+}
+
+.justify-self-end{
+  justify-self: end;
+}
+
 .overflow-y-auto{
   overflow-y: auto;
+}
+
+.truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .rounded-md{
@@ -1574,6 +1638,16 @@ input[type="file"]::file-selector-button{
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-yellow-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
 .fill-white{
   fill: #fff;
 }
@@ -1635,24 +1709,19 @@ input[type="file"]::file-selector-button{
   padding-right: 0.25rem;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .px-10{
@@ -1663,6 +1732,11 @@ input[type="file"]::file-selector-button{
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pl-4{
@@ -1984,6 +2058,10 @@ html {
     justify-content: flex-end;
   }
 
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -2035,16 +2113,6 @@ html {
     grid-column: span 2 / span 2;
   }
 
-  .lg\:mx-44{
-    margin-left: 11rem;
-    margin-right: 11rem;
-  }
-
-  .lg\:mx-40{
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
   .lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -2070,16 +2138,27 @@ html {
     margin-bottom: 8rem;
   }
 
+  .lg\:mx-44{
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+
+  .lg\:mx-40{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .lg\:mx-12{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
 
   .lg\:mb-4{
     margin-bottom: 1rem;
-  }
-
-  .lg\:ml-44{
-    margin-left: 11rem;
   }
 
   .lg\:mt-auto{
@@ -2100,6 +2179,10 @@ html {
 
   .lg\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .lg\:ml-44{
+    margin-left: 11rem;
   }
 
   .lg\:block{
@@ -2130,20 +2213,16 @@ html {
     width: 25%;
   }
 
-  .lg\:w-3\/4{
-    width: 75%;
-  }
-
   .lg\:basis-1\/2{
     flex-basis: 50%;
   }
 
-  .lg\:basis-auto{
-    flex-basis: auto;
-  }
-
   .lg\:basis-1\/4{
     flex-basis: 25%;
+  }
+
+  .lg\:basis-auto{
+    flex-basis: auto;
   }
 
   .lg\:grid-cols-2{
@@ -2154,6 +2233,10 @@ html {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -2162,8 +2245,12 @@ html {
     flex-wrap: nowrap;
   }
 
-  .lg\:items-start{
-    align-items: flex-start;
+  .lg\:place-content-center{
+    place-content: center;
+  }
+
+  .lg\:place-items-center{
+    place-items: center;
   }
 
   .lg\:items-end{
@@ -2196,6 +2283,10 @@ html {
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:justify-self-auto{
+    justify-self: auto;
+  }
+
   .lg\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
@@ -2216,14 +2307,14 @@ html {
     padding-bottom: 2.5rem;
   }
 
-  .lg\:px-44{
-    padding-left: 11rem;
-    padding-right: 11rem;
-  }
-
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-44{
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 
   .lg\:px-60{
