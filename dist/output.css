@@ -2329,6 +2329,11 @@ html {
 }
 
 @media (min-width: 1280px){
+  .xl\:mx-44{
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+
   .xl\:mb-0{
     margin-bottom: 0px;
   }
@@ -2352,6 +2357,11 @@ html {
   .xl\:px-52{
     padding-left: 13rem;
     padding-right: 13rem;
+  }
+
+  .xl\:px-44{
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 }
 
