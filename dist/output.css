@@ -423,6 +423,8 @@ video {
 
 html{
   height: 100%;
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
 body{
@@ -680,7 +682,7 @@ SELECT {
   cursor: pointer;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.75rem;
@@ -694,7 +696,7 @@ SELECT {
 
 .btn-blue-rounded:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 /* header styles */
@@ -790,7 +792,7 @@ input[type="file"]::file-selector-button{
   padding: 0px;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 /* Star sign in form */
@@ -927,6 +929,11 @@ input[type="file"]::file-selector-button{
   margin-right: auto;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -955,11 +962,6 @@ input[type="file"]::file-selector-button{
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .my-6{
@@ -1036,10 +1038,6 @@ input[type="file"]::file-selector-button{
 
 .mb-5{
   margin-bottom: 1.25rem;
-}
-
-.mb-9{
-  margin-bottom: 2.25rem;
 }
 
 .mt-3{
@@ -1124,6 +1122,10 @@ input[type="file"]::file-selector-button{
 
 .mr-40{
   margin-right: 10rem;
+}
+
+.mb-9{
+  margin-bottom: 2.25rem;
 }
 
 .ml-28{
@@ -1565,14 +1567,19 @@ input[type="file"]::file-selector-button{
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-blue-600{
+.bg-blue-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .bg-gray-300{
@@ -1618,11 +1625,6 @@ input[type="file"]::file-selector-button{
 .bg-yellow-100{
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-500{
@@ -1839,14 +1841,14 @@ input[type="file"]::file-selector-button{
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
-.text-blue-600{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-black{
@@ -1903,24 +1905,19 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+.hover\:bg-blue-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-blue-800:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-blue-700:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-900:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-black:hover{
@@ -1951,6 +1948,11 @@ html {
 .hover\:bg-red-200:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .hover\:text-blue-600:hover{
@@ -2143,16 +2145,6 @@ html {
   .lg\:mx-40{
     margin-left: 10rem;
     margin-right: 10rem;
-  }
-
-  .lg\:my-16{
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-
-  .lg\:my-8{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
 
   .lg\:mb-16{
