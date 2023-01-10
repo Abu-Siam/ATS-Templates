@@ -1834,6 +1834,11 @@ input[type="file"]::file-selector-button{
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-slate-700{
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
 .text-blue-600{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -1862,31 +1867,6 @@ input[type="file"]::file-selector-button{
 .text-\[\#555555\]{
   --tw-text-opacity: 1;
   color: rgb(85 85 85 / var(--tw-text-opacity));
-}
-
-.text-slate-800{
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
-}
-
-.text-slate-900{
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
-}
-
-.text-slate-700{
-  --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
-}
-
-.text-gray-800{
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
-.text-gray-900{
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .shadow-md{
@@ -2163,6 +2143,16 @@ html {
   .lg\:mx-40{
     margin-left: 10rem;
     margin-right: 10rem;
+  }
+
+  .lg\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .lg\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .lg\:mb-16{
