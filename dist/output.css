@@ -912,10 +912,6 @@ input[type="file"]::file-selector-button{
   z-index: 20;
 }
 
-.z-50{
-  z-index: 50;
-}
-
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -963,6 +959,11 @@ input[type="file"]::file-selector-button{
   margin-right: 2rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -996,11 +997,6 @@ input[type="file"]::file-selector-button{
 .mx-12{
   margin-left: 3rem;
   margin-right: 3rem;
-}
-
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .mx-20{
@@ -1445,6 +1441,10 @@ input[type="file"]::file-selector-button{
   gap: 1.5rem;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1712,6 +1712,11 @@ input[type="file"]::file-selector-button{
   padding-right: 0.5rem;
 }
 
+.py-\[6px\]{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1732,17 +1737,12 @@ input[type="file"]::file-selector-button{
   padding-right: 5rem;
 }
 
-.py-\[6px\]{
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
 .pl-4{
   padding-left: 1rem;
 }
 
-.pr-4{
-  padding-right: 1rem;
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .pt-5{
@@ -1765,8 +1765,8 @@ input[type="file"]::file-selector-button{
   padding-bottom: 2.5rem;
 }
 
-.pb-5{
-  padding-bottom: 1.25rem;
+.pr-4{
+  padding-right: 1rem;
 }
 
 .text-center{
@@ -1818,10 +1818,6 @@ input[type="file"]::file-selector-button{
 
 .font-bold{
   font-weight: 700;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .italic{
@@ -1972,9 +1968,9 @@ html {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
-.hover\:text-blue-600:hover{
+.hover\:text-blue-500:hover{
   --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
@@ -1987,9 +1983,9 @@ html {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.hover\:text-blue-500:hover{
+.hover\:text-blue-600:hover{
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
