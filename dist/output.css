@@ -426,7 +426,7 @@ video {
 html{
   height: 100%;
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 body{
@@ -1867,14 +1867,14 @@ input[type="file"]::file-selector-button{
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-blue-600{
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .text-gray-600{
@@ -1974,6 +1974,11 @@ html {
 .hover\:bg-blue-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-500:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .hover\:text-blue-500:hover{
@@ -2364,6 +2369,11 @@ html {
 }
 
 @media (min-width: 1280px){
+  .xl\:mx-44{
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+
   .xl\:mb-0{
     margin-bottom: 0px;
   }
