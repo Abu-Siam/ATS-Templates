@@ -317,7 +317,7 @@
               <input
                 type="submit"
                 value="Apply Filter"
-                class="px-6 py-2 border border-black bg-white rounded-md hover:bg-blue-600 hover:text-white grow cursor-pointer"
+                class="px-6 py-2 border border-black bg-white rounded-md hover:bg-blue-500 hover:text-white grow cursor-pointer"
               />
             </div>
           </form>
@@ -681,15 +681,15 @@
                 />
               </svg>
 
-              <a href="tel:0123456789"> 0123 456 7890</a>
+              <a href="tel:0123456789"> 0123 456 789</a>
             </div>
 
             <div
               class="flex flex-wrap gap-2 items-end justify-around mt-2 lg:mt-auto lg:justify-end"
             >
               <button
-                onclick="toggle_event_form()"
-                class="relative px-6 py-2 border border-black hover:bg-blue-600 hover:text-white rounded-md flex gap-2 items-center"
+                onclick="toggle_event_form_open()"
+                class="relative px-6 py-2 border border-black hover:bg-blue-500 hover:text-white rounded-md flex gap-2 items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -735,30 +735,60 @@
             </div>
 
             <!-- applicant's name -->
-            <div>
-              For
-              <div class="flex items-center gap-2 my-4">
-                <img
-                  src="../../images/applicants_pic.jpg"
-                  class="rounded-full w-20"
-                />
-                <div>
-                  <span class="font-bold text-black">Mr. Pinkman</span>
-                 <a href="tel:0123456789"> <p>0123456789</p> </a>
+            <div class="flex justify-end my-8">
+              <!-- <div>
+                For
+                <div class="flex items-center gap-2 my-4">
+                  <img
+                    src="../../images/applicants_pic.jpg"
+                    class="rounded-full w-20"
+                  />
+                  <div>
+                    <span class="font-bold text-black">Nasrin Sultana</span>
+                    <a href="tel:0123456789"> <p>0123456789</p> </a>
+                  </div>
                 </div>
+              </div> -->
+              <!-- cross button for create event form -->
+              <div onclick="toggle_event_form_close()" class="cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
               </div>
             </div>
 
             <!--Create event form -->
             <form>
-              <div class="flex flex-col gap-2">
+              <!-- <div class="flex flex-col gap-2">
                 <label class="required-star">Enter Title </label>
                 <input class="form-input-rounded" />
-              </div>
+              </div> -->
 
               <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
+
                 <div class="flex flex-col gap-2">
-                  <label>Scheduled at </label>
+                  <label class="required-star">Event Type </label>
+                  <select class="form-input-rounded cursor-pointer">
+                    <option>On premises</option>
+                    <option>Barishal</option>
+                    <option>khulna</option>
+                    <option>sylhet</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                  <label class="required-star">Scheduled at </label>
                   <input
                     type="date"
                     class="form-input-rounded cursor-pointer"
@@ -775,20 +805,11 @@
                   </select>
                 </div>
 
-                <div class="flex flex-col gap-2">
-                  <label class="required-star">Location </label>
-                  <select class="form-input-rounded cursor-pointer">
-                
-                    <option>Dhaka</option>
-                    <option>Barishal</option>
-                    <option>khulna</option>
-                    <option>sylhet</option>
-                  </select>
-                </div>
+
               </div>
 
               <div class="mt-4 flex flex-col gap-2">
-                <label class="required-star"> Participants from office </label>
+                <label> Participants from office </label>
                 <div class="flex gap-4">
                   <div class="flex gap-2">
                     <input type="checkbox" /><label>Mr abc</label>
@@ -809,7 +830,7 @@
               </div>
 
               <div class="mt-4 flex flex-col gap-2">
-                <label class="required-star"> Description</label>
+                <label> Description</label>
                 <textarea
                   class="border border-gray-300 rounded-md h-28 px-2 py-2 my-1 w-full"
                 ></textarea>
@@ -817,7 +838,12 @@
 
               <div class="flex items-center justify-between mt-8">
                 <div>
-                  <button   onclick="toggle_event_form()" class="text-blue-500 hover:underline">Cancel</button>
+                  <button
+                    onclick="toggle_event_form()"
+                    class="px-6 py-2 border border-gray-500 rounded-md hover:border-blue-500 hover:text-blue-500"
+                  >
+                    Cancel
+                  </button>
                 </div>
 
                 <div
@@ -852,7 +878,7 @@
 
                   <div class="flex flex-wrap gap-4 items-center pt-2">
                     <select
-                      class="px-2 py-2 rounded-md bg-white text-blue-600 font-bold cursor-pointer"
+                      class="px-2 py-2 rounded-md bg-white text-blue-500 font-bold cursor-pointer"
                     >
                       <option>+ Add Tags</option>
                       <option>1</option>
@@ -902,14 +928,14 @@
               <ul class="list-disc">
                 <li>
                   <b>Also in -</b>
-                  <span class="text-blue-600 font-bold hover:underline"
+                  <span class="text-blue-500 font-bold hover:underline"
                     ><a href="#">Design Verification Engineer</a></span
                   >
                   (applied)
                 </li>
                 <li>
                   <b>Also in -</b>
-                  <span class="text-blue-600 font-bold hover:underline"
+                  <span class="text-blue-500 font-bold hover:underline"
                     ><a href="#">Senior Design Verification Engineer</a></span
                   >
                   (2nd Interview)
@@ -924,7 +950,7 @@
               <div class="flex justify-between">
                 <div class="text-2xl py-2 font-semibold">Timeline</div>
                 <a
-                  class="px-6 py-2 border border-black rounded-md flex gap-2 items-center hover:bg-blue-600 hover:text-white"
+                  class="px-6 py-2 border border-black rounded-md flex gap-2 items-center hover:bg-blue-500 hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -989,8 +1015,9 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
-                      /></svg>
-                    </a>
+                      />
+                    </svg>
+                  </a>
 
                   <a href="#">
                     <svg
@@ -1106,11 +1133,21 @@
 
     <!-- Show/hide event create form js -->
     <script>
-      function toggle_event_form() {
+      function toggle_event_form_close() {
         var x = document.getElementById("toggle_event");
 
         if (x.style.display === "block") {
           x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      function toggle_event_form_open() {
+        var x = document.getElementById("toggle_event");
+
+        if (x.style.display === "block") {
+          x.style.display = "block";
         } else {
           x.style.display = "block";
         }
