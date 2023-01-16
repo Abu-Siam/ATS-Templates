@@ -427,6 +427,7 @@ html{
   height: 100%;
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+  scroll-behavior: smooth;
 }
 
 body{
@@ -1565,6 +1566,11 @@ input[type="file"]::file-selector-button{
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-gray-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
 .border-green-600{
   --tw-border-opacity: 1;
   border-color: rgb(22 163 74 / var(--tw-border-opacity));
@@ -1924,6 +1930,21 @@ input[type="file"]::file-selector-button{
 
 html {
   font-family: "Lato", sans-serif;
+}
+
+.hover\:rounded-l-xl:hover{
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.hover\:rounded-r-xl:hover{
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+.hover\:border-blue-500:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(59 130 246 / var(--tw-border-opacity));
 }
 
 .hover\:bg-blue-600:hover{

@@ -18,7 +18,8 @@
   /* for sticking footer to end */
   html {
     @apply h-full;
-    @apply text-gray-700
+    @apply text-gray-700;
+    @apply scroll-smooth;
   }
 
   body {
