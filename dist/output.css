@@ -1057,6 +1057,10 @@ input[type="file"]::file-selector-button{
   margin-left: 2rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
@@ -1097,10 +1101,6 @@ input[type="file"]::file-selector-button{
   margin-left: 1rem;
 }
 
-.mt-1{
-  margin-top: 0.25rem;
-}
-
 .ml-5{
   margin-left: 1.25rem;
 }
@@ -1137,6 +1137,18 @@ input[type="file"]::file-selector-button{
   margin-left: 7rem;
 }
 
+.ml-44{
+  margin-left: 11rem;
+}
+
+.ml-20{
+  margin-left: 5rem;
+}
+
+.ml-16{
+  margin-left: 4rem;
+}
+
 .block{
   display: block;
 }
@@ -1155,6 +1167,10 @@ input[type="file"]::file-selector-button{
 
 .hidden{
   display: none;
+}
+
+.h-16{
+  height: 4rem;
 }
 
 .h-24{
@@ -1207,14 +1223,6 @@ input[type="file"]::file-selector-button{
   height: 8rem;
 }
 
-.h-16{
-  height: 4rem;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
 .max-h-48{
   max-height: 12rem;
 }
@@ -1227,12 +1235,16 @@ input[type="file"]::file-selector-button{
   width: 20rem;
 }
 
-.w-36{
-  width: 9rem;
+.w-16{
+  width: 4rem;
 }
 
 .w-4\/5{
   width: 80%;
+}
+
+.w-36{
+  width: 9rem;
 }
 
 .w-32{
@@ -1245,10 +1257,6 @@ input[type="file"]::file-selector-button{
 
 .w-8{
   width: 2rem;
-}
-
-.w-16{
-  width: 4rem;
 }
 
 .w-24{
@@ -1289,10 +1297,6 @@ input[type="file"]::file-selector-button{
 
 .w-1\/4{
   width: 25%;
-}
-
-.w-10{
-  width: 2.5rem;
 }
 
 .flex-shrink-0{
@@ -2265,6 +2269,10 @@ html {
 
   .lg\:ml-12{
     margin-left: 3rem;
+  }
+
+  .lg\:ml-16{
+    margin-left: 4rem;
   }
 
   .lg\:block{
