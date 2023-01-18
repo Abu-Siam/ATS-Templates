@@ -2211,11 +2211,6 @@ html {
     margin-bottom: 1.5rem;
   }
 
-  .lg\:my-10{
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-  }
-
   .lg\:my-32{
     margin-top: 8rem;
     margin-bottom: 8rem;
@@ -2234,6 +2229,11 @@ html {
   .lg\:mx-40{
     margin-left: 10rem;
     margin-right: 10rem;
+  }
+
+  .lg\:my-10{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .lg\:mb-16{
@@ -2264,16 +2264,16 @@ html {
     margin-bottom: 0px;
   }
 
-  .lg\:mt-10{
-    margin-top: 2.5rem;
-  }
-
   .lg\:ml-44{
     margin-left: 11rem;
   }
 
   .lg\:ml-12{
     margin-left: 3rem;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
   }
 
   .lg\:block{
