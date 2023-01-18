@@ -31,7 +31,7 @@
     <!-- nav section -->
     <div class=" bg-white z-20">
       <div
-        class="flex flex-col lg:flex-row items-center gap-4 lg:gap-12 px-4 py-5 container mx-auto"
+        class="flex flex-col justify-center lg:justify-start md:flex-row items-center gap-4 lg:gap-16 px-4 py-5 container mx-auto"
       >
       <a href="#"><div><img src="../../images/Shrimp.svg"/></div></a>
   
@@ -182,34 +182,41 @@
               Fill up the following to Sign up -
             </div>
             <form class="flex flex-col px-6 mt-8 ">
+              <div class="flex flex-col gap-2">
               <label class="required-star">Company Name </label>
               <input
                 type="text"
-                class="border border-gray-300 rounded-md py-2 px-2 my-1"
+                class="form-input-rounded"
               />
-
-              <label class="mt-8 required-star">Unique Account ID </label>
+              </div>
+              <div class="flex flex-col gap-2">
+              <label class="mt-4 required-star">Unique Account ID </label>
               <input
                 type="text"
-                class="border border-gray-300 rounded-md py-2 px-2 my-1"
+                class="form-input-rounded"
               />
+              </div>
 
-              <label class="mt-8">Link of Company Website</label>
+              <div class="flex flex-col gap-2">
+              <label class="mt-4">Link of Company Website</label>
               <input
                 type="text"
-                class="border border-gray-300 rounded-md py-2 px-2 my-1"
+                class="form-input-rounded"
               />
+              </div>
 
-              <label class="mt-8 required-star"
+              <div class="flex flex-col gap-2">
+              <label class="mt-4 required-star"
                 >Account Owner’s Email address</label
               >
               <input
                 type="text"
-                class="border border-gray-300 rounded-md py-2 px-2 my-1"
+                class="form-input-rounded"
               />
+              </div>
 
-              <label class="mt-8 required-star">Time Zone </label>
-              <select class="border border-gray-300 rounded-md py-2 px-2 my-1">
+              <label class="mt-4 required-star">Time Zone </label>
+              <select class="border border-gray-400 rounded-md py-2 px-2 my-1">
                 <option>UTC</option>
                 <option>1</option>
                 <option>2</option>

@@ -7,22 +7,22 @@
     <title>Sign In</title>
   </head>
   <body class="bg-gray-300 z-10">
-
-
-
     <!-- nav section -->
-    <div class=" bg-white z-20">
+    <div class="bg-white z-20">
       <div
         class="flex flex-col justify-center lg:justify-start md:flex-row items-center gap-4 lg:gap-16 px-4 py-5 container mx-auto"
       >
-      <a href="#"><div><img src="../../images/Shrimp.svg"/></div></a>
-  
+        <a href="#"
+          ><div><img src="../../images/Shrimp.svg" /></div
+        ></a>
+
         <div class="flex items-center gap-4 lg:gap-12">
-          <a href="#"
+          <a
+            href="#"
             class="bg-gray-700 text-white py-2 px-6 hover:bg-gray-900 rounded-md"
           >
             Sign In
-        </a>
+          </a>
           <a class="text-blue-500 cursor-pointer hover:underline">
             About shrimp</a
           >
@@ -30,14 +30,14 @@
       </div>
     </div>
 
-  
-
     <main>
       <div
         class="flex flex-col lg:grid lg:grid-cols-2 lg:px-20 2xl:px-52 mx-auto lg:py-10"
       >
         <div class="px-4 py-6 lg:mx-10">
-          <div class="flex items-center justify-center lg:justify-start gap-2 lg:my-6">
+          <div
+            class="flex items-center justify-center lg:justify-start gap-2 lg:my-6"
+          >
             <svg
               width="39"
               height="38"
@@ -53,13 +53,15 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <span class="text-center lg:text-start text-3xl font-medium text-black flex gap-4">
+            <span
+              class="text-center lg:text-start text-3xl font-medium text-black flex gap-4"
+            >
               Sign up with
               <img src="../../images/Shrimp.svg" class="cursor-pointer"
             /></span>
           </div>
 
-          <div class=" text-center lg:text-start text-lg mt-6 lg:mt-0">
+          <div class="text-center lg:text-start text-lg mt-6 lg:mt-0">
             Shrimp is a HR application designed to streamline the hiring process
             for businesses. It offers features such as resume parsing, applicant
             tracking, and customizable job postings.
@@ -159,26 +161,19 @@
         </div>
 
         <div>
-          <div class="bg-white rounded-xl px-4 py-6 lg:px-8 lg:py-12 lg:mt-12 mx-10 mb-5 lg:mb-0">
-            <div class="text-start px-6 text-2xl font-bold">
-              Sign In
-            </div>
-            <form class="flex flex-col px-6 mt-8 ">
-              <label class="required-star"> Name </label>
-              <input
-                type="text"
-                class="border border-gray-300 rounded-md py-2 px-2 my-1"
-              />
-
-              <label class="mt-8 required-star">Password </label>
-              <input
-                type="text"
-                class="border border-gray-300 rounded-md py-2 px-2 my-1"
-              />
-
-     
-
-         
+          <div
+            class="bg-white rounded-xl px-4 py-6 lg:px-8 lg:py-12 lg:mt-12 mx-10 mb-5 lg:mb-0"
+          >
+            <div class="text-start px-6 text-2xl font-bold">Sign In</div>
+            <form class="flex flex-col px-6 mt-4">
+              <div class="flex flex-col gap-2">
+                <label class="required-star"> Name </label>
+                <input type="text" class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="mt-2 required-star">Password </label>
+                <input type="text" class="form-input-rounded" />
+              </div>
 
               <div
                 class="mt-8 text-xl flex flex-wrap flex-col-reverse lg:flex-row gap-4 items-center justify-between"
