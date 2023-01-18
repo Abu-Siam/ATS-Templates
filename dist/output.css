@@ -2206,6 +2206,11 @@ html {
     margin-right: 2.5rem;
   }
 
+  .lg\:my-6{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .lg\:my-10{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -2231,11 +2236,6 @@ html {
     margin-right: 10rem;
   }
 
-  .lg\:my-6{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
   .lg\:mb-16{
     margin-bottom: 4rem;
   }
@@ -2256,12 +2256,16 @@ html {
     margin-top: 0px;
   }
 
-  .lg\:mt-10{
-    margin-top: 2.5rem;
+  .lg\:mt-12{
+    margin-top: 3rem;
   }
 
   .lg\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
   }
 
   .lg\:ml-44{
@@ -2270,10 +2274,6 @@ html {
 
   .lg\:ml-12{
     margin-left: 3rem;
-  }
-
-  .lg\:mt-12{
-    margin-top: 3rem;
   }
 
   .lg\:block{
@@ -2402,6 +2402,16 @@ html {
     padding-bottom: 2.5rem;
   }
 
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -2420,16 +2430,6 @@ html {
   .lg\:px-72{
     padding-left: 18rem;
     padding-right: 18rem;
-  }
-
-  .lg\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .lg\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 
   .lg\:text-start{
