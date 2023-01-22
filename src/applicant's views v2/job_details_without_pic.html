@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../dist/output.css" />
-    <title>Job Details</title>
+    <title>Job Details no picture</title>
   </head>
   <style>
     /* top and bottom background style */
@@ -36,11 +36,13 @@
     }
   </style>
   <body>
+
+    <!-- header without company's logo picture -->
     <header class="header_background_color">
       <div class="logo-flex-center">
         <a href="#"
-          ><img class="w-36 h-24" src="../../images/dsi_logo_v2.svg"
-        /></a>
+          > <div class="w-16 h-16 flex items-center justify-center text-4xl rounded-full bg-white text-black">D</div>
+        </a>
 
         <div class="header_text_color title-2xl">
           Careers at Dynamic Solution Innovators Ltd.
@@ -48,12 +50,7 @@
       </div>
     </header>
 
-    <!-- top job picture for mobile -->
-    <div
-      style="background-image: url('../../images/bigpicture.jpg')"
-      class="md:hidden bg-cover bg-center bg-no-repeat h-56"
-    ></div>
-    <!-- top job picture for mobile ENDS -->
+
 
     <main class="container mx-auto lg:text-justify">
       <section class="w-4/5 lg:mx-auto mx-8 my-12">
@@ -61,10 +58,7 @@
         <div
           class="flex flex-col md:flex-row items-center gap-2 mb-8 justify-start"
         >
-          <!-- for tab, pc & above -->
-          <div class="hidden md:flex md:flex-shrink-0">
-            <img src="../../images/bigpicture.jpg" class="w-64 rounded-xl" />
-          </div>
+
 
           <!-- for mobile -->
 
