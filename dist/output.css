@@ -1137,10 +1137,6 @@ input[type="file"]::file-selector-button{
   margin-left: 7rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
-}
-
 .block{
   display: block;
 }
@@ -1163,6 +1159,10 @@ input[type="file"]::file-selector-button{
 
 .h-24{
   height: 6rem;
+}
+
+.h-56{
+  height: 14rem;
 }
 
 .h-16{
@@ -1213,18 +1213,6 @@ input[type="file"]::file-selector-button{
 
 .h-32{
   height: 8rem;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-40{
-  height: 10rem;
-}
-
-.h-56{
-  height: 14rem;
 }
 
 .max-h-48{
@@ -1698,24 +1686,8 @@ input[type="file"]::file-selector-button{
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/images\/bigpicture\.jpg\'\)\]{
-  background-image: url('../../images/bigpicture.jpg');
-}
-
-.bg-\[url\(\'\.\.\/\.\.\/images\/signup_page_image\.png\'\)\]{
-  background-image: url('../../images/signup_page_image.png');
-}
-
 .bg-cover{
   background-size: cover;
-}
-
-.bg-auto{
-  background-size: auto;
-}
-
-.bg-fixed{
-  background-attachment: fixed;
 }
 
 .bg-center{
@@ -2226,11 +2198,6 @@ html {
     text-align: start;
   }
 
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2529,6 +2496,11 @@ html {
     text-align: start;
   }
 
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2537,11 +2509,6 @@ html {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 }
 
