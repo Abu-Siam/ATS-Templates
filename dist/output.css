@@ -1165,10 +1165,6 @@ input[type="file"]::file-selector-button{
   height: 14rem;
 }
 
-.h-16{
-  height: 4rem;
-}
-
 .h-2{
   height: 0.5rem;
 }
@@ -1215,6 +1211,10 @@ input[type="file"]::file-selector-button{
   height: 8rem;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .max-h-48{
   max-height: 12rem;
 }
@@ -1231,20 +1231,16 @@ input[type="file"]::file-selector-button{
   width: 9rem;
 }
 
-.w-64{
-  width: 16rem;
-}
-
 .w-4\/5{
   width: 80%;
 }
 
-.w-32{
-  width: 8rem;
+.w-64{
+  width: 16rem;
 }
 
-.w-16{
-  width: 4rem;
+.w-32{
+  width: 8rem;
 }
 
 .w-2{
@@ -1253,6 +1249,10 @@ input[type="file"]::file-selector-button{
 
 .w-8{
   width: 2rem;
+}
+
+.w-16{
+  width: 4rem;
 }
 
 .w-24{
@@ -1293,10 +1293,6 @@ input[type="file"]::file-selector-button{
 
 .w-1\/4{
   width: 25%;
-}
-
-.w-1\/2{
-  width: 50%;
 }
 
 .flex-shrink-0{
@@ -1832,6 +1828,10 @@ input[type="file"]::file-selector-button{
 
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .text-start{
@@ -2494,6 +2494,10 @@ html {
   .lg\:px-72{
     padding-left: 18rem;
     padding-right: 18rem;
+  }
+
+  .lg\:text-justify{
+    text-align: justify;
   }
 
   .lg\:text-start{
