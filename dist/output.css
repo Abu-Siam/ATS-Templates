@@ -1295,6 +1295,10 @@ input[type="file"]::file-selector-button{
   width: 25%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .flex-shrink-0{
   flex-shrink: 0;
 }
