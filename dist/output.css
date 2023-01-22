@@ -1371,12 +1371,12 @@ input[type="file"]::file-selector-button{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-4{
@@ -1403,24 +1403,12 @@ input[type="file"]::file-selector-button{
   flex-wrap: wrap;
 }
 
-.place-content-center{
-  place-content: center;
-}
-
 .place-items-start{
   place-items: start;
 }
 
-.place-items-end{
-  place-items: end;
-}
-
 .place-items-center{
   place-items: center;
-}
-
-.content-center{
-  align-content: center;
 }
 
 .items-start{
@@ -2572,16 +2560,16 @@ html {
     width: 25%;
   }
 
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .xl\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:flex-row{
