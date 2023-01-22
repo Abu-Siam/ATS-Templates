@@ -949,6 +949,11 @@ input[type="file"]::file-selector-button{
   margin-right: 2rem;
 }
 
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1007,11 +1012,6 @@ input[type="file"]::file-selector-button{
 .mx-20{
   margin-left: 5rem;
   margin-right: 5rem;
-}
-
-.my-12{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .mb-8{
@@ -1142,6 +1142,10 @@ input[type="file"]::file-selector-button{
   margin-left: 7rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .block{
   display: block;
 }
@@ -1152,6 +1156,10 @@ input[type="file"]::file-selector-button{
 
 .flex{
   display: flex;
+}
+
+.inline-flex{
+  display: inline-flex;
 }
 
 .grid{
@@ -1168,6 +1176,10 @@ input[type="file"]::file-selector-button{
 
 .h-56{
   height: 14rem;
+}
+
+.h-16{
+  height: 4rem;
 }
 
 .h-2{
@@ -1216,14 +1228,6 @@ input[type="file"]::file-selector-button{
   height: 8rem;
 }
 
-.h-16{
-  height: 4rem;
-}
-
-.h-12{
-  height: 3rem;
-}
-
 .max-h-48{
   max-height: 12rem;
 }
@@ -1248,6 +1252,10 @@ input[type="file"]::file-selector-button{
   width: 16rem;
 }
 
+.w-16{
+  width: 4rem;
+}
+
 .w-32{
   width: 8rem;
 }
@@ -1258,10 +1266,6 @@ input[type="file"]::file-selector-button{
 
 .w-8{
   width: 2rem;
-}
-
-.w-16{
-  width: 4rem;
 }
 
 .w-24{
@@ -1304,12 +1308,12 @@ input[type="file"]::file-selector-button{
   width: 25%;
 }
 
-.w-28{
-  width: 7rem;
+.w-1\/2{
+  width: 50%;
 }
 
-.w-12{
-  width: 3rem;
+.w-1\/3{
+  width: 33.333333%;
 }
 
 .flex-shrink-0{
@@ -1811,6 +1815,16 @@ input[type="file"]::file-selector-button{
   padding-right: 5rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-44{
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
 .pl-4{
   padding-left: 1rem;
 }
@@ -1849,6 +1863,10 @@ input[type="file"]::file-selector-button{
 
 .text-start{
   text-align: start;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .text-xl{
@@ -1904,6 +1922,10 @@ input[type="file"]::file-selector-button{
 
 .italic{
   font-style: italic;
+}
+
+.leading-4{
+  line-height: 1rem;
 }
 
 .text-blue-500{
@@ -2111,8 +2133,25 @@ html {
 }
 
 @media (min-width: 640px){
+  .sm\:w-0{
+    width: 0px;
+  }
+
+  .sm\:w-auto{
+    width: auto;
+  }
+
   .sm\:flex-row{
     flex-direction: row;
+  }
+
+  .sm\:items-center{
+    align-items: center;
+  }
+
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -2170,6 +2209,14 @@ html {
 
   .md\:w-4\/5{
     width: 80%;
+  }
+
+  .md\:w-1\/3{
+    width: 33.333333%;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
   }
 
   .md\:flex-shrink-0{
@@ -2345,6 +2392,14 @@ html {
     margin-top: 2.5rem;
   }
 
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .lg\:mt-4{
+    margin-top: 1rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -2375,6 +2430,10 @@ html {
 
   .lg\:w-1\/2{
     width: 50%;
+  }
+
+  .lg\:w-1\/3{
+    width: 33.333333%;
   }
 
   .lg\:basis-1\/4{
@@ -2419,6 +2478,10 @@ html {
 
   .lg\:items-center{
     align-items: center;
+  }
+
+  .lg\:items-baseline{
+    align-items: baseline;
   }
 
   .lg\:justify-start{
@@ -2541,6 +2604,18 @@ html {
 
   .xl\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .xl\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .xl\:w-1\/3{
+    width: 33.333333%;
+  }
+
+  .xl\:w-1\/4{
+    width: 25%;
   }
 
   .xl\:grid-cols-3{
