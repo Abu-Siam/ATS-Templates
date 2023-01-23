@@ -81,9 +81,9 @@
         <section class="w-4/5 mx-auto my-8">
           <!-- contact information -->
           <div>
-            <div class="text-2xl font-medium my-4">Contact information</div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Contact information</div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
               <div class="flex flex-col gap-2 grow">
                 <label>Email</label>
                 <input class="form-input-rounded" />
@@ -97,7 +97,7 @@
 
           <!-- Resume upload -->
           <div>
-            <div class="text-2xl font-medium my-4">Resume upload</div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Resume upload</div>
 
             <div class="grid grid-cols-1 gap-8">
               <div class="flex flex-col gap-2 grow">
@@ -120,22 +120,22 @@
 
           <!-- Personal Information -->
           <div>
-            <div class="text-2xl font-medium my-4">Personal Information</div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Personal Information</div>
 
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 2xl:grid-cols-2 gap-2 lg:gap-8">
               <div class="self-center">
                 <div
-                  class="flex flex-col lg:flex-row gap-4 justify-center items-center"
+                  class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center lg:place-items-start"
                 >
-                  <div class="basis-1/2">
+                  <div class="col-span-1 ">
                     <img
                       class="rounded-img"
                       src="../../images/applicants_pic.jpg"
                       id="preview_image"
                     />
                   </div>
-                  <div class="basis-1/2 flex flex-col gap-2">
-                    <div class="italic">
+                  <div class="col-span-2 flex flex-col gap-2 mx-4 lg:mx-0 ">
+                    <div class="italic text-center lg:text-start">
                       It is highly advised to upload a profile picture as a
                       profile picture helps making a more personal connection
                       with the recruiter.
@@ -144,12 +144,16 @@
                       >Upload your profile picture
                     </label>
                     <label
-                      class="text-lg border border-gray-400 p-2 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer text-blue-500 flex px-4"
+                      class="text-lg border border-gray-400 p-2 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer text-blue-500 flex"
                     >
                       <input
-                        type="file"
-                        required="required"
+                   
+                       
                         class="cursor-pointer"
+                        type="file"
+                        accept="image/*"
+                        onchange="proPicReview(event)"
+                        required="required"
                       />
                     </label>
                     * In jpg, jpeg or png format and 1 meg max
@@ -174,77 +178,81 @@
             </div>
           </div>
 
-          <!-- Educational Information -->
+
+
+          <!-- Educational Information Version 2 -->
           <div>
-            <div class="text-2xl font-medium my-4">Educational Information</div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <div class="grow">
-                <div class="flex flex-col gap-2">
-                  <label>Graduation institute</label>
-                  <select class="form-input-rounded form-dropdown">
-                    <option>Not in the list</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </div>
-
-                <div class="flex flex-col gap-2">
-                  <label>Graduation degree</label>
-                  <select class="form-input-rounded form-dropdown">
-                    <option>Not in the list</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </div>
-
-                <div class="flex flex-col gap-2">
-                  <label>Graduation major</label>
-                  <select class="form-input-rounded form-dropdown">
-                    <option>Not in the list</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-                </div>
-
-                <div class="flex flex-col gap-2">
-                  <label class="flex flex-col gap-2"
-                    >Graduation year
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Educational Information</div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <label>Graduation institute</label>
+                    <select class="form-input-rounded form-dropdown">
+                      <option>Not in the list</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label>If graduation institute not in the list</label>
                     <input class="form-input-rounded" />
-                    <!-- <span> * Enter expected year if you are still attending</span> -->
-                  </label>
+                  </div>
                 </div>
-              </div>
 
-              <div class="grow">
-                <div class="flex flex-col gap-2">
-                  <label>If graduation institute not in the list</label>
-                  <input class="form-input-rounded" />
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <label>Graduation degree</label>
+                    <select class="form-input-rounded form-dropdown">
+                      <option>Not in the list</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label>If graduation degree not in the list</label>
+                    <input class="form-input-rounded" />
+                  </div>
                 </div>
-                <div class="flex flex-col gap-2">
-                  <label class="required-star"
-                    >If graduation degree not in the list
-                  </label>
-                  <input class="form-input-rounded" />
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <label>Graduation major</label>
+                    <select class="form-input-rounded form-dropdown">
+                      <option>Not in the list</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label>If graduation major not in the list</label>
+                    <input class="form-input-rounded" />
+                  </div>
                 </div>
-                <div class="flex flex-col gap-2">
-                  <label>If Graduation major not in the list</label>
-                  <input class="form-input-rounded cursor-text" type="text" />
+                <!-- one single column -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <label class="flex flex-col gap-2"
+                      >Graduation year
+                      <input class="form-input-rounded" />
+                
+                    </label>
+                  </div>
                 </div>
-              </div>
-            </div>
+
+
+           
           </div>
+          <!-- Educational Information Version 2 ENDS -->
 
           <!-- Professional Experiences -->
           <div>
-            <div class="text-2xl font-medium my-4">
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">
               Professional Experiences
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
               <div class="flex flex-col gap-2 grow">
                 <label class="required-star"
                   >Years of relevant experience
@@ -260,9 +268,9 @@
 
           <!-- Social Links -->
           <div>
-            <div class="text-2xl font-medium my-4">Social Links</div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Social Links</div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
               <div class="flex flex-col gap-2 grow">
                 <label>GitHub profile link</label>
                 <input class="form-input-rounded" />
@@ -278,7 +286,7 @@
             <input
               type="submit"
               value="Submit Your Application"
-              class="button_color px-6 py-2 rounded-md"
+              class="button_color px-6 py-2 rounded-md cursor-pointer"
             />
           </div>
         </section>
@@ -316,5 +324,24 @@
       </div>
     </footer>
     <!-- footer Ends -->
+
+    <!-- image upload preview  -->
+    <script>
+      var proPicReview = function (event) {
+        var output = document.getElementById("preview_image");
+
+        output.src = URL.createObjectURL(event.target.files[0]);
+        output.onload = function () {
+          URL.revokeObjectURL(output.src);
+        };
+
+        // for mobile
+        var output_mbl = document.getElementById("preview_image_mbl");
+        output_mbl.src = URL.createObjectURL(event.target.files[0]);
+        output_mbl.onload = function () {
+          URL.revokeObjectURL(output_mbl.src);
+        };
+      };
+    </script>
   </body>
 </html>
