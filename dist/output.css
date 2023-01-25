@@ -916,10 +916,6 @@ input[type="file"]::file-selector-button{
   z-index: 20;
 }
 
-.col-span-1{
-  grid-column: span 1 / span 1;
-}
-
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -952,11 +948,6 @@ input[type="file"]::file-selector-button{
   margin-bottom: 1rem;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -965,6 +956,11 @@ input[type="file"]::file-selector-button{
 .my-12{
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .my-1{
@@ -1766,6 +1762,11 @@ input[type="file"]::file-selector-button{
   padding-bottom: 2rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1791,11 +1792,6 @@ input[type="file"]::file-selector-button{
   padding-bottom: 0.25rem;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1804,6 +1800,11 @@ input[type="file"]::file-selector-button{
 .px-20{
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pl-4{
@@ -2114,6 +2115,14 @@ html {
     flex-direction: row;
   }
 
+  .sm\:items-end{
+    align-items: flex-end;
+  }
+
+  .sm\:justify-between{
+    justify-content: space-between;
+  }
+
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -2192,6 +2201,10 @@ html {
     align-items: flex-start;
   }
 
+  .md\:items-end{
+    align-items: flex-end;
+  }
+
   .md\:items-center{
     align-items: center;
   }
@@ -2262,6 +2275,10 @@ html {
     .lg\:container{
       max-width: 1536px;
     }
+  }
+
+  .lg\:col-span-1{
+    grid-column: span 1 / span 1;
   }
 
   .lg\:col-span-2{
@@ -2503,6 +2520,11 @@ html {
     padding-right: 7rem;
   }
 
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -2574,10 +2596,6 @@ html {
 
   .xl\:w-1\/4{
     width: 25%;
-  }
-
-  .xl\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-3{
