@@ -920,10 +920,6 @@ input[type="file"]::file-selector-button{
   grid-column: span 2 / span 2;
 }
 
-.col-span-4{
-  grid-column: span 4 / span 4;
-}
-
 .col-span-1{
   grid-column: span 1 / span 1;
 }
@@ -1430,20 +1426,12 @@ input[type="file"]::file-selector-button{
   flex-wrap: wrap;
 }
 
-.place-content-center{
-  place-content: center;
-}
-
 .place-items-start{
   place-items: start;
 }
 
 .place-items-center{
   place-items: center;
-}
-
-.content-center{
-  align-content: center;
 }
 
 .items-start{
@@ -1532,14 +1520,6 @@ input[type="file"]::file-selector-button{
 
 .place-self-center{
   place-self: center;
-}
-
-.self-start{
-  align-self: flex-start;
-}
-
-.self-end{
-  align-self: flex-end;
 }
 
 .self-center{
@@ -2158,14 +2138,6 @@ html {
 }
 
 @media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:hidden{
-    display: none;
-  }
-
   .sm\:w-auto{
     width: auto;
   }
@@ -2223,16 +2195,8 @@ html {
     }
   }
 
-  .md\:col-span-3{
-    grid-column: span 3 / span 3;
-  }
-
   .md\:col-span-2{
     grid-column: span 2 / span 2;
-  }
-
-  .md\:col-span-1{
-    grid-column: span 1 / span 1;
   }
 
   .md\:mx-auto{
