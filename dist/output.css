@@ -1319,6 +1319,10 @@ input[type="file"]::file-selector-button{
   flex-shrink: 0;
 }
 
+.flex-shrink{
+  flex-shrink: 1;
+}
+
 .shrink-0{
   flex-shrink: 0;
 }
@@ -1404,6 +1408,10 @@ input[type="file"]::file-selector-button{
 
 .grid-cols-6{
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-rows-1{
@@ -1542,6 +1550,14 @@ input[type="file"]::file-selector-button{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.break-words{
+  overflow-wrap: break-word;
+}
+
+.break-all{
+  word-break: break-all;
 }
 
 .rounded-md{
@@ -2474,6 +2490,14 @@ html {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -2604,6 +2628,16 @@ html {
     padding-right: 3rem;
   }
 
+  .lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .lg\:text-justify{
     text-align: justify;
   }
@@ -2666,6 +2700,11 @@ html {
   .xl\:px-52{
     padding-left: 13rem;
     padding-right: 13rem;
+  }
+
+  .xl\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
