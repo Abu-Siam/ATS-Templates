@@ -1398,20 +1398,20 @@ input[type="file"]::file-selector-button{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+.grid-cols-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-rows-1{
@@ -1550,10 +1550,6 @@ input[type="file"]::file-selector-button{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.break-words{
-  overflow-wrap: break-word;
 }
 
 .break-all{
@@ -2486,16 +2482,12 @@ html {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4{
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-6{
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-
   .lg\:grid-cols-5{
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -2623,19 +2615,14 @@ html {
     padding-right: 18rem;
   }
 
-  .lg\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .lg\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .lg\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:text-justify{
