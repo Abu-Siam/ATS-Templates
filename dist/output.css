@@ -1406,12 +1406,12 @@ input[type="file"]::file-selector-button{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-6{
   grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-rows-1{
@@ -2328,16 +2328,12 @@ html {
     grid-column: span 2 / span 2;
   }
 
-  .lg\:col-span-3{
-    grid-column: span 3 / span 3;
-  }
-
-  .lg\:col-span-6{
-    grid-column: span 6 / span 6;
-  }
-
   .lg\:col-span-5{
     grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
   }
 
   .lg\:mx-0{
@@ -2608,6 +2604,11 @@ html {
     padding-right: 4rem;
   }
 
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .lg\:px-44{
     padding-left: 11rem;
     padding-right: 11rem;
@@ -2626,11 +2627,6 @@ html {
   .lg\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  .lg\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 
   .lg\:text-justify{
