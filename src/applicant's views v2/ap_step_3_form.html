@@ -1,0 +1,347 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>Step 3(ap_form)</title>
+  </head>
+  <style>
+    /* top and bottom background style */
+    .header_background_color {
+      background-color: #000000;
+    }
+    .header_text_color {
+      color: #ffffff;
+    }
+    .footer_background_color {
+      background-color: #000000;
+    }
+    .footer_text_color {
+      color: #ffffff;
+    }
+
+    /* link style */
+    .link_color {
+      color: #3b82f6;
+    }
+
+    /* button style */
+    .button_color {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    .button_color:hover {
+      background-color: #000000;
+    }
+  </style>
+  <body>
+    <header class="header_background_color">
+      <div class="logo-flex-center">
+        <a href="#"
+          ><img class="w-36 h-24" src="../../images/dsi_logo_v2.svg"
+        /></a>
+
+        <div class="header_text_color title-2xl">
+          Careers at Dynamic Solution Innovators Ltd.
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <div class="flex flex-col items-center gap-3 px-6 container mx-auto my-8">
+        <div class="text-2xl font-medium mt-2 lg:mt-4">Applying for</div>
+        <a href="#" class="text-3xl font-bold text-center text-black"
+          >Senior Design Verification Engineer</a
+        >
+
+        <div class="flex flex-col items-center sm:flex-row gap-2">
+          <div class="flex items-center gap-1">
+            <img src="../../images/People Icon.svg" />
+            <div>1 Position</div>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <img src="../../images/Location marker.svg" />
+
+            <div>Dhaka, Bangladesh</div>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <img src="../../images/Clock Icon.svg" />
+
+            <div>Added on 9 November 2022</div>
+          </div>
+        </div>
+        <div class="text-2xl text-center mt-8 text-black">
+          Fill up the followings and submit
+        </div>
+        <img src="../../images/Progress%20Bar%203.svg" alt="Progress Bar" />
+
+        <!-- form -->
+        <section class="w-4/5 mx-auto my-8">
+          <!-- contact information -->
+          <div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Contact information</div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+              <div class="flex flex-col gap-2 grow">
+                <label>Email</label>
+                <input class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2 grow">
+                <label class="required-star">Contact number </label>
+                <input class="form-input-rounded" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Resume upload -->
+          <div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Resume upload</div>
+
+            <div class="grid grid-cols-1 gap-8">
+              <div class="flex flex-col gap-2 grow">
+                <label class="required-star">Resume </label>
+                <label
+                  class="text-lg border border-gray-400 p-2 pl-4 rounded-md focus:outline-none focus:ring-2 focus:ring-black cursor-pointer text-blue-500 flex px-4"
+                >
+                  <input
+                    type="file"
+                    required="required"
+                    class="cursor-pointer"
+                  />
+                </label>
+                <div class="mb-5 italic">
+                  * In doc, docs, pdf format and 3 meg max
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Information -->
+          <div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Personal Information</div>
+
+            <div class="grid grid-cols-1 2xl:grid-cols-2 gap-2 lg:gap-8">
+              <div class="self-center">
+                <div
+                  class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center lg:place-items-start"
+                >
+                  <div class="lg:col-span-1 ">
+                    <img
+                      class="rounded-img"
+                      src="../../images/applicants_pic.jpg"
+                      id="preview_image"
+                    />
+                  </div>
+                  <div class="lg:col-span-2 flex flex-col gap-2 mx-8 lg:mx-0 ">
+                    <div class="italic text-center lg:text-start px-10 lg:px-0">
+                      It is highly advised to upload a profile picture as a
+                      profile picture helps making a more personal connection
+                      with the recruiter.
+                    </div>
+                    <label class="required-star "
+                      >Upload your profile picture
+                    </label>
+                    <label
+                      class="form-input-rounded"
+                    >
+                      <input
+                   
+                       
+                        class="cursor-pointer "
+                        type="file"
+                        accept="image/*"
+                        onchange="proPicReview(event)"
+                        required="required"
+                      />
+                    </label>
+                    * In jpg, jpeg or png format and 1 meg max
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex flex-col gap-2">
+                  <label>Preferred nick name</label>
+                  <input class="form-input-rounded" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label class="required-star">Full legal name </label>
+                  <input class="form-input-rounded" />
+                </div>
+                <div class="flex flex-col gap-2">
+                  <label>Date of birth</label>
+                  <input class="form-input-rounded cursor-text" type="date" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Educational Information Version 2 -->
+          <div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Educational Information</div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <label>Graduation institute</label>
+                    <select class="form-input-rounded form-dropdown">
+                      <option>Not in the list</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label>If graduation institute not in the list</label>
+                    <input class="form-input-rounded" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <label>Graduation degree</label>
+                    <select class="form-input-rounded form-dropdown">
+                      <option>Not in the list</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label>If graduation degree not in the list</label>
+                    <input class="form-input-rounded" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <label>Graduation major</label>
+                    <select class="form-input-rounded form-dropdown">
+                      <option>Not in the list</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label>If graduation major not in the list</label>
+                    <input class="form-input-rounded" />
+                  </div>
+                </div>
+                <!-- one single column -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+                  <div class="flex flex-col gap-2">
+                    <label class="flex flex-col gap-2"
+                      >Graduation year
+                      <input class="form-input-rounded" />
+                
+                    </label>
+                  </div>
+                </div>
+
+
+           
+          </div>
+          <!-- Educational Information Version 2 ENDS -->
+
+          <!-- Professional Experiences -->
+          <div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">
+              Professional Experiences
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+              <div class="flex flex-col gap-2 grow">
+                <label class="required-star"
+                  >Years of relevant experience
+                </label>
+                <input class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2 grow">
+                <label class="required-star">Notice period in months </label>
+                <input class="form-input-rounded" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div>
+            <div class="text-2xl font-medium my-4 text-center lg:text-start">Social Links</div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-8">
+              <div class="flex flex-col gap-2 grow">
+                <label>GitHub profile link</label>
+                <input class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2 grow">
+                <label>LinkedIn profile link </label>
+                <input class="form-input-rounded" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-8">
+            <input
+              type="submit"
+              value="Submit Your Application"
+              class="button_color px-6 py-2 rounded-md cursor-pointer"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- footer starts -->
+
+    <footer class="footer_background_color mx-auto mt-auto w-full">
+      <div
+        class="footer_text_color px-6 mx-auto container py-5 flex flex-col sm:flex-row gap-4 justify-start sm:justify-between"
+      >
+        <div>
+          <div class="font-semibold">For Other Inquires -</div>
+          <div>
+            <a href="mailto:info@dsinnovators.com"
+              ><i>info@dsinnovators.com</i></a
+            >
+          </div>
+          <div>
+            <a href="https://www.dsinnovators.com/" target="_blank"
+              ><i>www.dsinnovators.com</i></a
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col items-start sm:items-end text-base">
+          <div class="font-semibold">Powered By -</div>
+          <div>
+            <i>Shrimp Solutions</i>
+          </div>
+          <div>
+            <i>www.shrimpsolutions.com</i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer Ends -->
+
+    <!-- image upload preview  -->
+    <script>
+      var proPicReview = function (event) {
+        var output = document.getElementById("preview_image");
+
+        output.src = URL.createObjectURL(event.target.files[0]);
+        output.onload = function () {
+          URL.revokeObjectURL(output.src);
+        };
+
+        // for mobile
+        var output_mbl = document.getElementById("preview_image_mbl");
+        output_mbl.src = URL.createObjectURL(event.target.files[0]);
+        output_mbl.onload = function () {
+          URL.revokeObjectURL(output_mbl.src);
+        };
+      };
+    </script>
+  </body>
+</html>

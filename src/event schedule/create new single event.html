@@ -1,0 +1,202 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>Create new event</title>
+  </head>
+  <body class=" bg-gray-300 z-10">
+    <!-- nav section -->
+    <div class="bg-white z-20">
+    <div
+      class="flex justify-between  lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:container lg:mx-auto py-5  "
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-evenly gap-2 lg:gap-0   "
+      >
+      <a href="#"><div><img src="../../images/Shrimp.svg"/></div></a>
+      <a href="#" class="text-blue-500 hover:underline"> Home</a>
+        <a href="#"
+          class="bg-gray-700 text-white py-2  px-6 hover:bg-gray-900 rounded-md"
+        >
+          All jobs
+    </a>
+        <a href="#" class="text-blue-500 hover:underline"> Candidates</a>
+
+        
+      </div>
+
+      <div
+        class="flex flex-col md:justify-end items-end md:flex-row md:items-center space-y-2 md:space-x-4"
+      >
+        <div>
+          Mohammad Habibul Bashar
+          <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="relative cursor-pointer">
+            <img src="../../images/notification_icon.svg" />
+            <!-- notification dot pulse -->
+            <div
+              class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
+            ></div>
+            <div
+              class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
+            ></div>
+            <!-- notification dot pulse ENDS -->
+          </div>
+
+          <div class="cursor-pointer">
+            <img class="h-8 w-8" src="../../images/Profile Picture.png" />
+          </div>
+          <div class="cursor-pointer">
+            <!-- <img src="../../images/down_arrow.svg" /> -->
+            <select class="-ml-3 px-1 cursor-pointer focus:outline-none">
+              <option></option>
+              <a href="#"></a><option>1</option></a>
+              <a href="#"><option>2</option></a>
+              <a href="#"><option>3</option></a>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="bg-white container mx-auto xl:mx-44 rounded-md my-8">
+        <section class="px-8 py-8">
+        <!-- title -->
+        <div class="text-3xl text-black font-semibold text-center">
+            Create New Event
+        </div>
+
+        <!-- applicant's name -->
+        <div>
+            For
+            <div class="flex items-center gap-2 my-4">
+                <img src="../../images/applicants_pic.jpg" class=" rounded-full w-20"/>
+                <div>
+                    <span class="font-bold text-black">Mr. Pinkman</span>
+                  <a href="tel:1023456789"><p>0123456789</p></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- form -->
+        <form >
+            <div class="flex flex-col gap-2">
+                <label class="required-star">Enter Title </label>
+                <input class="form-input-rounded">
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
+
+                <div class="flex flex-col gap-2">
+                    <label class="required-star">Scheduled at </label>
+                    <input
+                    type="date"
+                    class="form-input-rounded cursor-pointer "
+                  />
+                </div>
+
+                <div class="flex flex-col gap-2">
+                  <label class="required-star">Duration </label>
+                  <select class="form-input-rounded cursor-pointer">
+                    <option>30 mins</option>
+                    <option>1 hour</option>
+                    <option>2 hours</option>
+                    <option>2 and half hours</option>
+                  </select>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                  <label class="required-star">Location </label>
+                  <select class="form-input-rounded cursor-pointer">
+                
+                    <option>Dhaka</option>
+                    <option>Barishal</option>
+                    <option>khulna</option>
+                    <option>sylhet</option>
+                  </select>
+                </div>
+
+            </div>
+
+            <div class="mt-4 flex flex-col gap-2">
+                <label class="required-star"> Participants from office </label>
+                <div class="flex flex-wrap gap-4">
+                  <div>
+                    <input type="checkbox">
+                    <label>Mr sae</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox">
+                    <label>Mrs aaa</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox">
+                    <label>Md ABC</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox">
+                    <label>Random Name</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox">
+                    <label>Some Name</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox">
+                    <label>Lorem Ipsum</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox">
+                    <label>Ipsum Lorem</label>
+                  </div>
+                  
+                  <div>
+                    <input type="checkbox">
+                    <label>Ipsum Lorem lorem</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox">
+                    <label>Ipsum Lorem Ipsum</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 flex flex-col gap-2">
+                <label class="required-star"> Description</label>
+                <textarea class="border border-gray-300 rounded-md h-28 px-2 py-2 my-1 w-full"></textarea>
+                </div>
+
+                <div class="flex items-center justify-between mt-8">
+                    <div><a href="#" class="text-blue-500 hover:underline">Cancel</a></div>
+                  
+                      <div class="px-6 py-2 border border-gray-400 rounded-md hover:bg-blue-500 hover:text-white cursor-pointer"><a href="#">Save and Send Invitations</a></div>
+                 
+                   
+                  </div>
+        </form>
+        </section>
+
+    </div>
+  </main>
+
+      <!-- footer section -->
+      <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+        <div class="text-center text-sm px-4">
+          <b>powered by -</b>
+          <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+        </div>
+      </footer>
+    </body>
+    </html>

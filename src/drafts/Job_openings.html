@@ -1,0 +1,446 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Job Openings</title>
+  </head>
+  <body class="bg-gray-300 z-10">
+    <main>
+      <!-- nav section -->
+      <div
+        class="flex justify-between lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:px-20 py-5 bg-white z-20"
+      >
+        <div
+          class="flex flex-col lg:flex-row items-center gap-2 lg:gap-0 lg:space-x-16"
+        >
+        <a href="#"><div><img src="../images/Shrimp.svg"/></div></a>
+          <button
+            class="bg-gray-700 text-white py-2 md:py-3 px-6 hover:bg-gray-900 rounded-md"
+          >
+            All jobs
+          </button>
+          <a class="text-blue-500 cursor-pointer hover:underline">
+            Candidates</a
+          >
+        </div>
+
+        <div
+          class="flex flex-col md:justify-end items-end md:flex-row md:items-center space-y-2 md:space-x-4"
+        >
+          <div>
+            Mohammad Habibul Bashar
+            <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="relative cursor-pointer">
+              <img src="../images/notification_icon.svg" />
+              <!-- notification dot pulse -->
+              <div
+                class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
+              ></div>
+              <div
+                class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
+              ></div>
+              <!-- notification dot pulse ENDS -->
+            </div>
+
+            <div class="cursor-pointer">
+              <img class="h-8 w-8" src="../images/Profile Picture.png" />
+            </div>
+            <div class="cursor-pointer">
+              <!-- <img src="../images/down_arrow.svg" /> -->
+              <select class="-ml-3 px-1 cursor-pointer focus:outline-none">
+                <option></option>
+                <a href="#"></a><option>1</option></a>
+                <a href="#"><option>2</option></a>
+                <a href="#"><option>3</option></a>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- job openings section -->
+      <section class="bg-gray-300 py-4 lg:py-10">
+        <div>
+          <div
+            class="flex flex-col lg:flex-row gap-5 justify-between px-6 lg:px-44 py-8"
+          >
+            <div class="text-2xl lg:text-3xl text-center">Job Openings</div>
+            <div class="flex flex-col lg:flex-row gap-4">
+              <input
+                type="search"
+                placeholder="Search"
+                class="p-2 rounded-md"
+              />
+              <button
+                class="bg-gray-700 hover:bg-gray-900 text-white px-4 py-2 flex gap-2 rounded-md items-center justify-center"
+              >
+                <img src="../images/plus-circle.svg" /> Create New Job
+              </button>
+            </div>
+          </div>
+
+          <!-- job post-1 -->
+          <div
+            class="grid grid-cols-3 mx-4 lg:mx-44 bg-white px-4 py-5 shadow-md rounded-lg"
+          >
+            <div class="flex flex-col gap-3 col-span-2">
+              <div class="flex flex-col lg:flex-row gap-4">
+                <a href="#" class="text-2xl text-blue-600 hover:underline"
+                  >Senior Design Verification Engineer</a
+                >
+                <span
+                  class="bg-gray-300 text-sm rounded-lg px-4 py-2 h-8 w-16 flex items-center"
+                  >Draft</span
+                >
+              </div>
+
+              <div>
+                We also work on the firmware and software stack required for a
+                new microcontroller. We have trained and prepared engineers from
+                scratch.
+              </div>
+              <div class="flex flex-col lg:flex-row gap-2 lg:gap-5">
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.6667 4.73506C10.6667 6.20782 9.47276 7.40172 8 7.40172C6.52724 7.40172 5.33334 6.20782 5.33334 4.73506C5.33334 3.2623 6.52724 2.06839 8 2.06839C9.47276 2.06839 10.6667 3.2623 10.6667 4.73506Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 9.40172C5.42267 9.40172 3.33334 11.4911 3.33334 14.0684H12.6667C12.6667 11.4911 10.5773 9.40172 8 9.40172Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div>1 Position</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7712 11.173C11.2495 11.6947 10.2519 12.6923 9.41382 13.5304C8.63277 14.3114 7.36728 14.3115 6.58623 13.5304C5.76383 12.708 4.78309 11.7273 4.22877 11.173C2.14597 9.09016 2.14597 5.71328 4.22877 3.63049C6.31157 1.54769 9.68844 1.54769 11.7712 3.63049C13.854 5.71328 13.854 9.09016 11.7712 11.173Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 7.40172C10 8.50629 9.10457 9.40172 8.00001 9.40172C6.89544 9.40172 6.00001 8.50629 6.00001 7.40172C6.00001 6.29715 6.89544 5.40172 8.00001 5.40172C9.10457 5.40172 10 6.29715 10 7.40172Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div>Dhaka, Bangladesh</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 5.40172V8.06839L10 10.0684M14 8.06839C14 11.3821 11.3137 14.0684 8 14.0684C4.68629 14.0684 2 11.3821 2 8.06839C2 4.75468 4.68629 2.06839 8 2.06839C11.3137 2.06839 14 4.75468 14 8.06839Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div>Added on 9 November, 2022</div>
+                </div>
+              </div>
+              <a href="#"
+                ><div class="text-blue-600 hover:underline">
+                  View details
+                </div></a
+              >
+            </div>
+            <div class="flex items-end gap-4 flex-col">
+              <div class="flex items-center gap-2 hover:underline">
+                <svg  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.25 10.9375V13.75H3.0625L11.3575 5.45504L8.545 2.64254L0.25 10.9375ZM13.5325 3.28004C13.825 2.98754 13.825 2.51504 13.5325 2.22254L11.7775 0.467544C11.485 0.175044 11.0125 0.175044 10.72 0.467544L9.3475 1.84004L12.16 4.65254L13.5325 3.28004Z" fill="blue"/>
+                  </svg> 
+                  <a href="#" class="text-lg text-blue-600">Edit post</a>
+                  
+              </div>
+
+              <div
+              class="flex flex-col shadow-xl px-6 py-4 rounded-lg items-end gap-2 bg-gray-300"
+            >
+              <div class=" text-sm text-gray-700">Applied</div>
+              <div class="text-2xl">58</div>
+            </div>
+              <!-- <div
+                class="flex flex-col shadow-xl px-6 py-4 rounded-lg items-end gap-2"
+              >
+                <div class="cursor-pointer hover:underline hover:text-blue-600">
+                  Edit
+                </div>
+                <div class="cursor-pointer hover:underline hover:text-blue-600">
+                  Publish
+                </div>
+                <div class="cursor-pointer hover:underline hover:text-blue-600">
+                  Close
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- job post-2 -->
+          <div
+            class="grid grid-cols-3 mx-4 lg:mx-44 bg-white px-4 py-5 shadow-md rounded-lg mt-5"
+          >
+            <div class="flex flex-col gap-3 col-span-2">
+              <div class="flex flex-col lg:flex-row gap-4">
+                <a href="#" class="text-2xl text-blue-600 hover:underline"
+                  >Software Engineer (Application Support)</a
+                >
+                <span
+                  class="bg-green-200 text-sm rounded-lg px-4 py-2 h-8 w-24 flex items-center"
+                  >Published</span
+                >
+              </div>
+
+              <div>
+                We also work on the firmware and software stack required for a
+                new microcontroller. We have trained and prepared engineers from
+                scratch.
+              </div>
+              <div class="flex flex-col lg:flex-row gap-2 lg:gap-5">
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.6667 4.73506C10.6667 6.20782 9.47276 7.40172 8 7.40172C6.52724 7.40172 5.33334 6.20782 5.33334 4.73506C5.33334 3.2623 6.52724 2.06839 8 2.06839C9.47276 2.06839 10.6667 3.2623 10.6667 4.73506Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 9.40172C5.42267 9.40172 3.33334 11.4911 3.33334 14.0684H12.6667C12.6667 11.4911 10.5773 9.40172 8 9.40172Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div>1 Position</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7712 11.173C11.2495 11.6947 10.2519 12.6923 9.41382 13.5304C8.63277 14.3114 7.36728 14.3115 6.58623 13.5304C5.76383 12.708 4.78309 11.7273 4.22877 11.173C2.14597 9.09016 2.14597 5.71328 4.22877 3.63049C6.31157 1.54769 9.68844 1.54769 11.7712 3.63049C13.854 5.71328 13.854 9.09016 11.7712 11.173Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 7.40172C10 8.50629 9.10457 9.40172 8.00001 9.40172C6.89544 9.40172 6.00001 8.50629 6.00001 7.40172C6.00001 6.29715 6.89544 5.40172 8.00001 5.40172C9.10457 5.40172 10 6.29715 10 7.40172Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div>Dhaka, Bangladesh</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 5.40172V8.06839L10 10.0684M14 8.06839C14 11.3821 11.3137 14.0684 8 14.0684C4.68629 14.0684 2 11.3821 2 8.06839C2 4.75468 4.68629 2.06839 8 2.06839C11.3137 2.06839 14 4.75468 14 8.06839Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div>Added on 21 November, 2022</div>
+                </div>
+              </div>
+              <a href="#"
+                ><div class="text-blue-600 hover:underline">
+                  View details
+                </div></a
+              >
+            </div>
+            <div class="flex items-end gap-4 flex-col">
+              <div class="flex items-center gap-2 hover:underline">
+                <svg  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.25 10.9375V13.75H3.0625L11.3575 5.45504L8.545 2.64254L0.25 10.9375ZM13.5325 3.28004C13.825 2.98754 13.825 2.51504 13.5325 2.22254L11.7775 0.467544C11.485 0.175044 11.0125 0.175044 10.72 0.467544L9.3475 1.84004L12.16 4.65254L13.5325 3.28004Z" fill="blue"/>
+                  </svg> 
+                  <a href="#" class="text-lg text-blue-600">Edit post</a>
+                  
+              </div>
+              <div
+                class="flex flex-col shadow-xl px-6 py-4 rounded-lg items-end gap-2 bg-gray-300"
+              >
+                <div class=" text-sm text-gray-700">Applied</div>
+                <div class="text-2xl">237</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- job post-3 -->
+          <div
+            class="grid grid-cols-3 mx-4 lg:mx-44 bg-white px-4 py-5 shadow-md rounded-lg mt-5 mb-12"
+          >
+            <div class="flex flex-col gap-3 col-span-2">
+              <div class="flex gap-4 flex-col lg:flex-row">
+                <a href="#" class="text-2xl text-blue-600 hover:underline"
+                  >Software Engineer (Application Support)</a
+                >
+                <span
+                  class="bg-yellow-200 text-sm rounded-lg px-4 py-2 h-8 w-[5.3rem] flex items-center"
+                  >Unlisted</span
+                >
+              </div>
+
+              <div>
+                We also work on the firmware and software stack required for a
+                new microcontroller. We have trained and prepared engineers from
+                scratch.
+              </div>
+              <div class="flex flex-col lg:flex-row gap-2 lg:gap-5">
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.6667 4.73506C10.6667 6.20782 9.47276 7.40172 8 7.40172C6.52724 7.40172 5.33334 6.20782 5.33334 4.73506C5.33334 3.2623 6.52724 2.06839 8 2.06839C9.47276 2.06839 10.6667 3.2623 10.6667 4.73506Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 9.40172C5.42267 9.40172 3.33334 11.4911 3.33334 14.0684H12.6667C12.6667 11.4911 10.5773 9.40172 8 9.40172Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div>1 Position</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7712 11.173C11.2495 11.6947 10.2519 12.6923 9.41382 13.5304C8.63277 14.3114 7.36728 14.3115 6.58623 13.5304C5.76383 12.708 4.78309 11.7273 4.22877 11.173C2.14597 9.09016 2.14597 5.71328 4.22877 3.63049C6.31157 1.54769 9.68844 1.54769 11.7712 3.63049C13.854 5.71328 13.854 9.09016 11.7712 11.173Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 7.40172C10 8.50629 9.10457 9.40172 8.00001 9.40172C6.89544 9.40172 6.00001 8.50629 6.00001 7.40172C6.00001 6.29715 6.89544 5.40172 8.00001 5.40172C9.10457 5.40172 10 6.29715 10 7.40172Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div>Dhaka, Bangladesh</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 5.40172V8.06839L10 10.0684M14 8.06839C14 11.3821 11.3137 14.0684 8 14.0684C4.68629 14.0684 2 11.3821 2 8.06839C2 4.75468 4.68629 2.06839 8 2.06839C11.3137 2.06839 14 4.75468 14 8.06839Z"
+                      stroke="#555555"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div>Added on 21 November, 2022</div>
+                </div>
+              </div>
+              <a href="#"
+                ><div class="text-blue-600 hover:underline">
+                  View details
+                </div></a
+              >
+            </div>
+            <div class="flex items-end gap-4 flex-col">
+              <div class="flex items-center gap-2 hover:underline">
+                <svg  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.25 10.9375V13.75H3.0625L11.3575 5.45504L8.545 2.64254L0.25 10.9375ZM13.5325 3.28004C13.825 2.98754 13.825 2.51504 13.5325 2.22254L11.7775 0.467544C11.485 0.175044 11.0125 0.175044 10.72 0.467544L9.3475 1.84004L12.16 4.65254L13.5325 3.28004Z" fill="blue"/>
+                  </svg> 
+                  <a href="#" class="text-lg text-blue-600">Edit post</a>
+                  
+              </div>
+              <div
+                class="flex flex-col shadow-xl px-6 py-4 rounded-lg items-end gap-2 bg-gray-300"
+              >
+                <div class=" text-sm text-gray-700">Applied</div>
+                <div class="text-2xl">7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+      <div class="text-center text-sm px-4">
+        <b>powered by -</b>
+        <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+      </div>
+    </footer>
+  </body>
+</html>

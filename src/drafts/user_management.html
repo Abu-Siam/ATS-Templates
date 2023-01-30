@@ -1,0 +1,193 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>User Management</title>
+  </head>
+  <body class=" bg-gray-300 z-10">
+    <!-- nav section -->
+    <div
+      class="flex justify-between lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:px-20 py-5 bg-white z-20"
+    >
+    <!-- if nav content is total 4 items then this style applies -->
+      <div
+        class="flex flex-col lg:flex-row items-center gap-2 justify-evenly"
+      >
+      <a href="#"><div><img src="../images/Shrimp.svg"/></div></a>
+        <a href="#"
+          class=" text-blue-500 py-2 md:py-3 px-6 hover:underline"
+        >
+          All jobs
+      </a>
+        <a class="text-blue-500 cursor-pointer hover:underline"> Candidates</a>
+
+        <a
+        class="bg-gray-700 text-white py-2 md:py-3 px-6 hover:bg-gray-900 rounded-md"
+      >
+        Account
+    </a>
+      </div>
+
+      <div
+        class="flex flex-col md:justify-end items-end md:flex-row md:items-center space-y-2 md:space-x-4"
+      >
+        <div>
+          Mohammad Habibul Bashar
+          <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="relative cursor-pointer">
+            <img src="../images/notification_icon.svg" />
+            <!-- notification dot pulse -->
+            <div
+              class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
+            ></div>
+            <div
+              class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
+            ></div>
+            <!-- notification dot pulse ENDS -->
+          </div>
+
+          <div class="cursor-pointer">
+            <img class="h-8 w-8" src="../images/Profile Picture.png" />
+          </div>
+          <div class="cursor-pointer">
+            <!-- <img src="../images/down_arrow.svg" /> -->
+            <select class="-ml-3 px-1 cursor-pointer focus:outline-none">
+              <option></option>
+              <a href="#"></a><option>1</option></a>
+              <a href="#"><option>2</option></a>
+              <a href="#"><option>3</option></a>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="container mx-auto">
+
+        <!-- Section 1 (header) -->
+
+        <div class="flex flex-col lg:flex-row items-center gap-4 my-10  mx-24">
+            <div>
+                <img src="../images/Shrimp.svg"/>
+            </div>
+            <div>
+                <span  class="text-3xl">Dynamic Solution Innovators Ltd. </span>
+                <p class="flex items-center gap-2 mt-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                  http://www.shrimp.com/dsi</p>
+            </div>
+        </div>
+
+        <!-- section 2 (left section) -->
+        <div class="flex flex-col lg:flex-row gap-6 mx-10 lg:mx-24">
+            <div class="bg-white rounded-md w-full lg:w-1/4 py-4 h-fit ">
+               
+               <div class="flex flex-col gap-4">
+                    <a href="#"><div class="text-blue-500 hover:underline hover:bg-gray-200 px-4 py-2 mx-4 rounded-md"> Company Profile Settings </div></a>
+                    <a href="#"><div class="bg-gray-700 hover:bg-black text-white px-4 py-2 mx-4  rounded-md "> User management </div> </a>
+                   <a href="#"> <div class="text-blue-500 hover:underline hover:bg-gray-200 px-4 py-2 mx-4 rounded-md"> Dataset </div></a>
+               </div>
+            </div>
+            <!-- right section -->
+            <div class="bg-white w-full pb-10 rounded-md mb-20">
+                <div class="flex flex-col">
+                <div class="flex flex-wrap justify-between  p-4">
+                   <div class="text-2xl mb-4 lg:mb-0">User Management</div> </a>
+                    <div class="flex gap-2 text-white bg-gray-700 hover:bg-black px-4 py-2 rounded-md">
+                       <div> 
+                        <a href="#">  <div>Invite User</div> </a>
+                       </div>
+                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+
+                    </div>
+
+                </div>
+                <div class="bg-gray-700 text-white flex justify-between p-4 rounded-md mx-4 mb-4 lg:mb-0" >
+                    <select class="px-2 cursor-pointer bg-gray-700">
+                        <option>User</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <div class="hidden md:block ml-28">Role</div>
+                    <div class="hidden md:block ml-28" >Joined</div>
+                    <div class="hidden md:block ml-28">Actions</div>
+                </div>
+
+                <div class=" shadow-md rounded-md p-4 mx-4 my-2">
+                    <div class="flex flex-wrap items-center justify-between gap-4 lg:gap-0">
+                        <div class="flex flex-wrap gap-4 ">
+                            <img class="rounded-full w-20" src="../images/applicants_pic.jpg"/>
+                            <div>
+                                <p class=" text-xl font-bold">Mr. ABCD</p>
+                                <p class="text-gray-500">Account Owner</p>
+                                <p class="text-gray-500">mrabc@email.com</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-500 px-4 py-2 rounded-full text-white" >Owner</div>
+                        <div class="text-gray-500 text-xl" >Dec 10, 2022</div>
+                        <div class="flex items-center gap-2" >
+                           <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                              </svg></a>
+                              
+                           <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                              </svg> </a>
+                              
+                                
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class=" shadow-md rounded-md p-4 mx-4 my-2">
+                    <div class="flex flex-wrap items-center justify-between gap-4 lg:gap-0">
+                        <div class="flex flex-wrap gap-4 ">
+                            <img class="rounded-full w-20" src="../images/applicants_pic.jpg"/>
+                            <div>
+                                <p class=" text-xl font-bold">Mr. ABCD</p>
+                                <p class="text-gray-500">Account Owner</p>
+                                <p class="text-gray-500">mrabc@email.com</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-500 px-4 py-2 rounded-full text-white" >Owner</div>
+                        <div class="text-gray-500 text-xl" >Dec 10, 2022</div>
+                        <div class="flex items-center gap-2" >
+                           <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                              </svg></a>
+                              
+                           <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                              </svg> </a>
+                              
+                                
+                        </div>
+
+                    </div>
+
+                </div>
+           
+            </div>
+            </div>
+        </div>
+    </main>
+          <!-- footer section -->
+          <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+            <div class="text-center text-sm px-4">
+              <b>powered by -</b>
+              <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+            </div>
+          </footer>
+        </body>
+      </html>

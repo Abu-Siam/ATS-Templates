@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>Job openings (no jobs)</title>
+  </head>
+  <body class="bg-gray-300 z-10">
+    <!-- nav section -->
+    <div class="bg-white z-20">
+      <div
+        class="flex justify-between  lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:container lg:mx-auto py-5  "
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-evenly gap-2 lg:gap-0   "
+        >
+        <a href="#"><div><img src="../../images/Shrimp.svg"/></div></a>
+        <a href="#" class="text-blue-500 hover:underline"> Home</a>
+          <a href="#"
+            class="bg-gray-700 text-white py-2  px-6 hover:bg-gray-900 rounded-md"
+          >
+            All jobs
+      </a>
+          <a href="#" class="text-blue-500 hover:underline"> Candidates</a>
+  
+          
+        </div>
+  
+        <div
+          class="flex flex-col md:justify-end items-end md:flex-row md:items-center space-y-2 md:space-x-4"
+        >
+          <div>
+            Mohammad Habibul Bashar
+            <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="relative cursor-pointer">
+              <img src="../../images/notification_icon.svg" />
+              <!-- notification dot pulse -->
+              <div
+                class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
+              ></div>
+              <div
+                class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
+              ></div>
+              <!-- notification dot pulse ENDS -->
+            </div>
+  
+            <div class="cursor-pointer">
+              <img class="h-8 w-8" src="../../images/Profile Picture.png" />
+            </div>
+            <div class="cursor-pointer">
+              <!-- <img src="../../images/down_arrow.svg" /> -->
+              <select class="-ml-3 px-1 cursor-pointer focus:outline-none">
+                <option></option>
+                <a href="#"></a><option>1</option></a>
+                <a href="#"><option>2</option></a>
+                <a href="#"><option>3</option></a>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="bg-gray-300">
+      <!-- job openings section -->
+      <section class="bg-gray-300 py-4 lg:py-10 container mx-auto">
+        <div>
+          <div
+            class="flex flex-col lg:flex-row gap-5 justify-between px-6 py-8"
+          >
+            <div class="text-2xl lg:text-3xl text-center">Job Openings</div>
+            <div class="flex flex-col lg:flex-row gap-4">
+              <input
+                type="search"
+                placeholder="Search"
+                class="p-2 rounded-md"
+              />
+              <button
+                class="bg-gray-700 hover:bg-gray-900 text-white px-6 py-2 flex gap-2 rounded-md items-center justify-center"
+              >
+                <img src="../../images/plus-circle.svg" /> Create New Job
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex px-6  py-8 gap-2 items-start  lg:items-center"
+          >
+            <div>
+              <img class="hidden lg:block" src="../../images/exclamation-circle.png" />
+            </div>
+            <div class="text-xl">
+              There are no new openings at the moment. Click on the “<a
+                class="text-blue-600 hover:underline"
+                href="#"
+                >Create new Jobs</a
+              >” to create a new opening.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+      <div class="text-center text-sm px-4">
+        <b>powered by -</b>
+        <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+      </div>
+    </footer>
+  </body>
+</html>

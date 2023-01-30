@@ -1,0 +1,199 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Company profile setup</title>
+  </head>
+  <body class=" bg-gray-300 z-10">
+    <!-- nav section -->
+    <div
+      class="flex justify-between lg:gap-0 lg:grid lg:grid-cols-2 px-4 lg:px-20 py-5 bg-white z-20"
+    >
+    <!-- if nav content is total 4 items then this style applies -->
+      <div
+        class="flex flex-col lg:flex-row items-center gap-2 justify-evenly"
+      >
+      <a href="#"><div><img src="../images/Shrimp.svg"/></div></a>
+        <a href="#"
+          class=" text-blue-500 py-2 md:py-3 px-6 hover:underline"
+        >
+          All jobs
+      </a>
+        <a class="text-blue-500 cursor-pointer hover:underline"> Candidates</a>
+
+        <a
+        class="bg-gray-700 text-white py-2 md:py-3 px-6 hover:bg-gray-900 rounded-md"
+      >
+        Account
+    </a>
+      </div>
+
+      <div
+        class="flex flex-col md:justify-end items-end md:flex-row md:items-center space-y-2 md:space-x-4"
+      >
+        <div>
+          Mohammad Habibul Bashar
+          <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="relative cursor-pointer">
+            <img src="../images/notification_icon.svg" />
+            <!-- notification dot pulse -->
+            <div
+              class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
+            ></div>
+            <div
+              class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
+            ></div>
+            <!-- notification dot pulse ENDS -->
+          </div>
+
+          <div class="cursor-pointer">
+            <img class="h-8 w-8" src="../images/Profile Picture.png" />
+          </div>
+          <div class="cursor-pointer">
+            <!-- <img src="../images/down_arrow.svg" /> -->
+            <select class="-ml-3 px-1 cursor-pointer focus:outline-none">
+              <option></option>
+              <a href="#"></a><option>1</option></a>
+              <a href="#"><option>2</option></a>
+              <a href="#"><option>3</option></a>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="container mx-auto">
+
+        <!-- Section 1 (header) -->
+
+        <div class="flex flex-col lg:flex-row items-center gap-4 my-10  mx-24">
+            <div>
+                <img src="../images/Shrimp.svg"/>
+            </div>
+            <div>
+                <span  class="text-3xl">Dynamic Solution Innovators Ltd. </span>
+                <p class="flex items-center gap-2 mt-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                  http://www.shrimp.com/dsi</p>
+            </div>
+        </div>
+
+        <!-- section 2 (left section) -->
+        <div class="flex flex-col lg:flex-row gap-6 mx-10 lg:mx-24">
+            <div class="bg-white rounded-md w-full lg:w-1/4 py-4 h-fit ">
+               
+               <div class="flex flex-col gap-4">
+                    <a href="#"><div class="text-blue-500 hover:underline hover:bg-gray-200 px-4 py-2 mx-4 rounded-md"> Company Profile Settings </div></a>
+                    <a href="#"><div class="bg-gray-700 hover:bg-black text-white px-4 py-2 mx-4  rounded-md "> User management </div> </a>
+                   <a href="#"> <div class="text-blue-500 hover:underline hover:bg-gray-200 px-4 py-2 mx-4 rounded-md"> Dataset </div></a>
+               </div>
+            </div>
+            <!-- right section -->
+            <div class="bg-white w-full pb-10 rounded-md mb-20">
+               <div class="text-2xl text-center lg:text-start py-4 mx-4">Edit Company Profile</div>
+
+               <div class="flex flex-col mx-14 my-8">
+                <div class="flex items-start gap-4">
+                   
+                  
+                        <form class="w-full" >
+                            <div class="flex flex-col lg:flex-row items-start  lg:items-center gap-4 bg-gray-200 rounded-r-full z-10">
+                                <img src="../images/bigpicture.jpg" id="preview_image" class="h-auto w-40
+                                z-20 rounded-md"/>
+                                <div class="flex flex-col gap-2 z-20 w-full px-4">
+                                    <label class="text-lg">Update Company logo</label>
+                                    <input
+                                    type="file"
+                                    accept="image/*"
+                                    onchange="proPicReview(event)"
+                                    class="border border-gray-400 rounded-md py-2 px-2 my-1 cursor-pointer grow bg-white"
+                                    
+                                />
+                               <span class="text-gray-400"> * In jpg, jpeg or png format and 1 meg max </span>
+                                </div>
+                               
+                            </div>
+
+                            <div class="flex flex-col gap-2 mt-4">
+                                <label class="required-star">Company name </label>
+                                <input
+                                type="text"
+                                class="border border-gray-300 rounded-md py-2 px-2 my-1 "
+                              />
+                            </div>
+
+                            <div class="flex flex-col gap-2 mt-4">
+                                <label class="required-star">Unique Account ID </label>
+                                <input
+                                type="text"
+                                class="border border-gray-300 rounded-md py-2 px-2 my-1 "
+                              />
+                            </div>
+
+                            <div class="flex flex-col gap-2 mt-4">
+                                <label class="required-star">Short Description about the company </label>
+                                <textarea
+                                type="text"
+                                class="border border-gray-300 rounded-md py-2 px-2 my-1  h-32 "
+                              ></textarea>
+                            </div>
+
+                            <div class="flex flex-col gap-2 mt-4">
+                                <label class="required-star">Company website </label>
+                                <input
+                                type="url"
+                                class="border border-gray-300 rounded-md py-2 px-2 my-1 "
+                              />
+                            </div>
+
+                            <div class="mt-8 flex flex-col">
+                                <b class="text-xl">Page theme colors</b>
+
+                                <div class="flex flex-col lg:flex-row  justify-around">
+                               <div class="flex gap-2 mt-4 "><input type="color" class=" h-16 w-16 cursor-pointer"> <span class="text-xl font-bold">Header <br/> Background</span></div>
+                               <div class="flex gap-2 mt-4 "><input type="color" class=" h-16 w-16 cursor-pointer" value="#ffffff"> <span class="text-xl font-bold">Header <br/> Background</span></div>
+                               <div class="flex gap-2 mt-4 "><input type="color" class=" h-16 w-16 cursor-pointer" value="#0096FF"> <span class="text-xl font-bold">Header <br/> Background</span></div>
+                            </div>
+
+                            </div>
+
+                        </form>
+                
+                </div>
+
+               </div>
+            </div>
+        </div>
+    </main>
+          <!-- footer section -->
+          <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+            <div class="text-center text-sm px-4">
+              <b>powered by -</b>
+              <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+            </div>
+          </footer>
+
+              <!-- image upload preview  -->
+    <script>
+        var proPicReview = function (event) {
+          var output = document.getElementById("preview_image");
+  
+          output.src = URL.createObjectURL(event.target.files[0]);
+          output.onload = function () {
+            URL.revokeObjectURL(output.src);
+          };
+  
+          // for mobile
+          var output_mbl = document.getElementById("preview_image_mbl");
+          output_mbl.src = URL.createObjectURL(event.target.files[0]);
+          output_mbl.onload = function () {
+            URL.revokeObjectURL(output_mbl.src);
+          };
+        };
+      </script>
+        </body>
+      </html>
