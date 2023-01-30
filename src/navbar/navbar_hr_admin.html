@@ -4,21 +4,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../dist/output.css" />
-    <title>Navbar 3rd</title>
+    <title>Navbar</title>
   </head>
   <body class="bg-gray-300 z-10">
     <!-- nav section -->
     <div class="bg-white z-20">
-        <div class="grid grid-cols-6 py-4 px-4 lg:px-12 gap-2  mx-auto   ">
+        <div class="grid grid-cols-6 py-4 px-4 lg:px-2 xl:px-12 gap-2   ">
             <div class="col-span-1 self-center place-self-start flex">
                 <div class=" shrink-0">
                 <img class="w-32 h-12 " src="../../images/Shrimp.svg"/>
                 </div>
             </div>
             <div class="hidden self-center col-span-3 lg:col-span-2  place-self-center lg:place-self-start  md:flex gap-1 ">
-                <div class="px-6 py-2 ">Account</div>
-                <div class="px-6 py-2 "> Candidates</div>
-                <div class="px-6 py-2 bg-gray-600 text-white hover:bg-gray-900 rounded-md cursor-pointer">All jobs</div>
+                <a href="#"><div class="px-6 py-2 bg-gray-600 text-white hover:bg-gray-900 rounded-md cursor-pointer">Account</div></a>
+                <a href="#"><div class="px-6 py-2 text-blue-500"> Candidates</div></a>
+                <a href="#"><div class="px-6 py-2 text-blue-500">All jobs</div></a>
               
                 
             </div>
@@ -44,7 +44,7 @@
                   </div>
         
                   <div class="cursor-pointer">
-                    <img class="h-8 w-8 rounded-full" src="../../images/Profile Picture.png" />
+                    <img class="h-8 w-8 rounded-full" src="../../images/applicants_pic.jpg" />
                   </div>
                   <div class="cursor-pointer flex">
                     logout
@@ -58,10 +58,10 @@
             </div>
         </div>
         <!-- for mobile devices -->
-        <div class="flex flex-wrap md:hidden justify-between px-4 mb-2">
-            <div class="px-6 py-2 ">Account</div>
-            <div class="px-6 py-2"> Candidates</div>
-            <div class="px-6 py-2 bg-gray-600 text-white hover:bg-gray-900 rounded-md cursor-pointer">All jobs</div>
+        <div class="flex flex-wrap md:hidden justify-between px-2 mb-2">
+            <a><div class="px-6 py-2 bg-gray-600 text-white hover:bg-gray-900 rounded-md cursor-pointer ">item 1</div></a>
+            <a><div class="px-6 py-2 text-blue-500"> item 1</div></a>
+            <a><div class="px-6 py-2 text-blue-500">item 1</div></a>
             
         </div>
     </div>
