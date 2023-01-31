@@ -8,41 +8,31 @@
   </head>
   <body class="bg-gray-300 z-10">
     <!-- nav section -->
-    <div class="bg-white z-20">
-      <div class="grid grid-cols-6 py-4 px-4 lg:px-12 gap-2">
-        <div class=" col-span-6 sm:col-span-1 self-center place-self-center sm:place-self-start flex">
-          <div class="shrink-0">
-            <img class="w-32 h-12" src="../../images/Shrimp.svg" />
+    <div class="bg-white z-20 ">
+      <div class="flex py-4 px-4 items-center justify-center sm:justify-around  w-full lg:w-3/4 xl:w-1/2  ">
+        <div class=" shrink-0"><img class="w-32 h-12" src="../../images/Shrimp.svg"/></div>
+          <div class="flex space-x-12 justify-start">
+          <a href="#" class="hidden sm:flex px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md">Sign In</a>
+          <a href="#" class="hidden sm:flex px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md">Company Register</a>
+          <a href="#" class="hidden sm:flex px-6 py-2 bg-gray-400 text-white rounded-md">About</a>
           </div>
-        </div>
-        <div
-          class="hidden self-center col-span-3 sm:col-span-5 place-self-center md:place-self-start sm:flex gap-1"
-        >
-          <a href="#"><div class="px-6 py-2 text-blue-500">Sign In</div></a>
-          <a href="#"><div class="px-6 py-2 text-blue-500"> Sign Up</div></a>
-          <a href="#"> <div
-            class="px-6 py-2 bg-gray-600 text-white hover:bg-gray-900 rounded-md"
+      </div>
+        <!-- for mobile devices -->
+        <div class="flex flex-wrap sm:hidden  justify-between px-4 mb-2">
+          <a href="#" class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md">Sign In</a>
+          <a href="#" class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"> Sign Up</a>
+          <a href="#"
+            class="px-6 py-2 bg-gray-400 text-white rounded-md cursor-pointer"
           >
             About
-          </div></a>
+        </a>
         </div>
       </div>
-      <!-- for mobile devices -->
-      <div class="flex flex-wrap sm:hidden  justify-between px-4 mb-2">
-        <a href="#"><div class="px-6 py-2 text-blue-500">Sign In</div></a>
-        <a href="#"><div class="px-6 py-2 text-blue-500"> Sign Up</div></a>
-        <a href="#"><div
-          class="px-6 py-2 bg-gray-600 text-white hover:bg-gray-900 rounded-md cursor-pointer"
-        >
-          About
-        </div></a>
-      </div>
-    </div>
 
-    <main class="container mx-auto md:px-4 lg:px-8">
+    <main class="container mx-auto max-w-6xl">
       <!-- whole container -->
-      <section class="my-14">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <section class="m-6 lg:m-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
           <!-- right section -->
           <div class="hidden md:flex flex-col">
@@ -93,7 +83,7 @@
                 <div>
                   <svg
                     width="50"
-                    height="50"
+                    height="60"
                     viewBox="0 0 50 50"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -175,9 +165,9 @@
               <!-- for mobile devices -->
                 <!-- signup with {company.name} mobile -->
                 <div class="md:hidden text-center italic mb-2 text-xl">Don’t have a corporate account?</div>
-                  <div class="bg-blue-900 rounded-xl px-2 py-2  flex items-start justify-center  gap-2 md:hidden cursor-pointer ">
+                  <div class="bg-blue-900 rounded-xl px-2 py-4  flex items-start justify-center  gap-2 md:hidden cursor-pointer ">
                     <img src="../../images/click_logo.png"/>
-                    <div class="text-center  text-3xl font-medium text-white flex gap-2">
+                    <div class="text-center text-2xl justify-center items-center  lg:text-3xl font-medium text-white flex gap-2">
                       Sign up with
                       <img class="w-24 h-12" src="../../images/Shrimp_logo_white.svg" class="cursor-pointer"
                     /></div>
