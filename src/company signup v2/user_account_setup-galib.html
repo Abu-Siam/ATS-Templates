@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../dist/output.css" />
-    <title>Sign Up</title>
+    <title>User Account Setup</title>
   </head>
   <body class="bg-gray-300 z-10">
     <!-- nav section -->
@@ -65,54 +65,65 @@
           <div
             class="hidden xl:block -ml-28 -mt-8 absolute top-0 left-0 z-10"
           >
-            <img class="float-right" src="../../images/signup_cloud.svg" />
+            <img class="float-right" src="../../images/user_account_setup_cloud.svg" />
           </div>
           <div
             class="bg-gray-300 border border-gray-400 rounded-xl px-6 py-4 z-20"
           >
-            <div class=" text-center lg:text-start px-4 text-2xl font-bold">Sign Up Your Company with Shrimp</div>
+            <div class=" text-center lg:text-start px-4 text-2xl font-bold">User Account Setup</div>
+            <p class="px-4 mt-4 ">Provide details about your account for the company <span class="font-bold"> ABCDE Ltd. </span></p>
+            <p class=" px-4 italic">www.ABCDEXCDE.com</p>
             <form class="flex flex-col px-4 mt-4">
               <div class="flex flex-col gap-2">
-                <label class="required-star"> Company name </label>
+                <label class="required-star"> Your first name </label>
                 <input type="text" class="form-input-rounded" />
               </div>
               <div class="flex flex-col gap-2">
-                <label class="mt-2 required-star">Unique account ID </label>
+                <label class="mt-2 required-star">Your last name </label>
                 <input type="text" class="form-input-rounded" />
               </div>
               <div class="flex flex-col gap-2">
-                <label class="mt-2 required-star">Link of company website </label>
-                <input type="url" class="form-input-rounded" />
+                <label class="mt-2 required-star">Your username </label>
+                <input type="text" class="form-input-rounded" />
               </div>
               <div class="flex flex-col gap-2">
-                <label class="mt-2 required-star">Account owner’s email address </label>
+                <label class="mt-2 required-star">Your email address </label>
                 <input type="email" class="form-input-rounded" />
               </div>
+              <!-- warning message -->
+              <div class=" bg-teal-100 border border-teal-500 border-t-8 px-4 py-4 mb-4 rounded-md shadow-md">
+                <div>
+                    <div class="flex gap-2 mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                      </svg>
+                      About Password
+                    </div>
+                    <ul class=" list-disc px-6 text-sm">
+                        <li>Password must be at least 8 character long and contain both alphanumeric and a special character</li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- warning message ENDS -->
               <div class="flex flex-col gap-2">
-                <label class="mt-2 required-star">Time zone </label>
-               <select class="form-dropdown-rounded bg-white cursor-pointer">
-                <option>UCT</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-               </select>
+                <label class="mt-2 required-star">Password </label>
+                <input type="password" class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="mt-2 required-star">Re-type password </label>
+                <input type="password" class="form-input-rounded" />
               </div>
 
               <div
-                class=" mt-8 text-xl flex flex-wrap flex-col-reverse lg:flex-row gap-4 items-center justify-between"
+              class=" mt-4 text-xl flex  lg:flex-row gap-4 items-center justify-end"
+            >
+              <a href="#"
+                class="px-6 py-2 w-full lg:w-auto text-white text-center bg-red-900 rounded-md hover:bg-red-800"
               >
-              
-                <div>Already a member? <a href="#" class="text-blue-500 hover:underline"
-                    >Sign In</a
-                  ></div>
-
-                <a href="#" 
-                  class="px-6 py-2 w-full lg:w-auto text-white text-center bg-red-900 rounded-md hover:bg-red-800"
-                >
-                  Sign Up
-                </a>
+                Continue
+              </a>
+            </div>
               </div>
             </form>
           </div>

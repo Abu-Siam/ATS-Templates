@@ -1192,8 +1192,8 @@ input[type="file"]::file-selector-button{
   margin-top: -2rem;
 }
 
-.-ml-32{
-  margin-left: -8rem;
+.-ml-28{
+  margin-left: -7rem;
 }
 
 .mr-40{
@@ -1206,22 +1206,6 @@ input[type="file"]::file-selector-button{
 
 .ml-28{
   margin-left: 7rem;
-}
-
-.-ml-28{
-  margin-left: -7rem;
-}
-
-.ml-12{
-  margin-left: 3rem;
-}
-
-.ml-20{
-  margin-left: 5rem;
-}
-
-.ml-16{
-  margin-left: 4rem;
 }
 
 .block{
@@ -1655,6 +1639,10 @@ input[type="file"]::file-selector-button{
 
 .rounded-lg{
   border-radius: 0.5rem;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
 }
 
 .rounded-l-md{
@@ -2108,6 +2096,12 @@ input[type="file"]::file-selector-button{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-sm{
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -2270,20 +2264,12 @@ html {
     align-items: flex-end;
   }
 
-  .sm\:justify-start{
-    justify-content: flex-start;
-  }
-
   .sm\:justify-between{
     justify-content: space-between;
   }
 
   .sm\:justify-around{
     justify-content: space-around;
-  }
-
-  .sm\:justify-self-start{
-    justify-self: start;
   }
 
   .sm\:px-6{
@@ -2548,10 +2534,6 @@ html {
 
   .lg\:mb-0{
     margin-bottom: 0px;
-  }
-
-  .lg\:mt-8{
-    margin-top: 2rem;
   }
 
   .lg\:ml-44{
