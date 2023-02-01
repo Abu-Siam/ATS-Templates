@@ -13,6 +13,8 @@
 /*}*/
 
 /* making custom class for repeated styles */
+
+                                      /* default html styling or modifing goes in base */
 @layer base {
 
   /* for sticking footer to end */
@@ -37,7 +39,7 @@
     padding-right: 2rem !important;
   }
 }
-
+                                              /* own made classes goes in coponents */
 @layer components {
   .link-flex-center {
     @apply text-blue-500 mt-10 flex items-center justify-center;
