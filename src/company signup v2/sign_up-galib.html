@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>Sign Up</title>
+  </head>
+  <body class="bg-gray-300 z-10">
+    <!-- nav section -->
+    <div class="bg-white z-20">
+      <div
+        class="flex py-4 px-4 items-center justify-center sm:justify-around w-full lg:w-3/4 xl:w-1/2"
+      >
+        <div class="shrink-0">
+          <img class="w-32 h-12" src="../../images/Shrimp.svg" />
+        </div>
+        <div class="flex space-x-12 justify-start">
+          <a
+            href="#"
+            class="hidden sm:flex px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+            >Sign In</a
+          >
+          <a
+            href="#"
+            class="hidden sm:flex px-6 py-2 bg-gray-400 text-white rounded-md"
+            >Company Register</a
+          >
+          <a
+            href="#"
+            class="hidden sm:flex px-6 py-2 text-blue-500 hover:bg-gray-300 rounded-md"
+            >About</a
+          >
+        </div>
+      </div>
+      <!-- for mobile devices -->
+      <div class="flex flex-wrap sm:hidden justify-between px-4 mb-2">
+        <a
+          href="#"
+          class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+          >Sign In</a
+        >
+        <a
+          href="#"
+          class="px-6 py-2 bg-gray-400 text-white rounded-md"
+        >
+        Register</a
+        >
+        <a
+          href="#"
+          class="px-6 py-2 text-blue-500 hover:bg-gray-300 rounded-md cursor-pointer"
+        >
+          About
+        </a>
+      </div>
+    </div>
+
+    <main class="container mx-auto max-w-6xl">
+        <section class="m-6 lg:m-12">
+        <!-- signin form -->
+
+          <div
+          class="order-1 lg:order-none flex flex-col gap-4 relative mx-auto container md:w-3/4 lg:w-1/2"
+        >
+          <div
+            class="hidden xl:block -ml-28 -mt-8 absolute top-0 left-0 z-10"
+          >
+            <img class="float-right" src="../../images/signup_cloud.svg" />
+          </div>
+          <div
+            class="bg-gray-300 border border-gray-400 rounded-xl px-6 py-4 z-20"
+          >
+            <div class=" text-center lg:text-start px-4 text-2xl font-bold">Sign Up Your Company with Shrimp</div>
+            <form class="flex flex-col px-4 mt-4">
+              <div class="flex flex-col gap-2">
+                <label class="required-star"> Company Name </label>
+                <input type="text" class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="mt-2 required-star">Unique Account ID </label>
+                <input type="text" class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="mt-2 required-star">Link of Company Website </label>
+                <input type="url" class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="mt-2 required-star">Account Owner’s Email address </label>
+                <input type="email" class="form-input-rounded" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label class="mt-2 required-star">Time Zone </label>
+               <select class="form-dropdown-rounded bg-white cursor-pointer">
+                <option>UCT</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+               </select>
+              </div>
+
+              <div
+                class=" mt-8 text-xl flex flex-wrap flex-col-reverse lg:flex-row gap-4 items-center justify-between"
+              >
+              
+                <div>Already a member? <a href="#" class="text-blue-500 hover:underline"
+                    >Sign In</a
+                  ></div>
+
+                <a href="#" 
+                  class="px-6 py-2 w-full lg:w-auto text-white text-center bg-red-900 rounded-md hover:bg-red-800"
+                >
+                  Sign Up
+                </a>
+              </div>
+            </form>
+          </div>
+
+        </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+      <div class="text-center text-sm px-4">
+        <b>powered by -</b>
+        <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+      </div>
+    </footer>
+  </body>
+</html>
