@@ -2760,6 +2760,10 @@ html {
     margin-bottom: 0px;
   }
 
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:w-1\/4{
     width: 25%;
   }
