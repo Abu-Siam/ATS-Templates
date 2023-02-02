@@ -1290,12 +1290,12 @@ input[type="file"]::file-selector-button{
   height: 3rem;
 }
 
-.h-44{
-  height: 11rem;
-}
-
 .h-96{
   height: 24rem;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .h-max{
@@ -1379,21 +1379,17 @@ input[type="file"]::file-selector-button{
   width: 10rem;
 }
 
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-1\/4{
   width: 25%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
-.w-96{
-  width: 24rem;
-}
-
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
+.w-28{
+  width: 7rem;
 }
 
 .max-w-6xl{
@@ -1471,10 +1467,6 @@ input[type="file"]::file-selector-button{
   list-style-type: decimal;
 }
 
-.grid-flow-row{
-  grid-auto-flow: row;
-}
-
 .grid-flow-col{
   grid-auto-flow: column;
 }
@@ -1523,20 +1515,12 @@ input[type="file"]::file-selector-button{
   flex-wrap: wrap;
 }
 
-.place-content-between{
-  place-content: space-between;
-}
-
 .place-items-start{
   place-items: start;
 }
 
 .place-items-center{
   place-items: center;
-}
-
-.place-items-stretch{
-  place-items: stretch;
 }
 
 .items-start{
@@ -1853,6 +1837,11 @@ input[type="file"]::file-selector-button{
 .bg-blue-600{
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-red-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -2233,6 +2222,11 @@ html {
 .hover\:bg-blue-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-700:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .hover\:text-blue-500:hover{
@@ -2708,6 +2702,10 @@ html {
     gap: 3rem;
   }
 
+  .lg\:gap-6{
+    gap: 1.5rem;
+  }
+
   .lg\:space-x-16 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(4rem * var(--tw-space-x-reverse));
@@ -2785,6 +2783,21 @@ html {
   .lg\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .lg\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:text-justify{
