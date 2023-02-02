@@ -9,62 +9,100 @@
   <body class=" bg-gray-300 z-10">
     <!-- nav section -->
     <div class="bg-white z-20">
-      <div class="grid grid-cols-6 py-4 px-4 lg:px-2 xl:px-12 gap-2   ">
-          <div class="col-span-1 self-center place-self-start flex">
-              <div class=" shrink-0">
-              <img class="w-32 h-12 " src="../../images/Shrimp.svg"/>
-              </div>
+      <div class="flex justify-between items-center py-4 px-4">
+        <div
+          class="flex items-center justify-start md:justify-around w-full lg:w-3/4 xl:w-1/2"
+        >
+          <div class="shrink-0">
+            <img class="w-32 h-12" src="../../images/Shrimp.svg" />
           </div>
-          <div class="hidden self-center col-span-3 lg:col-span-2  place-self-center lg:place-self-start  md:flex gap-1 ">
-              <a href="#"><div class="px-6 py-2 bg-gray-600 text-white hover:bg-gray-900 rounded-md cursor-pointer">Account</div></a>
-              <a href="#"><div class="px-6 py-2 text-blue-500"> Candidates</div></a>
-              <a href="#"><div class="px-6 py-2 text-blue-500">All jobs</div></a>
-            
-              
-          </div>
-          <div class="self-center place-self-end col-span-5 md:col-span-2 lg:col-span-3  ">
-              <div
-              class="flex flex-col md:justify-end items-end md:flex-row md:items-center space-y-2 md:space-x-4"
+          <div class="flex space-x-12 justify-start">
+            <a
+              href="#"
+              class="hidden md:flex px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+              >All Jobs</a
             >
-              <div class="hidden lg:block">
-                Mohammad Habibul Bashar
-                <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+            <a
+              href="#"
+              class="hidden md:flex px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+              >Candidates</a
+            >
+            <a
+              href="#"
+              class="hidden md:flex px-6 py-2 bg-gray-400 text-white rounded-md"
+              >Account</a
+            >
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-col md:flex-row gap-4 pr-8 lg:pr-16 xl:pr-24">
+            <div class="hidden xl:block">
+              Mohammad Habibul Bashar
+              <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div class="hidden xl:block relative cursor-pointer">
+                <img src="../../images/notification_icon.svg" />
+                <!-- notification dot pulse -->
+                <div
+                  class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
+                ></div>
+                <div
+                  class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
+                ></div>
+                <!-- notification dot pulse ENDS -->
               </div>
-              <div class="flex items-center space-x-4">
-                <div class="hidden lg:block relative cursor-pointer">
-                  <img src="../../images/notification_icon.svg" />
-                  <!-- notification dot pulse -->
-                  <div
-                    class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
-                  ></div>
-                  <div
-                    class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
-                  ></div>
-                  <!-- notification dot pulse ENDS -->
-                </div>
-      
-                <div class="cursor-pointer">
-                  <img class="h-8 w-8 rounded-full" src="../../images/applicants_pic.jpg" />
-                </div>
-                <div class="cursor-pointer flex">
+
+              <div class="cursor-pointer shrink-0">
+                <img
+                  class=" h-8 w-8 rounded-full"
+                  src="../../images/applicants_pic.jpg"
+                />
+              </div>
+              <a href="#">
+                <div class="flex">
                   logout
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-                    </svg>
-                    
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+                    />
+                  </svg>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
+        </div>
       </div>
       <!-- for mobile devices -->
-      <div class="flex flex-wrap md:hidden justify-between px-2 mb-2">
-          <a><div class="px-6 py-2 bg-gray-600 text-white hover:bg-gray-900 rounded-md cursor-pointer ">item 1</div></a>
-          <a><div class="px-6 py-2 text-blue-500"> item 1</div></a>
-          <a><div class="px-6 py-2 text-blue-500">item 1</div></a>
-          
+      <div class="flex flex-wrap md:hidden justify-between px-4 mb-2">
+        <a
+          href="#"
+          class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+          >All Jobs</a
+        >
+        <a
+          href="#"
+          class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+        >
+          Candidates</a
+        >
+        <a
+          href="#"
+          class="px-6 py-2 bg-gray-400 text-white rounded-md cursor-pointer"
+        >
+          Account
+        </a>
       </div>
-  </div>
+    </div>
     <main class="container mx-auto">
 
         <!-- Section 1 (header) -->
@@ -94,7 +132,7 @@
                </div>
             </div>
             <!-- right section -->
-            <div class="bg-white w-full h-fit pb-4  rounded-md">
+            <div class="bg-white w-full h-fit pb-4 mb-10  rounded-md">
                 <div class="flex flex-col">
                 <div class="flex flex-wrap justify-between  p-4">
                    <div class="text-2xl mb-4 lg:mb-0">User Management</div> </a>

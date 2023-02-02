@@ -1068,6 +1068,11 @@ input[type="file"]::file-selector-button{
   margin-right: 5rem;
 }
 
+.mx-5{
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -1971,6 +1976,10 @@ input[type="file"]::file-selector-button{
   padding-right: 1rem;
 }
 
+.pr-8{
+  padding-right: 2rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -2391,6 +2400,10 @@ html {
     justify-content: space-between;
   }
 
+  .md\:justify-around{
+    justify-content: space-around;
+  }
+
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -2777,6 +2790,10 @@ html {
     padding-right: 1.5rem;
   }
 
+  .lg\:pr-16{
+    padding-right: 4rem;
+  }
+
   .lg\:text-justify{
     text-align: justify;
   }
@@ -2857,6 +2874,10 @@ html {
   .xl\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:pr-24{
+    padding-right: 6rem;
   }
 }
 
