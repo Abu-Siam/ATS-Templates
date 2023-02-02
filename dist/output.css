@@ -1068,11 +1068,6 @@ input[type="file"]::file-selector-button{
   margin-right: 5rem;
 }
 
-.mx-5{
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .mb-8{
   margin-bottom: 2rem;
 }
@@ -1479,12 +1474,12 @@ input[type="file"]::file-selector-button{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-rows-1{
@@ -1811,14 +1806,14 @@ input[type="file"]::file-selector-button{
   background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .bg-red-800{
   --tw-bg-opacity: 1;
   background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .bg-yellow-500{
@@ -1972,12 +1967,12 @@ input[type="file"]::file-selector-button{
   padding-bottom: 2.5rem;
 }
 
-.pr-4{
-  padding-right: 1rem;
-}
-
 .pr-8{
   padding-right: 2rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
 }
 
 .text-center{
@@ -2760,11 +2755,6 @@ html {
     padding-right: 4rem;
   }
 
-  .lg\:px-2{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
   .lg\:px-44{
     padding-left: 11rem;
     padding-right: 11rem;
@@ -2778,6 +2768,11 @@ html {
   .lg\:px-72{
     padding-left: 18rem;
     padding-right: 18rem;
+  }
+
+  .lg\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .lg\:px-12{
