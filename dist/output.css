@@ -1379,10 +1379,6 @@ input[type="file"]::file-selector-button{
   width: 25%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .max-w-6xl{
   max-width: 72rem;
 }
@@ -1943,16 +1939,6 @@ input[type="file"]::file-selector-button{
   padding-right: 5rem;
 }
 
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .pl-4{
   padding-left: 1rem;
 }
@@ -1983,10 +1969,6 @@ input[type="file"]::file-selector-button{
 
 .pr-4{
   padding-right: 1rem;
-}
-
-.pr-10{
-  padding-right: 2.5rem;
 }
 
 .text-center{
@@ -2295,10 +2277,6 @@ html {
     align-items: flex-end;
   }
 
-  .sm\:justify-start{
-    justify-content: flex-start;
-  }
-
   .sm\:justify-between{
     justify-content: space-between;
   }
@@ -2411,10 +2389,6 @@ html {
 
   .md\:justify-between{
     justify-content: space-between;
-  }
-
-  .md\:justify-around{
-    justify-content: space-around;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){
