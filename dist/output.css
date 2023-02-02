@@ -1290,6 +1290,19 @@ input[type="file"]::file-selector-button{
   height: 3rem;
 }
 
+.h-44{
+  height: 11rem;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-max{
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .max-h-48{
   max-height: 12rem;
 }
@@ -1370,6 +1383,19 @@ input[type="file"]::file-selector-button{
   width: 25%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-6xl{
   max-width: 72rem;
 }
@@ -1445,6 +1471,10 @@ input[type="file"]::file-selector-button{
   list-style-type: decimal;
 }
 
+.grid-flow-row{
+  grid-auto-flow: row;
+}
+
 .grid-flow-col{
   grid-auto-flow: column;
 }
@@ -1493,12 +1523,20 @@ input[type="file"]::file-selector-button{
   flex-wrap: wrap;
 }
 
+.place-content-between{
+  place-content: space-between;
+}
+
 .place-items-start{
   place-items: start;
 }
 
 .place-items-center{
   place-items: center;
+}
+
+.place-items-stretch{
+  place-items: stretch;
 }
 
 .items-start{
@@ -1639,10 +1677,6 @@ input[type="file"]::file-selector-button{
 
 .rounded-lg{
   border-radius: 0.5rem;
-}
-
-.rounded-sm{
-  border-radius: 0.125rem;
 }
 
 .rounded-l-md{
@@ -2096,12 +2130,6 @@ input[type="file"]::file-selector-button{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-sm{
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -2119,6 +2147,10 @@ input[type="file"]::file-selector-button{
 /*}*/
 
 /* making custom class for repeated styles */
+
+/* default html styling or modifing goes in base */
+
+/* own made classes goes in coponents */
 
 html {
   font-family: "Lato", sans-serif;
