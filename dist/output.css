@@ -1391,6 +1391,18 @@ input[type="file"]::file-selector-button{
   max-width: 32rem;
 }
 
+.max-w-5xl{
+  max-width: 64rem;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
+}
+
+.max-w-full{
+  max-width: 100%;
+}
+
 .flex-shrink-0{
   flex-shrink: 0;
 }
@@ -1622,6 +1634,10 @@ input[type="file"]::file-selector-button{
 
 .justify-self-end{
   justify-self: end;
+}
+
+.justify-self-center{
+  justify-self: center;
 }
 
 .overflow-y-auto{
@@ -1975,12 +1991,12 @@ input[type="file"]::file-selector-button{
   padding-bottom: 2.5rem;
 }
 
-.pr-8{
-  padding-right: 2rem;
-}
-
 .pr-4{
   padding-right: 1rem;
+}
+
+.pr-8{
+  padding-right: 2rem;
 }
 
 .text-center{
@@ -2427,12 +2443,6 @@ html {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:space-x-24 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(6rem * var(--tw-space-x-reverse));
-    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:space-x-20 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
@@ -2503,6 +2513,14 @@ html {
 
   .lg\:col-span-3{
     grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
+  .lg\:col-span-4{
+    grid-column: span 4 / span 4;
   }
 
   .lg\:m-12{
@@ -2673,6 +2691,22 @@ html {
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-8{
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-7{
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-9{
+    grid-template-columns: repeat(9, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
