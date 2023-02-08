@@ -1624,10 +1624,6 @@ input[type="file"]::file-selector-button{
   justify-self: end;
 }
 
-.overflow-hidden{
-  overflow: hidden;
-}
-
 .overflow-y-auto{
   overflow-y: auto;
 }
