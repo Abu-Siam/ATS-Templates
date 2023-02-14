@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../dist/output.css" />
-    <title>Verify Email </title>
+    <title>Verify Email</title>
   </head>
   <body class="bg-gray-300 z-10">
     <!-- nav section -->
@@ -16,12 +16,12 @@
           <img class="w-32 h-12" src="../../images/Shrimp.svg" />
         </div>
         <div class="flex flex-wrap gap-4 sm:justify-end">
-          <a href="#" class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
-            >Sign In</a
-          >
           <a
             href="#"
-            class="px-6 py-2 bg-gray-400 rounded-md text-white "
+            class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+            >Sign In</a
+          >
+          <a href="#" class="px-6 py-2 bg-gray-400 rounded-md text-white"
             >Register</a
           >
           <a
@@ -34,42 +34,52 @@
     </div>
 
     <main class="container mx-auto max-w-6xl">
-        <section class="m-6 lg:m-12">
+      <section class="m-6 lg:m-12">
         <!-- signin form -->
 
-          <div
+        <div
           class="order-1 lg:order-none flex flex-col gap-4 relative mx-auto container max-w-md"
         >
-          <div
-            class="hidden xl:block -ml-28 -mt-8 absolute top-0 left-0 z-10"
-          >
-            <img class="float-right" src="../../images/verify_email_cloud.svg" />
+          <div class="hidden xl:block -ml-28 -mt-8 absolute top-0 left-0 z-10">
+            <img
+              class="float-right"
+              src="../../images/verify_email_cloud.svg"
+            />
           </div>
           <div
             class="bg-gray-300 border border-gray-400 rounded-xl px-6 py-4 z-20"
           >
-            <div class=" text-center lg:text-start px-4 text-2xl font-bold">Verify Email Address</div>
-            <div class="px-4 mt-4">A verification link and a verification code has been sent to the email address - <br/> <span class="font-bold">yourmail@email.com.</span>
-            <p class="mt-4">Please follow that link or enter that code here to continue with the sign up process - </p></div>
+            <div class="text-center lg:text-start px-4 text-2xl font-bold">
+              Verify Email Address
+            </div>
+            <div class="px-4 mt-4">
+              A verification link and a verification code has been sent to the
+              email address - <br />
+              <span class="font-bold">yourmail@email.com.</span>
+              <p class="mt-4">
+                Please follow that link or enter that code here to continue with
+                the sign up process -
+              </p>
+            </div>
             <form class="flex flex-col px-4 mt-4">
-                <div class="flex flex-col gap-2">
-                  <label class="required-star"> Verification code </label>
-                  <input type="text" class="form-input-rounded" />
-                </div>
-                <div
-                  class=" mt-4 text-xl flex  lg:flex-row gap-4 items-center justify-end"
+              <div class="flex flex-col gap-2">
+                <label class="required-star"> Verification code </label>
+                <input type="text" class="form-input-rounded" />
+              </div>
+              <div
+                class="mt-4 text-xl flex lg:flex-row gap-4 items-center justify-end"
+              >
+                <a
+                  href="#"
+                  class="px-6 py-2 w-full lg:w-auto text-white text-center bg-red-900 rounded-md hover:bg-red-800"
                 >
-                  <a href="#"
-                    class="px-6 py-2 w-full lg:w-auto text-white text-center bg-red-900 rounded-md hover:bg-red-800"
-                  >
-                    Continue
-                  </a>
-                </div>
-              </form>
+                  Continue
+                </a>
+              </div>
+            </form>
           </div>
-
         </div>
-        </section>
+      </section>
     </main>
     <!-- footer section -->
     <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">

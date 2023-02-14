@@ -1294,10 +1294,6 @@ input[type="file"]::file-selector-button{
   height: min-content;
 }
 
-.h-36{
-  height: 9rem;
-}
-
 .max-h-48{
   max-height: 12rem;
 }
@@ -1875,10 +1871,6 @@ input[type="file"]::file-selector-button{
   padding: 1rem;
 }
 
-.p-0{
-  padding: 0px;
-}
-
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1957,11 +1949,6 @@ input[type="file"]::file-selector-button{
 .py-\[6px\]{
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .pb-10{
@@ -2543,6 +2530,11 @@ html {
     margin-right: 3rem;
   }
 
+  .lg\:mx-14{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
   .lg\:mx-24{
     margin-left: 6rem;
     margin-right: 6rem;
@@ -2576,11 +2568,6 @@ html {
   .lg\:my-6{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-  }
-
-  .lg\:mx-14{
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
   }
 
   .lg\:mb-0{
@@ -2717,10 +2704,6 @@ html {
 
   .lg\:place-items-center{
     place-items: center;
-  }
-
-  .lg\:items-start{
-    align-items: flex-start;
   }
 
   .lg\:items-end{
@@ -2860,11 +2843,6 @@ html {
   .lg\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .lg\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
   }
 
   .lg\:pr-16{
