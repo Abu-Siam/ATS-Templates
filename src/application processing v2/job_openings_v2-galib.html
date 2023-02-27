@@ -1,0 +1,340 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>Job Openings v2</title>
+  </head>
+  <body class="bg-gray-300 z-10">
+    <main>
+      <!-- nav section -->
+      <div class="bg-white z-20 py-4">
+        <div class="flex justify-between items-center px-6 lg:px-10">
+          <div
+            class="flex flex-col md:flex-row gap-2 md:space-x-20 lg:space-x-24 items-start justify-center md:items-center"
+          >
+            <div class="shrink-0">
+              <img class="w-32 h-12" src="../../images/Shrimp.svg" />
+            </div>
+            <div class="hidden md:flex flex-wrap gap-4">
+              <a href="#" class="px-6 py-2 bg-gray-400 rounded-2xl text-white"
+                >All Jobs</a
+              >
+              <a
+                href="#"
+                class="px-6 py-2 text-blue-500 hover:bg-gray-400 hover:text-white hover:rounded-2xl"
+                >Candidates</a
+              >
+              <a
+                href="#"
+                class="px-6 py-2 text-blue-500 hover:bg-gray-400 hover:text-white hover:rounded-2xl"
+                >Account</a
+              >
+            </div>
+          </div>
+          <!-- hr name and details -->
+          <div>
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="hidden xl:block">
+                Mohammad Habibul Bashar
+                <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="hidden xl:block relative cursor-pointer">
+                  <img src="../../images/notification_icon.svg" />
+                  <!-- notification dot pulse -->
+                  <div
+                    class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
+                  ></div>
+                  <div
+                    class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
+                  ></div>
+                  <!-- notification dot pulse ENDS -->
+                </div>
+
+                <div class="cursor-pointer shrink-0">
+                  <img
+                    class="h-8 w-8 rounded-full"
+                    src="../../images/applicants_pic.jpg"
+                  />
+                </div>
+                <a href="#">
+                  <div class="flex items-center gap-2">
+                    logout
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- for mobile devices -->
+        <div class="flex flex-wrap md:hidden justify-between px-4 mt-4">
+          <a
+            href="#"
+            class="px-6 py-2 text-blue-500 hover:bg-gray-400 hover:rounded-2xl"
+            >All Jobs</a
+          >
+          <a
+            href="#"
+            class="px-6 py-2 text-blue-500 hover:bg-gray-400 hover:rounded-2xl"
+          >
+            Candidates</a
+          >
+          <a
+            href="#"
+            class="px-6 py-2 bg-gray-400 text-white rounded-2xl cursor-pointer"
+          >
+            Account
+          </a>
+        </div>
+      </div>
+
+      <!-- comoany name and its website link -->
+
+      <div
+        class="container mx-auto flex flex-col lg:flex-row items-center gap-4 mt-4 px-4 text-center"
+      >
+        <div>
+          <img class="w-32 h-20" src="../../images/Shrimp.svg" />
+        </div>
+        <div>
+          <div class="text-2xl text-black font-medium">
+            Dynamic Solution Innovators Ltd.
+          </div>
+          <a
+            href="#"
+            class="flex items-center justify-center lg:justify-start gap-2 mt-2 text-blue-500 hover:underline"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square text-black"></i>
+            https://www.shrimp.com/dsi</a
+          >
+        </div>
+      </div>
+      <!-- job openings section -->
+      <section class="bg-gray-300 py-5 container mx-auto">
+        <div>
+          <div
+            class="flex flex-col lg:flex-row gap-5 justify-between px-4 pb-4"
+          >
+            <div
+              class="text-2xl lg:text-3xl text-center text-black font-medium"
+            >
+              Openings
+            </div>
+            <div class="flex flex-col lg:flex-row gap-4">
+              <button
+                class="bg-red-900 hover:bg-red-800 text-white px-6 py-2 flex gap-2 rounded-2xl items-center justify-center"
+              >
+                <img src="../../images/plus-circle.svg" /> Create New Job
+              </button>
+            </div>
+          </div>
+
+          <!-- job post-1 -->
+          <div
+            class="flex justify-between mx-4 bg-white p-4 shadow-md rounded-2xl"
+          >
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-col lg:flex-row gap-4">
+                <a href="#" class="text-2xl text-blue-500 hover:underline"
+                  >Senior Design Verification Engineer</a
+                >
+                <span
+                  class="bg-gray-300 text-sm rounded-2xl px-4 py-2 h-8 w-16 flex items-center"
+                  >Draft</span
+                >
+              </div>
+
+              <div>
+                We also work on the firmware and software stack required for a
+                new microcontroller. We have trained and prepared engineers from
+                scratch.
+              </div>
+              <div class="flex flex-col lg:flex-row gap-2 lg:gap-5">
+                <div class="flex items-center gap-1">
+                  <!-- person icon -->
+                  <i class="fa-regular fa-user text-sm"></i>
+                  <div>1 Position</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <!-- location icon -->
+                  <i class="fa-solid fa-location-dot text-sm"></i>
+
+                  <div>Dhaka, Bangladesh</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <!-- clock icon -->
+                  <i class="fa-regular fa-clock text-sm"></i>
+
+                  <div>Added on 9 November, 2022</div>
+                </div>
+              </div>
+              <a href="#"
+                ><div class="text-blue-500 hover:underline">
+                  View details
+                </div></a
+              >
+            </div>
+            <div class="flex items-end gap-4 flex-col">
+              <div class="flex items-center gap-2 hover:underline">
+                 <!-- edit icon -->
+                 <i class="fa-solid fa-pen-to-square text-xl"></i>
+                <a href="#" class="text-lg text-blue-500">Edit post</a>
+              </div>
+
+              <div
+                class="flex flex-col px-6 py-4 rounded-2xl items-center gap-2 bg-gray-300"
+              >
+                <div class="text-sm text-gray-700">Applied</div>
+                <div class="text-2xl">58</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- job post-2 -->
+          <div
+            class="flex justify-between mx-4 bg-white p-4 shadow-md rounded-lg mt-1"
+          >
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-col lg:flex-row gap-4">
+                <a href="#" class="text-2xl text-blue-500 hover:underline"
+                  >Software Engineer (Application Support)</a
+                >
+                <span
+                  class="bg-green-200 text-sm rounded-2xl px-4 py-2 h-8 w-24 flex items-center"
+                  >Published</span
+                >
+              </div>
+
+              <div>
+                We also work on the firmware and software stack required for a
+                new microcontroller. We have trained and prepared engineers from
+                scratch.
+              </div>
+              <div class="flex flex-col lg:flex-row gap-2 lg:gap-5">
+                <div class="flex items-center gap-1">
+                  <!-- person icon -->
+                  <i class="fa-regular fa-user text-sm"></i>
+                  <div>1 Position</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <!-- location icon -->
+                  <i class="fa-solid fa-location-dot text-sm"></i>
+
+                  <div>Dhaka, Bangladesh</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <!-- clock icon -->
+                  <i class="fa-regular fa-clock text-sm"></i>
+
+                  <div>Added on 21 November, 2022</div>
+                </div>
+              </div>
+              <a href="#"
+                ><div class="text-blue-500 hover:underline">
+                  View details
+                </div></a
+              >
+            </div>
+            <div class="flex items-end gap-4 flex-col">
+              <div class="flex items-center gap-2 hover:underline">
+                 <!-- edit icon -->
+                 <i class="fa-solid fa-pen-to-square text-xl"></i>
+                <a href="#" class="text-lg text-blue-500">Edit post</a>
+              </div>
+              <div
+                class="flex flex-col px-6 py-4 rounded-2xl items-center gap-2 bg-gray-300"
+              >
+                <div class="text-sm text-gray-700">Applied</div>
+                <div class="text-2xl">237</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- job post-3 -->
+          <div
+            class="flex justify-between mx-4 bg-white p-4 shadow-md rounded-lg mt-1"
+          >
+            <div class="flex flex-col gap-2">
+              <div class="flex gap-4 flex-col lg:flex-row">
+                <a href="#" class="text-2xl text-blue-500 hover:underline"
+                  >Software Engineer (Application Support)</a
+                >
+                <span
+                  class="bg-yellow-200 text-sm rounded-2xl px-4 py-2 h-8 w-[5.3rem] flex items-center"
+                  >Unlisted</span
+                >
+              </div>
+
+              <div>
+                We also work on the firmware and software stack required for a
+                new microcontroller. We have trained and prepared engineers from
+                scratch.
+              </div>
+              <div class="flex flex-col lg:flex-row gap-2 lg:gap-5">
+                <div class="flex items-center gap-1">
+                  <!-- person icon -->
+                  <i class="fa-regular fa-user text-sm"></i>
+                  <div>1 Position</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <!-- location icon -->
+                  <i class="fa-solid fa-location-dot text-sm"></i>
+
+                  <div>Dhaka, Bangladesh</div>
+                </div>
+
+                <div class="flex items-center gap-1">
+                  <!-- clock icon -->
+                  <i class="fa-regular fa-clock text-sm"></i>
+
+                  <div>Added on 21 November, 2022</div>
+                </div>
+              </div>
+              <a href="#"
+                ><div class="text-blue-500 hover:underline">
+                  View details
+                </div></a
+              >
+            </div>
+            <div class="flex items-end gap-4 flex-col">
+              <div class="flex items-center gap-2 hover:underline">
+                 <!-- edit icon -->
+                 <i class="fa-solid fa-pen-to-square text-xl"></i>
+                <a href="#" class="text-lg text-blue-500">Edit post</a>
+              </div>
+              <div
+                class="flex flex-col px-6 py-4 rounded-2xl items-center gap-2 bg-gray-300"
+              >
+                <div class="text-sm text-gray-700">Applied</div>
+                <div class="text-2xl">7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+      <div class="text-center text-sm px-4">
+        <b>powered by -</b>
+        <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+      </div>
+    </footer>
+  </body>
+</html>
