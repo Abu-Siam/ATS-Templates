@@ -1387,10 +1387,6 @@ input[type="file"]::file-selector-button{
   width: 20rem;
 }
 
-.w-\[1100px\]{
-  width: 1100px;
-}
-
 .w-\[5\.3rem\]{
   width: 5.3rem;
 }
@@ -1633,12 +1629,6 @@ input[type="file"]::file-selector-button{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-x-1 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .place-self-start{
   place-self: start;
 }
@@ -1751,6 +1741,14 @@ input[type="file"]::file-selector-button{
   border-width: 1px;
 }
 
+.border-l{
+  border-left-width: 1px;
+}
+
+.border-r{
+  border-right-width: 1px;
+}
+
 .border-r-2{
   border-right-width: 2px;
 }
@@ -1761,14 +1759,6 @@ input[type="file"]::file-selector-button{
 
 .border-t-8{
   border-top-width: 8px;
-}
-
-.border-l{
-  border-left-width: 1px;
-}
-
-.border-r{
-  border-right-width: 1px;
 }
 
 .border-black{
@@ -1811,19 +1801,14 @@ input[type="file"]::file-selector-button{
   border-color: rgb(20 184 166 / var(--tw-border-opacity));
 }
 
-.border-white{
+.border-l-white{
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-left-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-r-white{
   --tw-border-opacity: 1;
   border-right-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-l-white{
-  --tw-border-opacity: 1;
-  border-left-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black{
@@ -2764,10 +2749,6 @@ html {
 
   .lg\:w-full{
     width: 100%;
-  }
-
-  .lg\:w-\[1100px\]{
-    width: 1100px;
   }
 
   .lg\:max-w-\[1100px\]{
