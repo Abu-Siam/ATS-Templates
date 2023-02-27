@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <title>no jobs v2</title>
+  </head>
+  <body class="bg-gray-300 z-10">
+    <main>
+    <!-- nav section -->
+    <div class="bg-white z-20 py-4">
+        <div class="flex justify-between items-center px-6 lg:px-10">
+          <div
+            class="flex flex-col md:flex-row gap-2 md:space-x-20 lg:space-x-24 items-start justify-center md:items-center"
+          >
+            <div class="shrink-0">
+              <img class="w-32 h-12" src="../../images/Shrimp.svg" />
+            </div>
+            <div class="hidden md:flex flex-wrap gap-4">
+              <a href="#" class="px-6 py-2 bg-gray-400 rounded-2xl text-white"
+                >All Jobs</a
+              >
+              <a
+                href="#"
+                class="px-6 py-2 text-blue-500 hover:bg-gray-400 hover:text-white hover:rounded-2xl"
+                >Candidates</a
+              >
+              <a
+                href="#"
+                class="px-6 py-2 text-blue-500 hover:bg-gray-400 hover:text-white hover:rounded-2xl"
+                >Account</a
+              >
+            </div>
+          </div>
+          <!-- hr name and details -->
+          <div>
+            <div class="flex flex-col items-center md:flex-row gap-4">
+              <div class="hidden xl:block">Mohammad Habibul Bashar</div>
+              <div class="flex items-center space-x-4">
+                <div class="cursor-pointer shrink-0">
+                  <img
+                    class="h-10 w-10 rounded-full"
+                    src="../../images/applicants_pic.jpg"
+                  />
+                </div>
+                <a href="#">
+                  <div class="flex items-center gap-2">
+                    logout
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- for mobile devices -->
+        <div class="flex flex-wrap md:hidden justify-between px-4 mt-4">
+          <a
+            href="#"
+            class="px-6 py-2 text-blue-500 hover:bg-gray-400 hover:rounded-2xl"
+            >All Jobs</a
+          >
+          <a
+            href="#"
+            class="px-6 py-2 text-blue-500 hover:bg-gray-400 hover:rounded-2xl"
+          >
+            Candidates</a
+          >
+          <a
+            href="#"
+            class="px-6 py-2 bg-gray-400 text-white rounded-2xl cursor-pointer"
+          >
+            Account
+          </a>
+        </div>
+      </div>
+
+      <!-- comoany name and its website link -->
+
+      <div
+        class="container mx-auto flex flex-col lg:flex-row items-center gap-4 mt-4 px-4 text-center"
+      >
+        <div>
+          <img class="w-32 h-20" src="../../images/Shrimp.svg" />
+        </div>
+        <div>
+          <div class="text-2xl text-black font-medium">
+            Dynamic Solution Innovators Ltd.
+          </div>
+          <a
+            href="#"
+            class="flex items-center justify-center lg:justify-start gap-2 mt-2 text-blue-500 hover:underline"
+          >
+            <i class="fa-solid fa-arrow-up-right-from-square text-black"></i>
+            https://www.shrimp.com/dsi</a
+          >
+        </div>
+      </div>
+      <!-- job openings section -->
+      <section class="bg-gray-300 py-5 container mx-auto">
+        <div>
+          <div
+            class="flex flex-col lg:flex-row gap-5 justify-between px-4 pb-4"
+          >
+            <div
+              class="text-2xl lg:text-3xl text-center text-black font-medium"
+            >
+              Openings
+            </div>
+            <div class="flex flex-col lg:flex-row gap-4">
+              <button
+                class="bg-red-900 hover:bg-red-800 text-white px-6 py-2 flex gap-2 rounded-2xl items-center justify-center"
+              >
+                <img src="../../images/plus-circle.svg" /> Create New Job
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex px-6  py-8 gap-2 items-start  lg:items-center"
+          >
+            <div>
+              <img class="hidden lg:block" src="../../images/exclamation-circle.png" />
+            </div>
+          
+            <div class="text-xl">
+              There are no new openings at the moment. Click on the “<a
+                class="text-blue-500 hover:underline"
+                href="#"
+                >CREATE NEW OPENING</a
+              >” to create a new opening.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+      <div class="text-center text-sm px-4">
+        <b>powered by -</b>
+        <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+      </div>
+    </footer>
+  </body>
+</html>
