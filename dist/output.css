@@ -650,7 +650,7 @@ SELECT {
 
 .form-input-rounded{
   margin-bottom: 1.25rem;
-  border-radius: 0.375rem;
+  border-radius: 1rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
