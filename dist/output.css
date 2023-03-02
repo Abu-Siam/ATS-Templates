@@ -1932,6 +1932,14 @@ input[type="file"]::file-selector-button{
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400\/60{
+  background-color: rgb(156 163 175 / 0.6);
+}
+
+.bg-gray-400\/30{
+  background-color: rgb(156 163 175 / 0.3);
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -2410,6 +2418,10 @@ html {
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-400\/50:hover{
+  background-color: rgb(156 163 175 / 0.5);
+}
+
 .hover\:text-black:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2448,6 +2460,20 @@ html {
 .focus\:ring-black:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity));
+}
+
+.group:hover .group-hover\:bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:bg-gray-400\/50{
+  background-color: rgb(156 163 175 / 0.5);
+}
+
+.group:hover .group-hover\:text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){
