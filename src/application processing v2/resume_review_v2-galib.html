@@ -16,43 +16,51 @@
   </head>
   <body class="bg-gray-300 z-10">
     <!-- nav section -->
-    <div class="bg-white z-20 py-4">
-      <div class="flex justify-between items-center px-6 lg:px-10">
+    <div class="bg-white z-20 px-6 lg:px-8 py-5">
+      <div class="flex justify-between items-center ">
         <div
-          class="flex flex-col md:flex-row gap-2 md:space-x-20 lg:space-x-28 items-start justify-center md:items-center"
+          class="flex flex-col md:flex-row gap-2 md:space-x-12 lg:space-x-16 items-start justify-center md:items-center"
         >
           <div class="shrink-0">
-            <img class="w-32 h-12" src="../../images/Shrimp.svg" />
+            <img class="w-32 h-12" src="../../images/Shrimp_red.svg" />
           </div>
-          <div class="hidden md:flex mx-8 flex-wrap gap-4">
-            <a href="#" class="px-6 py-2 bg-gray-400 rounded-2xl text-white"
+          <div class="hidden md:flex mx-8 flex-wrap gap-1">
+            <a href="#" class="px-3.5 py-2 bg-gray-400 rounded-2xl text-white"
               > Jobs</a
             >
             <a
               href="#"
-              class="px-6 py-2 text-blue-500 hover:bg-gray-400/50  hover:rounded-2xl"
+              class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50  hover:rounded-2xl"
               >Candidates</a
             >
             <a
               href="#"
-              class="px-6 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
+              class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
               >Account</a
             >
           </div>
         </div>
         <!-- hr name and details -->
         <div>
-          <div class="flex flex-col items-center md:flex-row gap-4">
-            <div class="hidden xl:block">Mohammad Habibul Bashar</div>
-            <div class="flex items-center space-x-4">
+          <div class="flex flex-col items-center md:flex-row gap-2.5">
+            <div class="hidden xl:block font-semibold">Mohammad Ahmed Khan</div>
+            <div class="flex items-center gap-2.5">
               <div class="cursor-pointer shrink-0">
-                <img
+
+                <!-- if image given -->
+                <!-- <img
                   class="h-10 w-10 rounded-full"
                   src="../../images/applicants_pic.jpg"
-                />
+                /> -->
+
+                <!-- if image not given -->
+                <span
+                  class="p-3 rounded-img bg-orange-500 text-white text-2xl"
+                 
+                >M</span>
               </div>
               <a href="#">
-                <div class="flex items-center gap-2">
+                <div class="flex items-center">
                   
                   <i class="fa-solid fa-right-from-bracket"></i>
                 </div>
@@ -65,28 +73,28 @@
       <div class="flex flex-wrap md:hidden justify-evenly px-4 mt-4">
         <a
           href="#"
-          class="px-6 py-2 bg-gray-400 text-white hover:bg-gray-400/50 rounded-2xl"
+          class="px-3.5 py-2 bg-gray-400 text-white hover:bg-gray-400/50 rounded-2xl"
           >Jobs</a
         >
         <a
           href="#"
-          class="px-6 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
+          class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
         >
           Candidates</a
         >
         <a
           href="#"
-          class="px-6 py-2  text-blue-500 hover:bg-gray-400/50 rounded-2xl cursor-pointer"
+          class="px-3.5 py-2  text-blue-500 hover:bg-gray-400/50 rounded-2xl cursor-pointer"
         >
           Account
         </a>
       </div>
     </div>
     <!-- section 1 -->
-    <main class="bg-gray-300 container mx-auto max-w-7xl">
+    <main class="bg-gray-300 container mx-auto xl:max-w-5xl 2xl:max-w-7xl">
       <div class="flex items-center px-4">
         <div>
-          <div class="flex flex-col items-start gap-3 mt-11 mb-5">
+          <div class="flex flex-col items-start gap-1 mt-11 mb-5">
             <a href="#" class="text-3xl text-black font-medium"
               >Senior Design Verification Engineer</a
             >
@@ -231,30 +239,30 @@
       <!-- whole container -->
      
       <!-- left section -->
-      <div class="flex flex-col mx-auto lg:flex-row gap-2 px-4">
-        <div class="bg-gray-200 p-2 rounded-2xl w-full lg:w-80 mb-5 lg:mb-10 h-fit">
-          <form class="flex flex-col gap-2 p-2">
+      <div class="flex flex-col mx-auto lg:flex-row gap-2.5 px-4">
+        <div class="bg-gray-200/80 p-5 rounded-2xl w-full lg:w-80 mb-5 lg:mb-10 h-fit">
+          <form class="flex flex-col gap-1">
             <input
               type="search"
               placeholder="Search"
-              class="py-2 px-4 rounded-2xl bg-white"
+              class="py-2 px-4 rounded-2xl bg-white focus:outline-none focus:ring-1 focus:ring-gray-400"
             />
 
-            <select class="py-2 px-4 rounded-2xl bg-white cursor-pointer">
+            <select class="py-2 px-4 rounded-2xl bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-gray-400">
               <option>University</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
             </select>
 
-            <select class="py-2 px-4 rounded-2xl bg-white cursor-pointer">
+            <select class="py-2 px-4 rounded-2xl bg-white cursor-pointer focus:outline-none focus:ring-1 focus:ring-gray-400">
               <option>All</option>
               <option>1</option>
               <option>2</option>
               <option>3</option>
             </select>
 
-            <div class="flex gap-1 mt-1">
+            <div class="flex gap-1 mt-2.5">
               <input
                 type="submit"
                 value="CLEAR FILTER"
@@ -267,17 +275,17 @@
               />
             </div>
           </form>
-          <div class="flex justify-between items-center px-2">
+          <div class="flex justify-between items-center">
             <div>
               <input
                 type="checkbox"
-                class="cursor-pointer"
+                class="cursor-pointer checked:accent-pink-800"
                 onClick="toggle(this)"
               />
               <label class="mx-1"> All</label>
             </div>
             <a href="#">
-              <select class="px-2 py-2 bg-white rounded-l-xl cursor-pointer">
+              <select class="px-2 py-2 bg-white border border-gray-400 rounded-l-xl cursor-pointer focus:outline-none focus:ring-1 focus:ring-gray-400">
                 <option>Interview 1</option>
                 <option>options 1</option>
                 <option>options 2</option>
@@ -291,18 +299,18 @@
           </div>
           <!-- all profiles -->
 
-          <div class="flex flex-col mt-6 gap-2">
-            <div class="flex flex-col justify-end gap-6">
-              <div>
+          <div class="flex flex-col mt-3 gap-2.5">
+            <div class="flex flex-col justify-end gap-2.5">
+              <div class="flex flex-col gap-1.5">
                 <div
-                  class="bg-gray-400 rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="bg-gray-400 rounded-2xl py-2 px-2 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between gap-4 items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between  items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -310,11 +318,11 @@
                         />
                       </div>
                       <div>
-                        <p class="text-lg text-black">
+                        <span class="text-lg leading-snug text-black">
                           <b
-                            >Md. robot ahmed turjo</b
+                            >Md. robot</b
                           >
-                        </p>
+                        </span>
                         <p class="text-black">Dhaka University </p>
                       </div>
                     </div>
@@ -327,14 +335,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -342,7 +350,7 @@
                         />
                       </div>
                       <div>
-                        <span class=" text-lg"><b>Mr abcd ahmed</b></span>
+                        <span class=" text-lg leading-snug"><b>Mr abcd ahmed</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -350,14 +358,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -365,7 +373,7 @@
                         />
                       </div>
                       <div>
-                        <span class="text-lg"><b>Nasrin Sultana Ahmed</b></span>
+                        <span class="text-lg leading-snug"><b>Nasrin Sultana Ahmed</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -373,14 +381,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -388,7 +396,7 @@
                         />
                       </div>
                       <div>
-                        <span class="text-lg"><b>Nasrin Sultana</b></span>
+                        <span class="text-lg leading-snug"><b>Nasrin Sultana</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -396,14 +404,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -411,7 +419,7 @@
                         />
                       </div>
                       <div>
-                        <span class="text-lg"><b>Nasrin Sultana</b></span>
+                        <span class="text-lg leading-snug"><b>Nasrin Sultana</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -419,14 +427,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -434,7 +442,7 @@
                         />
                       </div>
                       <div>
-                        <span class="text-lg"><b>Nasrin Sultana</b></span>
+                        <span class="text-lg leading-snug"><b>Nasrin Sultana</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -442,14 +450,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -457,7 +465,7 @@
                         />
                       </div>
                       <div>
-                        <span class="text-lg"><b>Nasrin Sultana</b></span>
+                        <span class="text-lg leading-snug"><b>Nasrin Sultana</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -465,14 +473,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -480,7 +488,7 @@
                         />
                       </div>
                       <div>
-                        <span class="text-lg"><b>Nasrin Sultana</b></span>
+                        <span class="text-lg leading-snug"><b>Nasrin Sultana</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -488,14 +496,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -503,7 +511,7 @@
                         />
                       </div>
                       <div>
-                        <span class="text-lg"><b>Nasrin Sultana</b></span>
+                        <span class="text-lg leading-snug"><b>Nasrin Sultana</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -511,14 +519,14 @@
                 </div>
 
                 <div
-                  class="rounded-2xl py-2 px-1 mb-2 cursor-pointer hover:bg-gray-400/30"
+                  class="rounded-2xl py-2 px-1 cursor-pointer hover:bg-gray-400/30"
                 >
-                  <div class="flex justify-between items-center pr-2">
-                    <div class="flex items-center gap-4">
+                  <div class="flex justify-between items-center">
+                    <div class="flex items-center gap-2">
                       <div class="flex gap-2 shrink-0">
                         <input
                           type="checkbox"
-                          class="cursor-pointer"
+                          class="cursor-pointer checked:accent-pink-800"
                           name="marked_all"
                         /><img
                           class="rounded-full h-12 w-12"
@@ -526,7 +534,7 @@
                         />
                       </div>
                       <div>
-                        <span class="text-lg"><b>Nasrin Sultana</b></span>
+                        <span class="text-lg leading-snug"><b>Nasrin Sultana</b></span>
                         <p>Dhaka University</p>
                       </div>
                     </div>
@@ -580,9 +588,9 @@
 
         <!-- right section -->
         <div>
-          <div class="w-full mx-auto lg:max-w-[960px] mb-5 lg:mb-10">
+          <div class=" mx-auto mb-5 lg:mb-10">
             <div
-              class="bg-white flex flex-wrap gap-2 items-center justify-between rounded-2xl px-4 py-2 mb-2"
+              class="bg-white flex flex-wrap gap-2 items-center justify-between rounded-2xl px-5 py-2 mb-2"
             >
               <a href="tel:123456789" class="text-lg text-black font-bold">
                 <i class="fa-solid fa-phone"></i>
@@ -591,7 +599,7 @@
 
               <a href="#">
                 <select
-                  class="px-2 py-2 border border-gray-400 rounded-l-2xl cursor-pointer"
+                  class="px-2 py-2 border border-gray-400 rounded-l-2xl cursor-pointer focus:outline-none focus:ring-1 focus:ring-gray-400"
                 >
                   <option>Interview 1</option>
                   <option>options 1</option>
@@ -607,35 +615,30 @@
             <!-- applicant details -->
             <div class="flex flex-col mb-2">
               <div
-                class="flex justify-between bg-white px-4 py-4 rounded-t-2xl"
+                class="flex justify-between bg-white p-5 rounded-t-2xl"
               >
-                <div class="flex flex-col lg:flex-row gap-4 items-start">
+                <div class="flex flex-col lg:flex-row gap-2.5 items-start">
                   <img
                     class="w-36 h-36"
                     src="../../images/applicants_pic.jpg"
                   />
 
                   <div>
-                    <div>
-                      <p class="text-2xl font-bold">Nasrin Sultana</p>
-                      <p class="font-bold">3+ years Experience</p>
-                      <p>Software Engineer, Therap Services LLC.</p>
+                    <div class="flex flex-col">
+                      <span class="text-2xl font-bold">Nasrin Sultana</span>
+                      <span class="font-bold">3+ years Experience</span>
+                      <span>Software Engineer, Therap Services LLC.</span>
                     </div>
 
-                    <div class="mt-2">
+                    <div class="mt-4">
                       <p>Master’s in Computer Science</p>
                       <p>Application developer</p>
                       <p class="font-bold">Dhaka University</p>
-                      <p class="mt-2">
+                      <p class="mt-4">
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Voluptatem molestias, modi a doloremque et eos,
                         quam vitae ex voluptates voluptatum suscipit totam alias
-                        consequuntur illo sequi deserunt neque voluptatibus
-                        earum. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Exercitationem porro fugit in, hic
-                        nihil nostrum harum ullam molestias, magnam animi ipsam
-                        eos voluptas eius rem vitae repellendus enim
-                        voluptatibus. Vel?
+                        consequuntur
                       </p>
                     </div>
                   </div>
@@ -661,10 +664,11 @@
               </div>
 
               <!-- tags -->
-              <div class="flex flex-wrap gap-2 items-center px-4 py-2 bg-white">
-                <div>
+              <div class="flex flex-wrap gap-1 items-center px-5 bg-white">
+                <div class="w-60 flex">
+                  
                   <select
-                    class="px-2 py-2 border border-gray-400 rounded-l-2xl cursor-pointer"
+                    class="grow px-2 py-2 border-t border-l border-b border-gray-400 rounded-l-2xl cursor-pointer focus:outline-none focus:ring-0 focus:ring-gray-400"
                   >
                     <option>Select Tag</option>
                     <option>options 1</option>
@@ -673,103 +677,40 @@
                   <input
                     type="submit"
                     value="ADD"
-                    class="border border-gray-400 px-2 py-2 -ml-1 rounded-r-2xl cursor-pointer"
+                    class=" border border-gray-400 px-6 py-2 rounded-r-2xl cursor-pointer "
                   />
+                  
                 </div>
 
                 <div
-                  class="flex gap-2 px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Referred
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
+                  class="flex gap-2 px-5 py-2 bg-gray-200 rounded-2xl italic items-center"
                 >
                   A problem solver
                   <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
                 </div>
 
+
+
                 <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
+                  class="px-5 py-2 bg-gray-200 rounded-2xl italic items-center"
                 >
                   Introvert
                   <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
                 </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert3
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
-                <div
-                  class="px-4 py-2 bg-gray-200 rounded-2xl italic items-center"
-                >
-                  Introvert
-                  <i class="fa-regular fa-circle-xmark cursor-pointer"></i>
-                </div>
+
               </div>
               <div class="bg-white rounded-b-2xl px-8 py-2">
-                <ul class="list-disc">
+                <ul class="list-disc px-3">
                   <li>
                     <b>Also in -</b>
-                    <span class="text-blue-500 font-bold hover:underline"
+                    <span class="text-blue-600 font-bold hover:underline"
                       ><a href="#">Design Verification Engineer</a></span
                     >
                     (applied)
                   </li>
                   <li>
                     <b>Also in -</b>
-                    <span class="text-blue-500 font-bold hover:underline"
+                    <span class="text-blue-600 font-bold hover:underline"
                       ><a href="#">Senior Design Verification Engineer</a></span
                     >
                     (2nd Interview)
@@ -779,7 +720,7 @@
             </div>
 
             <!-- Timeline -->
-            <div class="flex flex-col bg-white p-4 rounded-2xl mb-2">
+            <div class="flex flex-col bg-white p-5 rounded-2xl mb-2">
               <div class="flex flex-wrap gap-2 items-center justify-between">
                 <span class="text-2xl text-black">Timeline</span>
                 <div class="flex gap-2">
@@ -805,11 +746,11 @@
 
               <!-- create event form -->
               <section
-                class="hidden p-4 mt-4 bg-gray-200 rounded-2xl"
+                class="hidden p-5 mt-2 bg-gray-200 rounded-2xl"
                 id="toggle_event"
               >
                 <!-- title -->
-                <div class="flex justify-between items-center mb-4">
+                <div class="flex justify-between items-center">
                   <div class="text-3xl text-black font-semibold text-start">
                     Create New Event
                   </div>
@@ -835,7 +776,7 @@
                     <div class="flex flex-col gap-2">
                       <label class="required-star">Event Type </label>
                       <select
-                        class="px-4 py-2 border border-gray-400 cursor-pointer bg-white rounded-2xl"
+                        class="px-4 py-2 border border-gray-400 cursor-pointer bg-white rounded-2xl focus:outline-none focus:ring-1 focus:ring-gray-400"
                       >
                         <option>On premises</option>
                         <option>Barishal</option>
@@ -848,14 +789,14 @@
                       <label class="required-star">Scheduled at </label>
                       <input
                         type="date"
-                        class="px-4 py-2 border border-gray-400 cursor-pointer bg-white rounded-2xl"
+                        class="px-4 py-2 border border-gray-400 cursor-pointer bg-white rounded-2xl focus:outline-none focus:ring-1 focus:ring-gray-400"
                       />
                     </div>
 
                     <div class="flex flex-col gap-2">
                       <label class="required-star">Duration </label>
                       <select
-                        class="px-4 py-2 border border-gray-400 cursor-pointer bg-white rounded-2xl"
+                        class="px-4 py-2 border border-gray-400 cursor-pointer bg-white rounded-2xl focus:outline-none focus:ring-1 focus:ring-gray-400"
                       >
                         <option>30 mins</option>
                         <option>1 hour</option>
@@ -867,21 +808,21 @@
 
                   <div class="mt-4 flex flex-col gap-2">
                     <label> Participants from office </label>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 ">
                       <div class="flex gap-1">
-                        <input type="checkbox" /><label>Mr abc</label>
+                        <input type="checkbox" class="checked:accent-pink-800 cursor-pointer" /><label>Mr abc</label>
                       </div>
                       <div class="flex gap-2">
-                        <input type="checkbox" /><label>Mr abc</label>
+                        <input type="checkbox" class="checked:accent-pink-800 cursor-pointer" /><label>Mr abc</label>
                       </div>
                       <div class="flex gap-1">
-                        <input type="checkbox" /><label>Mr abc</label>
+                        <input type="checkbox" class="checked:accent-pink-800 cursor-pointer" /><label>Mr abc</label>
                       </div>
                       <div class="flex gap-1">
-                        <input type="checkbox" /><label>Mr abc</label>
+                        <input type="checkbox" class="checked:accent-pink-800 cursor-pointer" /><label>Mr abc</label>
                       </div>
                       <div class="flex gap-1">
-                        <input type="checkbox" /><label>Mr abc</label>
+                        <input type="checkbox" class="checked:accent-pink-800 cursor-pointer" /><label>Mr abc</label>
                       </div>
                     </div>
                   </div>
@@ -915,7 +856,7 @@
               <!-- create event form ends -->
               <!-- comments 1 -->
               <div
-                class="flex items-center justify-between bg-gray-200 py-4 px-4 mt-4 gap-2 rounded-2xl"
+                class="flex items-start justify-between bg-gray-200 p-3 mt-2 gap-1 rounded-2xl"
               >
                 <div class="flex gap-4">
                   <!-- put message icon here -->
@@ -923,7 +864,7 @@
 
                   <div>
                     <b>Mashraful</b> (1st interview) -
-                    <p>
+                    <p class="text-black leading-snug">
                       I really like her attitude in solving the provided
                       problems on second interview. Seems a little introvert but
                       smart.
@@ -948,7 +889,7 @@
                 </div>
               </div>
               <!-- comments 2 -->
-              <div class="flex gap-4 py-4 px-4 mt-2 rounded-2xl">
+              <div class="flex gap-4 px-3 py-2 rounded-2xl">
                 <!-- put message icon here -->
                 <i class="fa-regular fa-calendar text-2xl"></i>
 
@@ -959,7 +900,7 @@
                 </div>
               </div>
               <!-- comment 3 -->
-              <div class="flex gap-4 py-4 px-4 mt-2 rounded-2xl">
+              <div class="flex gap-4 px-3 py-2 rounded-2xl">
                 <!-- put message icon here -->
                 <i class="fa-regular fa-calendar text-2xl"></i>
 
@@ -972,11 +913,11 @@
             </div>
 
             <!-- Resume -->
-            <div class="flex flex-col bg-white p-4 rounded-2xl mb-2">
+            <div class="flex flex-col bg-white p-5 rounded-2xl mb-2">
               <div class="flex items-center justify-between">
                 <span class="text-2xl text-black">Resume</span>
                 <a href="#" class="text-blue-500"
-                  >Open in new tab &nbsp;<i
+                  >Open resume in new tab &nbsp;<i
                     class="fa-solid fa-arrow-up-right-from-square text-gray-700"
                   ></i
                 ></a>
@@ -999,7 +940,7 @@
                   scrollbar="0"
                   frameBorder="0"
                   scrolling="auto"
-                  height="1100"
+                  height="600"
                   width="100%"
                 />
               </div>
