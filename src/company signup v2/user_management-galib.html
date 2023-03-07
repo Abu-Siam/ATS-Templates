@@ -4,77 +4,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../dist/output.css" />
+        <!-- font-awesome -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
     <title>User Management v2</title>
   </head>
   <body class=" bg-gray-300 z-10">
     <!-- nav section -->
-    <div class="bg-white z-20 py-4">
-      <div class="flex justify-between items-center px-6 lg:px-10">
+    <div class="bg-white z-20 px-6 lg:px-8 py-5">
+      <div class="flex justify-between items-center ">
         <div
-          class="flex flex-col md:flex-row gap-2 md:space-x-20 lg:space-x-24 items-start justify-center md:items-center"
+          class="flex flex-col md:flex-row gap-2 md:space-x-12 lg:space-x-16 items-start justify-center md:items-center"
         >
           <div class="shrink-0">
-            <img class="w-32 h-12" src="../../images/Shrimp.svg" />
+            <img class="w-32 h-12" src="../../images/Shrimp_red.svg" />
           </div>
-          <div class="hidden md:flex flex-wrap gap-4">
-            <a href="#" class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
-              >All Jobs</a
+          <div class="hidden md:flex mx-8 flex-wrap gap-1">
+            <a href="#" class="px-3.5 py-2 bg-gray-400 rounded-2xl text-white"
+              > Jobs</a
             >
             <a
               href="#"
-              class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+              class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50  hover:rounded-2xl"
               >Candidates</a
             >
             <a
               href="#"
-              class="px-6 py-2  bg-gray-400 rounded-md text-white"
+              class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
               >Account</a
             >
           </div>
         </div>
         <!-- hr name and details -->
         <div>
-          <div class="flex flex-col md:flex-row gap-4">
-            <div class="hidden xl:block">
-              Mohammad Habibul Bashar
-              <p class="text-sm text-gray-700 flex justify-end">HR Admin</p>
-            </div>
-            <div class="flex items-center space-x-4">
-              <div class="hidden xl:block relative cursor-pointer">
-                <img src="../../images/notification_icon.svg" />
-                <!-- notification dot pulse -->
-                <div
-                  class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 animate-ping -mb-2"
-                ></div>
-                <div
-                  class="absolute left-0 -mt-5 w-2 h-2 rounded-full bg-red-500 -mb-2"
-                ></div>
-                <!-- notification dot pulse ENDS -->
-              </div>
-
+          <div class="flex flex-col items-center md:flex-row gap-2.5">
+            <div class="hidden xl:block font-semibold">Mohammad Ahmed Khan</div>
+            <div class="flex items-center gap-2.5">
               <div class="cursor-pointer shrink-0">
-                <img
-                  class="h-8 w-8 rounded-full"
+
+                <!-- if image given -->
+                <!-- <img
+                  class="h-10 w-10 rounded-full"
                   src="../../images/applicants_pic.jpg"
-                />
+                /> -->
+
+                <!-- if image not given -->
+                <span
+                  class="p-3 rounded-img bg-orange-500 text-white text-2xl"
+                 
+                >M</span>
               </div>
               <a href="#">
-                <div class="flex">
-                  logout
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
-                    />
-                  </svg>
+                <div class="flex items-center">
+                  
+                  <i class="fa-solid fa-right-from-bracket"></i>
                 </div>
               </a>
             </div>
@@ -82,31 +70,31 @@
         </div>
       </div>
       <!-- for mobile devices -->
-      <div class="flex flex-wrap md:hidden justify-between px-4 mt-4">
+      <div class="flex flex-wrap md:hidden justify-evenly px-4 mt-4">
         <a
           href="#"
-          class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
-          >All Jobs</a
+          class="px-3.5 py-2 bg-gray-400 text-white hover:bg-gray-400/50 rounded-2xl"
+          >Jobs</a
         >
         <a
           href="#"
-          class="px-6 py-2 text-blue-500 hover:bg-gray-300 hover:rounded-md"
+          class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
         >
           Candidates</a
         >
         <a
           href="#"
-          class="px-6 py-2 bg-gray-400 text-white rounded-md cursor-pointer"
+          class="px-3.5 py-2  text-blue-500 hover:bg-gray-400/50 rounded-2xl cursor-pointer"
         >
           Account
         </a>
       </div>
     </div>
-    <main class="container mx-auto max-w-8xl">
+    <main class="container mx-auto xl:max-w-5xl 2xl:max-w-7xl">
 
         <!-- Section 1 (header) -->
 
-        <div class="hidden lg:flex flex-col lg:flex-row items-center gap-4 my-10 mx-12">
+        <div class="hidden lg:flex flex-col lg:flex-row items-center gap-4 my-10">
             <div>
                 <img src="../../images/Shrimp.svg"/>
             </div>
