@@ -1416,6 +1416,10 @@ input[type="file"]::file-selector-button{
   width: 100%;
 }
 
+.w-14{
+  width: 3.5rem;
+}
+
 .max-w-6xl{
   max-width: 72rem;
 }
