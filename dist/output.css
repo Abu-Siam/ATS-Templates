@@ -1335,6 +1335,10 @@ input[type="file"]::file-selector-button{
   width: 3rem;
 }
 
+.w-14{
+  width: 3.5rem;
+}
+
 .w-16{
   width: 4rem;
 }
@@ -1414,10 +1418,6 @@ input[type="file"]::file-selector-button{
 
 .w-full{
   width: 100%;
-}
-
-.w-14{
-  width: 3.5rem;
 }
 
 .max-w-6xl{
