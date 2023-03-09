@@ -1420,10 +1420,6 @@ input[type="file"]::file-selector-button{
   width: 100%;
 }
 
-.max-w-6xl{
-  max-width: 72rem;
-}
-
 .max-w-7xl{
   max-width: 80rem;
 }
@@ -1659,12 +1655,6 @@ input[type="file"]::file-selector-button{
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-x-8 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2rem * var(--tw-space-x-reverse));
-  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .place-self-start{
@@ -2480,10 +2470,6 @@ html {
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-400\/80:hover{
-  background-color: rgb(156 163 175 / 0.8);
-}
-
 .hover\:text-black:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2571,26 +2557,12 @@ html {
     align-items: flex-end;
   }
 
-  .sm\:justify-start{
-    justify-content: flex-start;
-  }
-
-  .sm\:justify-end{
-    justify-content: flex-end;
-  }
-
   .sm\:justify-between{
     justify-content: space-between;
   }
 
   .sm\:justify-around{
     justify-content: space-around;
-  }
-
-  .sm\:space-x-24 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(6rem * var(--tw-space-x-reverse));
-    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:space-x-4 > :not([hidden]) ~ :not([hidden]){
