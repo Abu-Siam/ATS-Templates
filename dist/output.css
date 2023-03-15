@@ -1117,6 +1117,10 @@ input[type="file"]::file-selector-button{
   margin-bottom: 0.5rem;
 }
 
+.mb-2\.5{
+  margin-bottom: 0.625rem;
+}
+
 .mb-20{
   margin-bottom: 5rem;
 }
@@ -2892,6 +2896,10 @@ html {
     flex-direction: row;
   }
 
+  .lg\:flex-col{
+    flex-direction: column;
+  }
+
   .lg\:flex-nowrap{
     flex-wrap: nowrap;
   }
@@ -2946,6 +2954,14 @@ html {
 
   .lg\:gap-8{
     gap: 2rem;
+  }
+
+  .lg\:gap-2{
+    gap: 0.5rem;
+  }
+
+  .lg\:gap-2\.5{
+    gap: 0.625rem;
   }
 
   .lg\:space-x-16 > :not([hidden]) ~ :not([hidden]){
