@@ -1169,6 +1169,10 @@ input[type="file"]::file-selector-button{
   margin-left: 2rem;
 }
 
+.mr-16{
+  margin-right: 4rem;
+}
+
 .mr-40{
   margin-right: 10rem;
 }
@@ -1217,44 +1221,16 @@ input[type="file"]::file-selector-button{
   margin-top: 1.5rem;
 }
 
+.mt-7{
+  margin-top: 1.75rem;
+}
+
 .mt-8{
   margin-top: 2rem;
 }
 
 .mt-auto{
   margin-top: auto;
-}
-
-.mr-96{
-  margin-right: 24rem;
-}
-
-.mr-20{
-  margin-right: 5rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.mr-10{
-  margin-right: 2.5rem;
-}
-
-.mr-12{
-  margin-right: 3rem;
-}
-
-.mr-8{
-  margin-right: 2rem;
-}
-
-.mr-16{
-  margin-right: 4rem;
-}
-
-.mt-7{
-  margin-top: 1.75rem;
 }
 
 .block{
@@ -1454,14 +1430,6 @@ input[type="file"]::file-selector-button{
 
 .w-full{
   width: 100%;
-}
-
-.w-5{
-  width: 1.25rem;
-}
-
-.w-96{
-  width: 24rem;
 }
 
 .max-w-7xl{
@@ -2005,6 +1973,11 @@ input[type="file"]::file-selector-button{
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#1F2937\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -2129,6 +2102,11 @@ input[type="file"]::file-selector-button{
 .py-\[6px\]{
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 
 .pb-10{
@@ -2426,18 +2404,9 @@ html {
   border-bottom-right-radius: 0.75rem;
 }
 
-.hover\:border:hover{
-  border-width: 1px;
-}
-
 .hover\:border-blue-500:hover{
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
-}
-
-.hover\:border-green-500:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(34 197 94 / var(--tw-border-opacity));
 }
 
 .hover\:bg-black:hover{
@@ -2523,11 +2492,6 @@ html {
   background-color: rgb(254 240 138 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-pink-900:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(131 24 67 / var(--tw-bg-opacity));
-}
-
 .hover\:text-black:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2543,14 +2507,14 @@ html {
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-pink-700:hover{
   --tw-text-opacity: 1;
   color: rgb(190 24 93 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -2694,6 +2658,10 @@ html {
     align-items: flex-start;
   }
 
+  .md\:items-end{
+    align-items: flex-end;
+  }
+
   .md\:items-center{
     align-items: center;
   }
@@ -2704,6 +2672,10 @@ html {
 
   .md\:justify-end{
     justify-content: flex-end;
+  }
+
+  .md\:justify-center{
+    justify-content: center;
   }
 
   .md\:justify-between{
@@ -2985,6 +2957,10 @@ html {
 
   .lg\:justify-end{
     justify-content: flex-end;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:gap-0{
