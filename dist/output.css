@@ -1859,6 +1859,11 @@ input[type="file"]::file-selector-button{
   border-right-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-\[\#1F2937\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1971,11 +1976,6 @@ input[type="file"]::file-selector-button{
 .bg-yellow-500{
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#1F2937\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -2104,11 +2104,6 @@ input[type="file"]::file-selector-button{
   padding-bottom: 6px;
 }
 
-.py-2\.5{
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2151,6 +2146,10 @@ input[type="file"]::file-selector-button{
 
 .text-start{
   text-align: start;
+}
+
+.text-end{
+  text-align: end;
 }
 
 .text-2xl{
@@ -2563,6 +2562,11 @@ html {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:flex{
     display: flex;
@@ -2957,10 +2961,6 @@ html {
 
   .lg\:justify-end{
     justify-content: flex-end;
-  }
-
-  .lg\:justify-center{
-    justify-content: center;
   }
 
   .lg\:gap-0{
