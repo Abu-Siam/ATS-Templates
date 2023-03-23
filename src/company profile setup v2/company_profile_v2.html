@@ -1,0 +1,325 @@
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="../../dist/output.css" />
+   <!-- font-awesome -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+   <title>company profile v2</title>
+ </head>
+ <body class="bg-gray-300 z-10">
+   <!-- nav section -->
+   <div class="bg-white z-20 px-6 lg:px-8 py-5">
+     <div class="flex justify-between items-center">
+       <div
+         class="flex flex-col md:flex-row gap-2 md:space-x-12 lg:space-x-16 items-start justify-center md:items-center"
+       >
+         <div class="shrink-0">
+           <img class="w-32 h-12" src="../../images/Shrimp_red.svg" />
+         </div>
+         <div class="hidden md:flex mx-8 flex-wrap gap-1">
+           <a href="#" class="px-3.5 py-2 bg-gray-400 rounded-2xl text-white">
+             Jobs</a
+           >
+           <a
+             href="#"
+             class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
+             >Candidates</a
+           >
+           <a
+             href="#"
+             class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
+             >Account</a
+           >
+         </div>
+       </div>
+       <!-- hr name and details -->
+       <div>
+         <div class="flex flex-col items-center md:flex-row gap-2.5">
+           <div class="hidden xl:block font-semibold">Mohammad Ahmed Khan</div>
+           <div class="flex items-center gap-2.5">
+             <div class="cursor-pointer shrink-0">
+               <!-- if image given -->
+               <!-- <img
+                 class="h-10 w-10 rounded-full"
+                 src="../../images/applicants_pic.jpg"
+               /> -->
+
+
+               <!-- if image not given -->
+               <span class="p-3 rounded-img bg-orange-500 text-white text-2xl"
+                 >M</span
+               >
+             </div>
+             <a href="#">
+               <div class="flex items-center">
+                 <i class="fa-solid fa-right-from-bracket"></i>
+               </div>
+             </a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <!-- for mobile devices -->
+     <div class="flex flex-wrap md:hidden justify-evenly px-4 mt-4">
+       <a
+         href="#"
+         class="px-3.5 py-2 bg-gray-400 text-white hover:bg-gray-400/50 rounded-2xl"
+         >Jobs</a
+       >
+       <a
+         href="#"
+         class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50 hover:rounded-2xl"
+       >
+         Candidates</a
+       >
+       <a
+         href="#"
+         class="px-3.5 py-2 text-blue-500 hover:bg-gray-400/50 rounded-2xl cursor-pointer"
+       >
+         Account
+       </a>
+     </div>
+   </div>
+   <main class="container mx-auto xl:max-w-5xl 2xl:max-w-7xl">
+     <!-- Section 1 (header) -->
+
+
+     <div class="hidden lg:flex flex-col lg:flex-row items-center gap-4 my-10">
+       <div>
+         <img src="../../images/Shrimp.svg" />
+       </div>
+       <div>
+         <span class="text-3xl">Dynamic Solution Innovators Ltd. </span>
+         <p class="flex items-center gap-2 mt-2">
+           <svg
+             xmlns="http://www.w3.org/2000/svg"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke-width="1.5"
+             stroke="currentColor"
+             class="w-6 h-6"
+           >
+             <path
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+             />
+           </svg>
+           <a href="#" class="hover:text-blue-500">www.shrimp.com</a>
+         </p>
+       </div>
+     </div>
+
+
+     <!-- section 2 (left section) -->
+     <div class="flex flex-col lg:flex-row gap-1 lg:gap-6 my-4 px-4">
+       <div class="rounded-2xl w-full lg:w-1/4 h-fit">
+         <div class="flex justify-between flex-col gap-1 lg:gap-2 my-2">
+           <a href="#"
+             ><div
+               class="bg-gray-400 text-white  py-2 px-4 rounded-2xl"
+             >
+               Company Profile
+             </div></a
+           >
+           <a href="#"
+             ><div class="text-blue-500 hover:bg-gray-200 py-2 px-4 rounded-2xl">
+               User management
+             </div>
+           </a>
+           <a href="#">
+             <div
+               class="text-blue-500 hover:bg-gray-200 py-2 px-4 rounded-2xl"
+             >
+               Dataset
+             </div></a
+           >
+         </div>
+       </div>
+       <!-- right section -->
+       <div class="flex flex-col">
+         <!-- tabs -->
+       
+
+
+         <div>
+           <div class="hidden lg:flex flex-wrap gap-2 mt-2 mb-2.5">
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-200 rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-black cursor-pointer"
+               >
+                 All applicants
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-200 group-hover:bg-gray-400/50 group-hover:text-black px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-200 rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-black cursor-pointer"
+               >
+                 All applicants
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-200 group-hover:bg-gray-400/50 group-hover:text-black px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-200 rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-black cursor-pointer"
+               >
+                 All applicants
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-200 group-hover:bg-gray-400/50 group-hover:text-black px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-200 rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-black cursor-pointer"
+               >
+                 All applicants
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-200 group-hover:bg-gray-400/50 group-hover:text-black px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-200 rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-black cursor-pointer"
+               >
+                 All applicants
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-200 group-hover:bg-gray-400/50 group-hover:text-black px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-200 rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-black cursor-pointer"
+               >
+                 All applicants
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-200 group-hover:bg-gray-400/50 group-hover:text-black px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-400 text-white rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-white cursor-pointer"
+               >
+                 Offered
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-400 text-white group-hover:bg-gray-400/50 group-hover:text-white px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-200 rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-black cursor-pointer"
+               >
+                 All applicants
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-200 group-hover:bg-gray-400/50 group-hover:text-black px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+             <div class="flex items-center gap-0.5 group">
+               <div
+                 class="px-4 py-2 bg-gray-200 rounded-l-2xl group-hover:bg-gray-400/50 group-hover:text-black cursor-pointer"
+               >
+                 All applicants
+               </div>
+               <span
+                 class="rounded-r-2xl bg-gray-200 group-hover:bg-gray-400/50 group-hover:text-black px-4 py-2 cursor-pointer"
+                 ><b>237</b></span
+               >
+             </div>
+           </div>
+         </div>
+          <!-- tabs ENDS -->
+         <!-- designation    -->
+         <div class="bg-white w-full h-fit pb-4 my-4 rounded-2xl ">
+           <div class="flex flex-col">
+             <div class="flex flex-wrap items-center justify-center sm:justify-between px-4 lg:px-7 py-5">
+               <div class="text-3xl text-black mb-4 lg:mb-0">Company Profile</div>
+               <div
+                 class="w-full sm:w-auto flex justify-center items-center gap-2 text-white bg-pink-800 hover:bg-pink-700 px-4 py-2 rounded-2xl cursor-pointer"
+               >
+                 <div>
+                   <a href="#"> EDIT PROFILE </a>
+                 </div>
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   fill="none"
+                   viewBox="0 0 24 24"
+                   stroke-width="1.5"
+                   stroke="currentColor"
+                   class="w-6 h-6 cursor-pointer"
+                 >
+                   <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                   />
+                 </svg>
+               </div>
+             </div>
+
+
+             <!-- details -->
+             <div class="flex flex-col items-center md:items-start md:flex-row gap-8 px-4 lg:px-7 mb-6 lg:mb-12">
+               <img class="rounded-2xl w-28 h-24" src="/ATS-Templates/images/applicants_pic.jpg" />
+               <div class="flex flex-col gap-2.5">
+                 <div>
+                   <span class="text-xl lg:text-2xl font-bold text-center lg:text-start">Dynamic Solution Innovators Ltd.</span>
+                   <p class="font-semibold">Unique account id: dsi</p>
+                   <a href="#" class="text-blue-500 hover:underline">www.dsinnovators.com</a>
+                 </div>
+                 <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Officia, magni sapiente! Maiores, commodi eligendi doloribus
+                   dignissimos dolorum doloremque recusandae dolorem
+                   consectetur modi culpa iusto ducimus tenetur itaque illo
+                   aspernatur totam.
+                 </p>
+                 <div>
+                   <p>Owner’s email address: masum@gmail.com</p>
+                   <p>Country code: <em class="text-gray-500">not provided</em></p>
+                   <p>Time zone: Asia/Dhaka</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </main>
+   <!-- footer section -->
+   <footer class="bg-gray-700 text-white py-5 mx-auto mt-auto w-full">
+     <div class="text-center text-sm px-4">
+       <b>powered by -</b>
+       <a href="#"><i>Shrimp Solutions. www.shrimpsolutions.com </i></a>
+     </div>
+   </footer>
+ </body>
+</html>
+
+
+
